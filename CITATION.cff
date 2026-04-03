@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "Hi-AUDiO: Practice-Based Evaluation Report"
+message: "If you use or reference this evaluation report, please cite it as below."
+type: report
+authors:
+  - family-names: Brown
+    given-names: Nela
+    affiliation: "FLO Lab, Female Laptop Orchestra"
+date-released: 2026-03-22
+abstract: >
+  A practice-based evaluation of the Hi-AUDiO platform conducted by nine
+  performers from the Female Laptop Orchestra (FLO) between February and
+  March 2026, during the production of a collaborative composition for the
+  Radiophrenia 2026 festival. The report assesses the platform's suitability
+  for professional creative workflows and identifies design considerations
+  for future development.
+keywords:
+  - audio
+  - web audio
+  - networked music performance
+  - collaborative recording
+  - practice-based research
+  - usability evaluation
+  - digital audio workstation
+license: CC-BY-4.0
+references:
+  - type: grant
+    title: "Hybrid and Interpretable Deep Neural Audio Machines"
+    authors:
+      - name: "Institut Mines-Télécom"
+    institution:
+      name: "European Research Council"
+    number: "101052978"
+    notes: "Funded under the European Union's Horizon Europe research and innovation programme"
