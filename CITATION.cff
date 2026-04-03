@@ -1,19 +1,12 @@
 cff-version: 1.2.0
-title: "Hi-AUDiO: Practice-Based Evaluation Report"
 message: "If you use or reference this evaluation report, please cite it as below."
-type: report
 authors:
   - family-names: Brown
     given-names: Nela
     affiliation: "FLO Lab, Female Laptop Orchestra"
+title: "Hi-AUDiO: Practice-Based Evaluation Report"
 date-released: 2026-03-22
-abstract: >
-  A practice-based evaluation of the Hi-AUDiO platform conducted by nine
-  performers from the Female Laptop Orchestra (FLO) between February and
-  March 2026, during the production of a collaborative composition for the
-  Radiophrenia 2026 festival. The report assesses the platform's suitability
-  for professional creative workflows and identifies design considerations
-  for future development.
+license: CC-BY-4.0
 keywords:
   - audio
   - web audio
@@ -22,13 +15,22 @@ keywords:
   - practice-based research
   - usability evaluation
   - digital audio workstation
-license: CC-BY-4.0
-references:
-  - type: grant
-    title: "Hybrid and Interpretable Deep Neural Audio Machines"
-    authors:
-      - name: "Institut Mines-Télécom"
-    institution:
-      name: "European Research Council"
-    number: "101052978"
-    notes: "Funded under the European Union's Horizon Europe research and innovation programme"
+preferred-citation:
+  type: report
+  title: "Hi-AUDiO: Practice-Based Evaluation Report"
+  authors:
+    - family-names: Brown
+      given-names: Nela
+      affiliation: "FLO Lab, Female Laptop Orchestra"
+  date-released: 2026-03-22
+  abstract: >
+    A practice-based evaluation of the Hi-AUDiO platform conducted by nine
+    performers from the Female Laptop Orchestra (FLO) between February and
+    March 2026, during the production of a collaborative composition for the
+    Radiophrenia 2026 festival. The report assesses the platform's suitability
+    for professional creative workflows and identifies design considerations
+    for future development.
+  notes: >
+    Relates to the project Hybrid and Interpretable Deep Neural Audio Machines,
+    funded by the European Research Council (ERC) under the European Union's
+    Horizon Europe research and innovation programme (grant agreement No. 101052978).
