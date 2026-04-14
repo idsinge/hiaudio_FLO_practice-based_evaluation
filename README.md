@@ -46,7 +46,7 @@
 
 ## Summary
 
-This memo outlines findings from a practice-based evaluation of the Hi-AUDiO platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform.
+This memo outlines findings from a practice-based evaluation of the Hi-AUDiO platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform. A complementary task-based usability study of the Hi-AUDiO platform, conducted with 22 participants using the System Usability Scale (SUS) and NASA-TLX, is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
 
 ## 1. Purpose of This Memo
 
@@ -90,7 +90,7 @@ Communication between participants took place through a dedicated WhatsApp group
 
 The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement.
 
-To complement these qualitative findings, a structured participant questionnaire is being administered to FLO members following the evaluation period. The instrument draws on established usability and technology acceptance frameworks — including the USE Questionnaire, AttrakDiff, and the Technology Acceptance Model (TAM) — covering technical setup, first-time usability, hedonic experience, and future use intent. Results will be reported in subsequent documentation.
+To complement these qualitative findings, a structured participant questionnaire is being administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results will be reported in subsequent documentation.
 
 The following sections summarise the key insights derived from the practice-based evaluation material.
 
