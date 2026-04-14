@@ -50,7 +50,7 @@ This memo outlines findings from a practice-based evaluation of the Hi-AUDiO pla
 
 ## 1. Purpose of This Memo
 
-The purpose of this memo is to present findings from a practice-based expert evaluation of the Hi-AUDiO platform conducted through artistic use rather than task-based usability testing. The goal of the evaluation was to assess the platform's suitability for real-world creative workflows, identify strengths and limitations and highlight design considerations relevant to advanced users and artistic contexts. By synthesising qualitative feedback gathered through the evaluation process, the memo identifies workflow bottlenecks and outlines considerations that may inform future platform development and research dissemination.
+The purpose of this memo is to present findings from a practice-based expert evaluation of the Hi-AUDiO platform conducted through artistic use rather than task-based usability testing. The original evaluation memo is available in [PDF format](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf). The goal of the evaluation was to assess the platform's suitability for real-world creative workflows, identify strengths and limitations and highlight design considerations relevant to advanced users and artistic contexts. By synthesising qualitative feedback gathered through the evaluation process, the memo identifies workflow bottlenecks and outlines considerations that may inform future platform development and research dissemination.
 
 ## 2. Evaluation Context
 
