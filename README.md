@@ -88,7 +88,11 @@ The FLO Lab evaluation approach prioritises ecological validity. Rather than rel
 
 Communication between participants took place through a dedicated WhatsApp group created specifically for the testing period, ensuring that discussions related to the Hi-AUDiO platform did not overlap with other FLO projects. WhatsApp was chosen over email to enable rapid communication and troubleshooting during recording sessions. Issues encountered by performers were addressed either directly by the FLO Lab director or communicated to the Lead Software Engineer where necessary.
 
-The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement. The following sections summarise the key insights derived from this material.
+The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement.
+
+To complement these qualitative findings, a structured participant questionnaire is being administered to FLO members following the evaluation period. The instrument draws on established usability and technology acceptance frameworks — including the USE Questionnaire, AttrakDiff, and the Technology Acceptance Model (TAM) — covering technical setup, first-time usability, hedonic experience, and future use intent. Results will be reported in subsequent documentation.
+
+The following sections summarise the key insights derived from the practice-based evaluation material.
 
 ## 4. Platform Strengths
 
