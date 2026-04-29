@@ -46,11 +46,11 @@
 
 ## Summary
 
-This memo outlines findings from a practice-based evaluation of the Hi-AUDiO platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform. A complementary task-based usability study of the Hi-AUDiO platform, conducted with 22 participants using the System Usability Scale (SUS) and NASA-TLX, is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
+This memo outlines findings from a practice-based evaluation of the Hi-Audio platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform. A complementary task-based usability study of the Hi-Audio platform, conducted with 22 participants using the System Usability Scale (SUS) and NASA-TLX, is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
 
 ## 1. Purpose of This Memo
 
-The purpose of this memo is to present findings from a practice-based expert evaluation of the Hi-AUDiO platform conducted through artistic use rather than task-based usability testing. The original evaluation memo is available in [PDF format](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf). The goal of the evaluation was to assess the platform's suitability for real-world creative workflows, identify strengths and limitations and highlight design considerations relevant to advanced users and artistic contexts. By synthesising qualitative feedback gathered through the evaluation process, the memo identifies workflow bottlenecks and outlines considerations that may inform future platform development and research dissemination.
+The purpose of this memo is to present findings from a practice-based expert evaluation of the Hi-Audio platform conducted through artistic use rather than task-based usability testing. The original evaluation memo is available in [PDF format](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf). The goal of the evaluation was to assess the platform's suitability for real-world creative workflows, identify strengths and limitations and highlight design considerations relevant to advanced users and artistic contexts. By synthesising qualitative feedback gathered through the evaluation process, the memo identifies workflow bottlenecks and outlines considerations that may inform future platform development and research dissemination.
 
 ## 2. Evaluation Context
 
@@ -62,13 +62,13 @@ Most FLO members hold academic positions in music, sound, HCI, and related field
 
 ### 2.2 Use Case
 
-In this evaluation, the Hi-AUDiO platform was used for remote asynchronous recording of 16 audio tracks by FLO members based in Australia, Brazil, Croatia, France, Italy, Poland, Slovakia, Spain and the UK. The recordings were intended as source material for a collaborative composition that would later be mixed offline and submitted to the Radiophrenia 2026 festival.
+In this evaluation, the Hi-Audio platform was used for remote asynchronous recording of 16 audio tracks by FLO members based in Australia, Brazil, Croatia, France, Italy, Poland, Slovakia, Spain and the UK. The recordings were intended as source material for a collaborative composition that would later be mixed offline and submitted to the Radiophrenia 2026 festival.
 
 Individual recording sessions involved the use of acoustic and electronic instruments, percussion, vocals (utilising audio interfaces and Loopback software for internal audio routing to Firefox), as well as live coding and binaural soundscape recordings.
 
-The workflow also involved downloading recordings from the Hi-AUDiO platform, converting and importing them into performers' Digital Audio Workstations (DAWs) for additional DSP processing using audio plug-ins and AI-based tools. The processed material was subsequently uploaded back to the platform.
+The workflow also involved downloading recordings from the Hi-Audio platform, converting and importing them into performers' Digital Audio Workstations (DAWs) for additional DSP processing using audio plug-ins and AI-based tools. The processed material was subsequently uploaded back to the platform.
 
-As the resulting composition is intended for broadcast at a professional music festival, the project also provides a potential dissemination context for the Hi-AUDiO platform and the associated research project initiative.
+As the resulting composition is intended for broadcast at a professional music festival, the project also provides a potential dissemination context for the Hi-Audio platform and the associated research project initiative.
 
 ### 2.3 Scope
 
@@ -76,27 +76,27 @@ The evaluation focused on the recording interface, transport controls, visual fe
 
 ## 3. Methodological Approach
 
-Seven FLO members were onboarded to the Hi-AUDiO platform by the Lead Software Engineer, across two separate two-hour sessions. Two additional FLO members were onboarded by the FLO Lab director, who also coordinated the recording process, organised scheduling, assisted with troubleshooting, and collected participant feedback throughout the evaluation period. The onboarding sessions introduced the platform interface, conducted latency tests, and examined signal flow across different recording configurations.
+Seven FLO members were onboarded to the Hi-Audio platform by the Lead Software Engineer, across two separate two-hour sessions. Two additional FLO members were onboarded by the FLO Lab director, who also coordinated the recording process, organised scheduling, assisted with troubleshooting, and collected participant feedback throughout the evaluation period. The onboarding sessions introduced the platform interface, conducted latency tests, and examined signal flow across different recording configurations.
 
 Following onboarding, the FLO Lab director created a private Collection titled *"FLO - Radiophrenia 2026"* and a Composition within that Collection titled "Hi-Audio Radiophrenia 2026 Jam."
 
-The remaining eight performers were invited as members using the Composition Info section, which generated automated email invitations from the Hi-AUDiO platform. Upon registration, participants were able to navigate directly to the shared recording session workspace.
+The remaining eight performers were invited as members using the Composition Info section, which generated automated email invitations from the Hi-Audio platform. Upon registration, participants were able to navigate directly to the shared recording session workspace.
 
 All tracks were recorded and uploaded between February 13, 2026, and March 3, 2026. The mixing phase took place between March 3 and March 13, 2026. A detailed recording timeline is provided in the Appendix.
 
 The FLO Lab evaluation approach prioritises ecological validity. Rather than relying on controlled usability tasks, the evaluation followed a practice-based research methodology grounded in real creative activity. Insights were generated through hands-on use of the platform during individual recording sessions, reflecting observations during and after these sessions, and informal comparison with existing tools and workflows.
 
-Communication between participants took place through a dedicated WhatsApp group created specifically for the testing period, ensuring that discussions related to the Hi-AUDiO platform did not overlap with other FLO projects. WhatsApp was chosen over email to enable rapid communication and troubleshooting during recording sessions. Issues encountered by performers were addressed either directly by the FLO Lab director or communicated to the Lead Software Engineer where necessary.
+Communication between participants took place through a dedicated WhatsApp group created specifically for the testing period, ensuring that discussions related to the Hi-Audio platform did not overlap with other FLO projects. WhatsApp was chosen over email to enable rapid communication and troubleshooting during recording sessions. Issues encountered by performers were addressed either directly by the FLO Lab director or communicated to the Lead Software Engineer where necessary.
 
 The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement.
 
-To complement these qualitative findings, a structured participant questionnaire is being administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results will be reported in subsequent documentation.
+To complement these qualitative findings, a structured participant questionnaire will be administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results will be reported in subsequent documentation.
 
 The following sections summarise the key insights derived from the practice-based evaluation material.
 
 ## 4. Platform Strengths
 
-This section highlights aspects of the Hi-AUDiO platform that effectively supported the collaborative workflow used by FLO members during the evaluation.
+This section highlights aspects of the Hi-Audio platform that effectively supported the collaborative workflow used by FLO members during the evaluation.
 
 ### 4.1 Accessibility
 
@@ -199,11 +199,11 @@ The observations outlined below translate participants' testing experiences into
 
 ## 7. Assessment of Platform Fit for Professional Creative Workflows
 
-In its current iteration, the Hi-AUDiO platform functions primarily as a lightweight multitrack recording environment rather than a fully featured creative production system.
+In its current iteration, the Hi-Audio platform functions primarily as a lightweight multitrack recording environment rather than a fully featured creative production system.
 
 The platform's web-based simplicity is a clear strength; however, the absence of core editing capabilities (e.g., cut, trim, paste) and dynamic control tools (e.g., automation envelopes) limits its suitability for end-to-end professional production workflows.
 
-For the Female Laptop Orchestra (FLO) to adopt Hi-AUDiO as a regular tool for distributed composition, further development would be required to support non-linear editing, advanced signal control, and workflow features aligned with established professional audio practices.
+For the Female Laptop Orchestra (FLO) to adopt Hi-Audio as a regular tool for distributed composition, further development would be required to support non-linear editing, advanced signal control, and workflow features aligned with established professional audio practices.
 
 ## 8. Key Findings and Next Steps
 
@@ -234,12 +234,12 @@ This timeline documents the procedural sequence of onboarding, recording, and po
 ### 2025 — Project Initiation
 
 - **05/12** – Meeting (Lead Software Engineer; Principal Investigator; FLO Lab director)
-- **09/12** – Hi-AUDiO platform demonstration (Lead Software Engineer; FLO Lab director)
+- **09/12** – Hi-Audio platform demonstration (Lead Software Engineer; FLO Lab director)
 
 ### 2026 — Onboarding Phase
 
 - **29/01** – Onboarding Session 1 (Lead Software Engineer; FLO Lab director)
-- **30/01** – Editing guide track (binaural soundscape) from 20 to 10 minutes due to file size restriction; uploading guide track to Hi-AUDiO
+- **30/01** – Editing guide track (binaural soundscape) from 20 to 10 minutes due to file size restriction; uploading guide track to Hi-Audio
 - **30/01** – Onboarding Session 2 (Lead Software Engineer; FLO Lab director; three FLO members)
 - **04/02** – Onboarding Session 3 (Lead Software Engineer; FLO Lab director; three FLO members)
 - **05/02** – Onboarding Session 4 (FLO Lab director; one FLO member)
@@ -249,7 +249,7 @@ This timeline documents the procedural sequence of onboarding, recording, and po
 
 - **13/02** – FLO planning meeting
 - **14/02–16/02** – Recording individual voice tracks in participants' native languages using varied recording setups
-- **17/02–19/02** – Downloading and converting guide track; importing into Ableton; mixing and processing individual voice recordings; translating materials into English; uploading processed tracks to Hi-AUDiO platform
+- **17/02–19/02** – Downloading and converting guide track; importing into Ableton; mixing and processing individual voice recordings; translating materials into English; uploading processed tracks to Hi-Audio platform
 - **20/02** – Downloading processed tracks, AI-based processing, re-uploading selected material
 - **21/02–03/03** – Recording instrumental and electronic parts (piano, CubeHarmonic, cello tracks, percussion, SuperCollider, soundscape)
 - **04/03** – Obtaining .wav files from the Lead Software Engineer
@@ -297,10 +297,10 @@ The screenshots below provide visual documentation of interface states, workflow
 
 ## 9. Acknowledgements
 
-The evaluator would like to thank the members of the Female Laptop Orchestra (FLO) for participating in this evaluation, and the Hi-AUDiO team (Lead Software Engineer and Principal Investigator), for providing access to the platform, technical support, and openness during the evaluation period.
+The evaluator would like to thank the members of the Female Laptop Orchestra (FLO) for participating in this evaluation, and the Hi-Audio team (Lead Software Engineer and Principal Investigator), for providing access to the platform, technical support, and openness during the evaluation period.
 
 The evaluator would also like to thank the Female Laptop Orchestra (FLO) sponsors Bitwig Studio, PreSonus, Røde Microphones, Audio-Technica, Waves, NETGEAR, and Rogue Amoeba for providing software and hardware used in the evaluation process.
 
-The Hi-AUDiO platform is developed as part of the project *Hybrid and Interpretable Deep Neural Audio Machines*, funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
+The Hi-Audio platform is developed as part of the project *Hybrid and Interpretable Deep Neural Audio Machines*, funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
 
 <img src="./images/ERC_logo.png" alt="European Research Council logo" width="250"/>
