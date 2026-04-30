@@ -59,7 +59,7 @@ This survey complements the FLO Orchestra practice-based evaluation of the Hi-Au
 
 ---
 
-**Q5. Do you usually record audio using an external audio interface (with a microphone or instrument input)?** *(Required)*
+**Q5. Do you usually record audio using an external audio interface (e.g. a sound card connected to a microphone or instrument)?** *(Required)*
 *(Single choice)*
 - Yes, always
 - Yes, sometimes
@@ -170,7 +170,7 @@ This survey complements the FLO Orchestra practice-based evaluation of the Hi-Au
 
 ---
 
-**Q18. Did you encounter any challenges when using Hi-Audio for recording? If so, please describe them.**
+**Q18. Did you encounter any challenges when using Hi-Audio for recording? If so, please describe them**
 *(Open text)*
 
 ---
