@@ -446,7 +446,7 @@ workflow interactions, and usability observations identified during the
 practice-based evaluation. They complement the findings presented in
 Section 5.
 
-<img src="./images/image1.png"
+<img src="../images/image1.png"
 style="width:6.69284in;height:2.34736in" alt="Image" />
 
 Fig B1. Use of the audio routing software Loopback to route audio from a
@@ -454,20 +454,20 @@ DAW (Bitwig/Ableton) to the Firefox browser. This configuration formed
 an important part of the recording workflow for FLO performers working
 with external instruments and DAWs.
 
-<img src="./images/image2.png"
+<img src="../images/image2.png"
 style="width:6.69298in;height:1.95605in" alt="Image" />
 
 Fig B2. The microphone permission icon in the Firefox interface was
 occasionally hidden, which created uncertainty during the recording
 setup process.
 
-<img src="./images/image3.png"
+<img src="../images/image3.png"
 style="width:6.69284in;height:1.76685in" alt="Image" />
 
 Fig B3. Refreshing the Firefox browser allowed Loopback to be selected
 as the input device instead of the internal microphone.
 
-<img src="./images/image4.png"
+<img src="../images/image4.png"
 style="width:6.69298in;height:2.79035in" alt="Image" />
 
 Fig B4. Transport bar icons change colour only temporarily and, in some
@@ -475,26 +475,26 @@ cases (e.g., when the microphone icon is activated), appear only
 slightly lighter. This subtle change made it difficult to determine
 whether the recording was active.
 
-<img src="./images/image5.png"
+<img src="../images/image5.png"
 style="width:6.69298in;height:3.9436in" alt="Image" />
 
 Fig B5. Dark blue waveform segments representing silence were visually
 ambiguous and could be misinterpreted during track inspection.
 
-<img src="./images/image6.png"
+<img src="../images/image6.png"
 style="width:6.69298in;height:4.25397in" alt="Image" />
 
 Fig B6. Track rendering times were relatively long, and the rendering
 indicator located at the bottom of the interface became difficult to
 monitor once several tracks had been recorded.
 
-<img src="./images/image7.png"
+<img src="../images/image7.png"
 style="width:6.68589in;height:3.92109in" alt="Image" />
 
 Fig B7. Interaction with the Mute and Solo controls sometimes appeared
 visually ambiguous, as both buttons could appear active simultaneously.
 
-<img src="./images/image8.png"
+<img src="../images/image8.png"
 style="width:6.69298in;height:3.69604in" alt="Image" />
 
 Fig B8. Zoom in/out controls demonstrated limited responsiveness during
