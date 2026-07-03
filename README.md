@@ -9,8 +9,33 @@
 
 ---
 
+## Repository Contents
+
+This repository publishes both the practice-based evaluation report (this file) and the participant survey that complements it, including anonymised response data. The table below lists everything published in the repository.
+
+| Category | File / Folder | What it is |
+|---|---|---|
+| Report | `README.md` | This file — the practice-based evaluation report itself |
+| Report | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The original evaluation memo, as a PDF |
+| Report | [`docs/output.md`](./docs/output.md) | Historical record: the original Pandoc conversion of the memo from `.docx` — content preserved as-is, except for 8 relative image paths updated when the file was relocated into `docs/` |
+| Report | [`CITATION.cff`](CITATION.cff) | Structured citation metadata (also powers GitHub's "Cite this repository" button) |
+| Survey instrument | [`docs/participant_survey.md`](./docs/participant_survey.md) | The participant questionnaire, as administered via JotForm (23 questions, three sections) |
+| Survey instrument | [`docs/ANALYSIS_PLAN.md`](./docs/ANALYSIS_PLAN.md) | The planned approach for analysing survey responses: quantitative and thematic-coding methodology, triangulation against this report |
+| Response data | [`docs/participant_survey_responses.csv`](./docs/participant_survey_responses.csv) / [`.xlsx`](./docs/participant_survey_responses.xlsx) | Anonymised aggregate responses from all 9 participants, one row per respondent |
+| Response data | [`docs/individual_participant_responses/`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/tree/main/docs/individual_participant_responses) | Per-respondent submission exports (`P01.pdf`–`P09.pdf`), anonymised by participant ID |
+| Response data | [`docs/response_id_mapping.md`](./docs/response_id_mapping.md) | Maps each anonymised participant ID (P01–P09) to its original JotForm submission identifier, for cross-referencing the CSV/XLSX rows against the individual PDFs |
+| Supporting | [`CONTEXT.md`](CONTEXT.md) | Project background and working notes for collaborators |
+| Supporting | `images/` | Screenshots and figures referenced throughout this report |
+| Supporting | [`LICENSE`](LICENSE) | CC BY 4.0 |
+| Supporting | [`_config.yml`](_config.yml) | Jekyll theme configuration for GitHub Pages |
+
+All response data was screened for personally identifiable information before publication; see the "Positionality note" in §3 below for the one disclosed exception (a participant who is also the questionnaire's designer).
+
+---
+
 ## Table of Contents
 
+- [Repository Contents](#repository-contents)
 - [Summary](#summary)
 - [1. Purpose of This Memo](#1-purpose-of-this-memo)
 - [2. Evaluation Context](#2-evaluation-context)
@@ -40,6 +65,7 @@
   - [8.2 Potential for Future Collaboration](#82-potential-for-future-collaboration)
 - [Appendix A: Introduction, Onboarding, and Evaluation Timeline](#appendix-a-introduction-onboarding-and-evaluation-timeline)
 - [Appendix B: Platform Use and Interface Observations](#appendix-b-platform-use-and-interface-observations)
+- [Citation](#citation)
 - [9. Acknowledgements](#9-acknowledgements)
 
 ---
@@ -90,7 +116,9 @@ Communication between participants took place through a dedicated WhatsApp group
 
 The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement.
 
-To complement these qualitative findings, a structured participant questionnaire will be administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results will be reported in subsequent documentation.
+To complement these qualitative findings, a structured participant questionnaire was administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results are reported in subsequent documentation.
+
+**Positionality note:** the FLO Lab director, who designed the questionnaire and authored this evaluation memo, also completed the questionnaire as one of the nine respondents (participant P09 in the published response data). This dual role is disclosed here for transparency; her response is retained in the dataset rather than excluded, consistent with the practice-based, practitioner-embedded nature of this evaluation, but readers should account for it when weighing the objectivity of aggregate results. One consequence of this disclosed dual role: her name appears once in the response data itself, in a track filename she references in her own answer — left unredacted, since she is already named as this report's author and evaluator above.
 
 The following sections summarise the key insights derived from the practice-based evaluation material.
 
@@ -292,6 +320,26 @@ The screenshots below provide visual documentation of interface states, workflow
 ![Unresponsive zoom controls](./images/image8.png)
 
 **Fig B8.** Zoom in/out controls demonstrated limited responsiveness during testing, which slowed inspection of recorded tracks.
+
+---
+
+## Citation
+
+If you use or reference this evaluation report, please cite it as below. A structured [CITATION.cff](CITATION.cff) is also included in this repository, which GitHub uses to generate a "Cite this repository" option automatically.
+
+> Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO: Practice-Based Evaluation Report*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
+
+**BibTeX:**
+
+```bibtex
+@techreport{Brown2026hiaudio,
+  author      = {Brown, Nela and Gil Panal, Jos{\'e} M.},
+  title       = {Hi-AUDiO: Practice-Based Evaluation Report},
+  institution = {FLO Lab, Female Laptop Orchestra / Hi-AUDiO, T{\'e}l{\'e}com Paris},
+  year        = {2026},
+  url         = {https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation}
+}
+```
 
 ---
 
