@@ -347,7 +347,7 @@ If you use or reference this evaluation report, please cite it as below. A struc
 
 The evaluator would like to thank the members of the Female Laptop Orchestra (FLO) for participating in this evaluation, and the Hi-Audio team (Lead Software Engineer and Principal Investigator), for providing access to the platform, technical support, and openness during the evaluation period.
 
-The evaluator would also like to thank the Female Laptop Orchestra (FLO) sponsors Bitwig Studio, PreSonus, Røde Microphones, Audio-Technica, Waves, NETGEAR, and Rogue Amoeba for providing software and hardware used in the evaluation process.
+The evaluator would also like to thank the Female Laptop Orchestra (FLO) supporters Bitwig Studio, PreSonus, Røde Microphones, Audio-Technica, Waves, NETGEAR, and Rogue Amoeba for providing software and hardware used in the evaluation process.
 
 The Hi-Audio platform is developed as part of the project *Hybrid and Interpretable Deep Neural Audio Machines*, funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
 
