@@ -327,13 +327,13 @@ The screenshots below provide visual documentation of interface states, workflow
 
 If you use or reference this evaluation report, please cite it as below. A structured [CITATION.cff](CITATION.cff) is also included in this repository, which GitHub uses to generate a "Cite this repository" option automatically.
 
-> Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO: Practice-Based Evaluation Report*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
+> Brown, N., (2026). *Hi-AUDiO: Practice-Based Evaluation Report*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
 
 **BibTeX:**
 
 ```bibtex
 @techreport{Brown2026hiaudio,
-  author      = {Brown, Nela and Gil Panal, Jos{\'e} M.},
+  author      = {Brown, Nela,
   title       = {Hi-AUDiO: Practice-Based Evaluation Report},
   institution = {FLO Lab, Female Laptop Orchestra / Hi-AUDiO, T{\'e}l{\'e}com Paris},
   year        = {2026},

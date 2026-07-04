@@ -4,9 +4,6 @@ authors:
   - family-names: Brown
     given-names: Nela
     affiliation: "FLO Lab, Female Laptop Orchestra"
-  - family-names: "Gil Panal"
-    given-names: "José M."
-    affiliation: "Hi-AUDiO, Télécom Paris / Institut Mines-Télécom"
 title: "Hi-AUDiO: Practice-Based Evaluation Report"
 date-released: 2026-03-22
 license: CC-BY-4.0
@@ -25,9 +22,6 @@ preferred-citation:
     - family-names: Brown
       given-names: Nela
       affiliation: "FLO Lab, Female Laptop Orchestra"
-    - family-names: "Gil Panal"
-      given-names: "José M."
-      affiliation: "Hi-AUDiO, Télécom Paris / Institut Mines-Télécom"
   date-released: 2026-03-22
   abstract: >
     A practice-based evaluation of the Hi-Audio platform conducted by nine
