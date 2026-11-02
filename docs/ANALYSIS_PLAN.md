@@ -15,7 +15,7 @@ The analysis is exploratory and descriptive in nature. It is not intended to val
 
 ## Researcher Positionality — Respondent Overlap
 
-Nela Brown, who designed this questionnaire and authored the practice-based evaluation memo (README.md) against which survey findings are triangulated, is also a respondent in the dataset: she is **P09** (submitted 2026-07-03). This is disclosed for transparency and is not treated as disqualifying — practice-based research expects the lead researcher to be embedded in the activity under study — but it has concrete implications for this analysis:
+This questionnaire was co-designed by Nela Brown and the Hi-AUDiO Lead Software Engineer. Nela Brown, who co-designed it and authored the practice-based evaluation memo (README.md) against which survey findings are triangulated, is also a respondent in the dataset: she is **P09** (submitted 2026-07-03). (The Lead Software Engineer is not a respondent; the co-design itself is disclosed in README.md §3.) This is disclosed for transparency. Practice-based research commonly embeds the lead researcher in the activity under study, but that context does not by itself resolve the non-independence, so the following handling applies:
 
 - **Do not silently exclude P09.** Report the full n=9 sample as the primary result.
 - For headline quantitative metrics (Q16–Q20), additionally compute the same means/medians with P09 excluded (n=8) and note whether her response is an outlier that shifts the result. Report both if they diverge meaningfully.
@@ -68,7 +68,7 @@ Planned outputs:
 
 Note: the published CSV/XLSX store these items as text ("Strongly disagree" ... "Strongly agree"), not numbers — recode to 1–7 in a local working copy before computing means (see AGENTS.md Step 1b for the exact mapping). The published files intentionally keep the text labels for legibility; the recoded numeric copy is not committed.
 
-Because the sample is expected to be small, interpretation will remain descriptive and cautious. Inferential statistics are not planned unless a later sample size clearly justifies them.
+Because the sample is small, interpretation remains descriptive and cautious. Inferential statistics (t-tests, ANOVA, regressions, confidence intervals) are not used and are not to be introduced unless explicitly instructed — a sample of this size does not justify them on its own, so that judgement should not be made independently.
 
 **Q16/Q17 data correction (already applied to the hosted CSV/XLSX).** The raw JotForm export originally split Q16 and Q17 into 4 sub-columns each, suffixed `>> Service Quality`, `>> Cleanliness`, `>> Responsiveness`, `>> Friendliness`. This text was never part of the actual form — confirmed directly in the live JotForm builder, which shows Q16 and Q17 each have exactly one matrix row with a blank row-name field (JotForm's own "Type Row Name" placeholder hint, not real content). The 4-way split was a JotForm export defect. Before correction, all 4 sub-column values were identical for every one of the 9 respondents (e.g. P01: Q16 = "Strongly disagree" ×4), confirming no information was lost by collapsing them.
 
@@ -143,16 +143,18 @@ The table below maps each survey item to the corresponding section of the evalua
 | Q11, Q12 | §3 Methodology | Session structure and duration distribution |
 | Q13, Q14 | §2.2 Use Case | OS and browser distribution — frequency counts |
 | Q15 | §2.2 Use Case | Headphone type breakdown |
-| Q16 | §7 Platform Fit | Overall professional/artistic suitability — headline metric; mean |
-| Q17 | §7 Artistic Fit | Artistic intention support — mean |
+| Q16 | §7 Platform Fit | Meets the necessary standards as a professional audio recording application — headline metric; mean. Construct is professional standards only; artistic-intention support is Q17 |
+| Q17 | §7 Platform Fit | Artistic intention support — mean |
 | Q18 | §4.2 Ease of Use | First-use usability dimensions (clarity, effort, ease, control) — mean per item |
-| Q19 | §7 Artistic Fit | Hedonic/experiential quality (enjoyment, pleasantness, fun) — mean per item |
+| Q19 | §7 Platform Fit | Hedonic/experiential quality (enjoyment, pleasantness, fun) — mean per item |
 | Q20 | §7 Platform Fit | Future use intent and perceived usefulness — mean per item |
 | Q21 | §4 Platform Strengths / §7 Platform Fit | Participant-reported strengths — thematic coding; complements Q22 challenge taxonomy |
 | Q22 | §5, §6 Design Implications | Challenges — thematic coding against report challenge taxonomy |
 | Q23 | §7 Platform Fit | Applicability scenarios — thematic coding |
 
-**Matrix scales Q18–Q20:** This questionnaire was developed for the present study and informed by established technology acceptance and usability evaluation approaches. Q18 adapts pragmatic usability dimensions (clarity, mental effort, ease, controllability) commonly used in usability questionnaires. Q19 captures hedonic/experiential quality (enjoyment, pleasantness, fun) using common UX evaluation dimensions. Q20 adapts perceived usefulness and behavioural intention constructs commonly associated with technology acceptance literature.
+**Matrix scales Q18–Q20:** Q18 is the four-item **Perceived Ease of Use** scale and Q19 the three-item **Perceived Enjoyment** scale, both as worded in Venkatesh (2000, Appendix 1), with the verb tense changed from present to past and the platform named in place of "the system". Q20 combines Davis's (1989) perceived-usefulness item (Q20_2, domain changed to "for recording music") with attitude and behavioural-intention items whose direct wording source is not established (Q20_1, Q20_3) and a recommendation item written for this study (Q20_4). Q16 and Q17 are single items written for this study. The instrument *as assembled* is nonetheless not a standardised questionnaire and was not re-validated for this population or this retrospective framing, so its ratings must not be compared against published norms for any source scale, nor treated as validated subscale scores. Full attribution: [`REFERENCES.md`](REFERENCES.md).
+
+> **Correction, 2026-08-20 — post-hoc amendment to this plan.** The paragraph above previously read: *"This questionnaire was developed for the present study and informed by established technology acceptance and usability evaluation approaches,"* describing Q18–Q20 as adapting constructs without reproducing any published instrument. Item-level comparison against the primary sources showed that to be a factual under-attribution: Q18 and Q19 reproduce Venkatesh's (2000) scales close to verbatim. Two further pointer corrections were made on 2026-08-21: the Q17 and Q19 rows above pointed at a "§7 Artistic Fit" section that README does not have, and the tense change was described as prospective→retrospective when it is grammatically present→past. **No methodological choice in this plan was altered, and no result was recomputed** — the analysis was always descriptive and never compared against external norms, which is the handling the corrected attribution also requires.
 
 **Open-text questions (Q21–Q23)** are suited for thematic coding. Q22 (challenges) and Q21 (strengths) form a complementary pair — the challenge areas identified in §5 of the evaluation report (visual feedback, transport controls, editing, file format, etc.) can serve as the coding frame for Q22, while §4 (Platform Strengths) provides the frame for Q21.
 

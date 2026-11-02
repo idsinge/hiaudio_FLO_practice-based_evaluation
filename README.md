@@ -5,31 +5,42 @@
 **Evaluator:** Nela Brown  
 **Role:** Director, FLO Lab  
 **Evaluation Period:** 13/02/2026 – 13/03/2026  
-**Document Date:** 22 March 2026
+**Document Date:** 22 March 2026  
+**Last Revised:** 21 August 2026 — see `CONTEXT.md` for the revision history
 
 ---
 
 ## Repository Contents
 
-This repository publishes both the practice-based evaluation report (this file) and the participant survey that complements it, including anonymised response data. The table below lists everything published in the repository.
+This repository publishes the practice-based evaluation report (this file), the participant survey that complements it including pseudonymised response data, and the analysis of those survey responses. The table below lists everything published in the repository.
 
 | Category | File / Folder | What it is |
 |---|---|---|
 | Report | `README.md` | This file — the practice-based evaluation report itself |
-| Report | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The original evaluation memo, as a PDF |
-| Report | [`docs/output.md`](./docs/output.md) | Historical record: the original Pandoc conversion of the memo from `.docx` — content preserved as-is, except for 8 relative image paths updated when the file was relocated into `docs/` |
+| Report | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The original evaluation memo, as a PDF — **historical; superseded by this report** where the two differ (it predates the onboarding, timeline and funding-statement corrections recorded in `CONTEXT.md`) |
+| Report | [`docs/output.md`](./docs/output.md) | Historical record: the original Pandoc conversion of the memo from `.docx` — content preserved as-is, except for 8 relative image paths updated when the file was relocated into `docs/`. Where it differs from this report, **this report supersedes it** — notably its description of the onboarding sessions, since clarified in §3 |
 | Report | [`CITATION.cff`](CITATION.cff) | Structured citation metadata (also powers GitHub's "Cite this repository" button) |
 | Survey instrument | [`docs/participant_survey.md`](./docs/participant_survey.md) | The participant questionnaire, as administered via JotForm (23 questions, three sections) |
 | Survey instrument | [`docs/ANALYSIS_PLAN.md`](./docs/ANALYSIS_PLAN.md) | The planned approach for analysing survey responses: quantitative and thematic-coding methodology, triangulation against this report |
-| Response data | [`docs/participant_survey_responses.csv`](./docs/participant_survey_responses.csv) / [`.xlsx`](./docs/participant_survey_responses.xlsx) | Anonymised aggregate responses from all 9 participants, one row per respondent |
-| Response data | [`docs/individual_participant_responses/`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/tree/main/docs/individual_participant_responses) | Per-respondent submission exports (`P01.pdf`–`P09.pdf`), anonymised by participant ID |
-| Response data | [`docs/response_id_mapping.md`](./docs/response_id_mapping.md) | Maps each anonymised participant ID (P01–P09) to its original JotForm submission identifier, for cross-referencing the CSV/XLSX rows against the individual PDFs |
+| Response data | [`docs/participant_survey_responses.csv`](./docs/participant_survey_responses.csv) / [`.xlsx`](./docs/participant_survey_responses.xlsx) | Pseudonymised respondent-level responses from all 9 participants, one row per respondent. Rows carry a submission date, not a participant ID; use `docs/response_id_mapping.md` to link a row to its P01–P09 identifier |
+| Response data | [`docs/individual_participant_responses/`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/tree/main/docs/individual_participant_responses) | Per-respondent submission exports (`P01.pdf`–`P09.pdf`), pseudonymised by participant ID |
+| Response data | [`docs/response_id_mapping.md`](./docs/response_id_mapping.md) | Maps each participant ID (P01–P09) to its original JotForm submission identifier, for cross-referencing the CSV/XLSX rows against the individual PDFs |
+| Survey analysis | [`docs/figures/`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/tree/main/docs/figures) | The three figures used in the analysis (SVG), plus `make_figures.py`, which regenerates them from the published CSV so they can be verified against the data |
+| Survey analysis | [`docs/analysis_summary_print.html`](./docs/analysis_summary_print.html) / [`docs/make_print_html.py`](./docs/make_print_html.py) | A print/PDF rendering of the analysis, and the script that regenerates it from the Markdown so the two cannot drift apart |
+| Survey analysis | [`docs/analysis_summary.md`](./docs/analysis_summary.md) | Analysis of the survey responses: sample description, quantitative results for Q16–Q20, thematic coding of the open questions, and triangulation against §4–§8 of this report — including a sensitivity analysis excluding the respondent identified in the Positionality note below |
+| Supporting | [`docs/REFERENCES.md`](./docs/REFERENCES.md) | Full annotated reference list for the sources cited in this report and in the analysis plan |
 | Supporting | [`CONTEXT.md`](CONTEXT.md) | Project background and working notes for collaborators |
+| Supporting | [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md) | Working instructions for AI coding assistants and collaborators working in this repository |
 | Supporting | `images/` | Screenshots and figures referenced throughout this report |
-| Supporting | [`LICENSE`](LICENSE) | CC BY 4.0 |
-| Supporting | [`_config.yml`](_config.yml) | Jekyll theme configuration for GitHub Pages |
+| Supporting | [`LICENSE`](LICENSE) | CC BY 4.0 — covers everything **except** the participant response data |
+| Supporting | [`docs/DATA_LICENSE.md`](./docs/DATA_LICENSE.md) | Research-use licence governing the participant response data (CSV/XLSX, individual PDFs, ID mapping) |
+| Supporting | [`_config.yml`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/blob/main/_config.yml) | Jekyll theme configuration for GitHub Pages (Jekyll does not copy underscore-prefixed files into the published site, so this link points at the repository) |
 
-All response data was screened for personally identifiable information before publication; see the "Positionality note" in §3 below for the one disclosed exception (a participant who is also the questionnaire's designer).
+All response data was screened for personally identifiable information before publication; see the "Positionality note" in §3 below for the one disclosed exception (a participant who is also a co-designer of the questionnaire).
+
+The response data is **pseudonymised rather than anonymised**: each row is one respondent, carrying a submission date that links to a stable participant identifier through `docs/response_id_mapping.md`. Because the cohort is small and FLO's membership is public, readers should treat these records as potentially re-identifiable and use them accordingly.
+
+**Licensing is split.** The report, survey instrument, analysis, and images are licensed [CC BY 4.0](LICENSE). The participant response data — the CSV/XLSX, the individual respondent PDFs, and the ID mapping — is released under a more restrictive [research-use licence](./docs/DATA_LICENSE.md) reflecting the terms on which participants gave consent: non-commercial academic research and educational use only, no redistribution, and no attempted re-identification.
 
 ---
 
@@ -65,6 +76,7 @@ All response data was screened for personally identifiable information before pu
   - [8.2 Potential for Future Collaboration](#82-potential-for-future-collaboration)
 - [Appendix A: Introduction, Onboarding, and Evaluation Timeline](#appendix-a-introduction-onboarding-and-evaluation-timeline)
 - [Appendix B: Platform Use and Interface Observations](#appendix-b-platform-use-and-interface-observations)
+- [References](#references)
 - [Citation](#citation)
 - [9. Acknowledgements](#9-acknowledgements)
 
@@ -72,7 +84,7 @@ All response data was screened for personally identifiable information before pu
 
 ## Summary
 
-This memo outlines findings from a practice-based evaluation of the Hi-Audio platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform. A complementary task-based usability study of the Hi-Audio platform, conducted with 22 participants using the System Usability Scale (SUS) and NASA-TLX, is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
+This memo outlines findings from a practice-based evaluation of the Hi-Audio platform, conducted by nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform. The platform itself is described in Gil Panal, David and Richard (2026). A complementary task-based usability study of the Hi-Audio platform, conducted with 22 participants using the System Usability Scale (SUS; Brooke, 1996) and NASA-TLX (Hart & Staveland, 1988), is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
 
 ## 1. Purpose of This Memo
 
@@ -102,23 +114,29 @@ The evaluation focused on the recording interface, transport controls, visual fe
 
 ## 3. Methodological Approach
 
-Seven FLO members were onboarded to the Hi-Audio platform by the Lead Software Engineer, across two separate two-hour sessions. Two additional FLO members were onboarded by the FLO Lab director, who also coordinated the recording process, organised scheduling, assisted with troubleshooting, and collected participant feedback throughout the evaluation period. The onboarding sessions introduced the platform interface, conducted latency tests, and examined signal flow across different recording configurations.
+Seven FLO members, including the FLO Lab director, were onboarded to the Hi-Audio platform by the Lead Software Engineer: the director in an initial session, and six further members across two separate two-hour sessions. Two additional FLO members were onboarded by the FLO Lab director, who also coordinated the recording process, organised scheduling, assisted with troubleshooting, and collected participant feedback throughout the evaluation period. The onboarding sessions introduced the platform interface, conducted latency tests, and examined signal flow across different recording configurations.
 
 Following onboarding, the FLO Lab director created a private Collection titled *"FLO - Radiophrenia 2026"* and a Composition within that Collection titled "Hi-Audio Radiophrenia 2026 Jam."
 
 The remaining eight performers were invited as members using the Composition Info section, which generated automated email invitations from the Hi-Audio platform. Upon registration, participants were able to navigate directly to the shared recording session workspace.
 
-All tracks were recorded and uploaded between February 13, 2026, and March 3, 2026. The mixing phase took place between March 3 and March 13, 2026. A detailed recording timeline is provided in the Appendix.
+All participant contribution tracks were recorded and uploaded between February 13, 2026, and March 3, 2026. The guide track — a pre-existing binaural soundscape used as a timing reference — was uploaded earlier, on January 30, 2026, as noted in the Appendix. The mixing phase took place between March 3 and March 13, 2026. A detailed recording timeline is provided in the Appendix.
 
-The FLO Lab evaluation approach prioritises ecological validity. Rather than relying on controlled usability tasks, the evaluation followed a practice-based research methodology grounded in real creative activity. Insights were generated through hands-on use of the platform during individual recording sessions, reflecting observations during and after these sessions, and informal comparison with existing tools and workflows.
+The FLO Lab evaluation approach prioritises ecological validity (Schmuckler, 2001). Rather than relying on controlled usability tasks, the evaluation followed a practice-based research methodology (Candy, 2006) grounded in real creative activity. Insights were generated through hands-on use of the platform during individual recording sessions, reflecting observations during and after these sessions, and informal comparison with existing tools and workflows.
 
 Communication between participants took place through a dedicated WhatsApp group created specifically for the testing period, ensuring that discussions related to the Hi-Audio platform did not overlap with other FLO projects. WhatsApp was chosen over email to enable rapid communication and troubleshooting during recording sessions. Issues encountered by performers were addressed either directly by the FLO Lab director or communicated to the Lead Software Engineer where necessary.
 
 The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement.
 
-To complement these qualitative findings, a structured participant questionnaire was administered to FLO members following the evaluation period. The questionnaire was developed for this study and informed by established usability and technology acceptance approaches, covering technical setup, first-time usability, hedonic experience, and future use intent. Rather than reproducing a single standardised instrument, it adapts selected constructs to the specific context of collaborative online audio recording. Results are reported in subsequent documentation.
+To complement these qualitative findings, a structured participant questionnaire was administered to FLO members following the evaluation period. The questionnaire was assembled for this study from items drawn from the technology acceptance literature, covering technical setup, first-time usability, hedonic experience, and future use intent. Specifically: **Q18** uses the four-item Perceived Ease of Use scale and **Q19** the three-item Perceived Enjoyment scale, both as worded in Venkatesh (2000, Appendix 1) — themselves adapted there from Davis (1989) and Davis, Bagozzi and Warshaw (1992) respectively — with the verb tense changed from present to past ("I find…" → "I found…") and the platform named in place of "the system." **Q20_2** is Davis's (1989) perceived-usefulness item with the domain changed from "in my job" to "for recording music"; **Q20_1** and **Q20_3** are attitude and behavioural-intention items in the same tradition, but their direct wording source has not been established and none is claimed here; **Q20_4** is a recommendation item that is not part of any of these scales. **Q16** and **Q17** are single items written for this study.
 
-**Positionality note:** the FLO Lab director, who designed the questionnaire and authored this evaluation memo, also completed the questionnaire as one of the nine respondents (participant P09 in the published response data). This dual role is disclosed here for transparency; her response is retained in the dataset rather than excluded, consistent with the practice-based, practitioner-embedded nature of this evaluation, but readers should account for it when weighing the objectivity of aggregate results. One consequence of this disclosed dual role: her name appears once in the response data itself, in a track filename she references in her own answer — left unredacted, since she is already named as this report's author and evaluator above.
+The instrument as a whole is therefore **not** a single standardised questionnaire, and it was not re-validated for this population. Its ratings are reported descriptively and should not be compared against published norms for any of the source scales, nor treated as validated subscale scores: the items were recombined across sources, and the sample (n = 9) is far too small to establish reliability. A further difference from the source scales is one of framing rather than wording — they were written to be answered about a system in current use, whereas this questionnaire was answered months after the evaluation period ended. Its verbal anchors follow the fully labelled seven-point form discussed by Rohrmann (2007) and Preston and Colman (2000). Results are reported in [`docs/analysis_summary.md`](./docs/analysis_summary.md).
+
+**Positionality note:** the participant questionnaire was designed collaboratively by the FLO Lab director and the Hi-AUDiO Lead Software Engineer. Two aspects of that arrangement are disclosed here for transparency.
+
+First, the FLO Lab director — who co-designed the questionnaire and authored this evaluation memo — also completed the questionnaire as one of the nine respondents (participant P09 in the published response data). Her response is retained in the dataset rather than excluded, consistent with the practice-based, practitioner-embedded nature of this evaluation (Brannick & Coghlan, 2007; Berger, 2015), but readers should account for it when weighing the objectivity of aggregate results. One consequence of this disclosed dual role: her name appears once in the response data itself, in a track filename she references in her own answer — left unredacted, since she is already named as this report's author and evaluator above.
+
+Second, the Lead Software Engineer is a member of the Hi-AUDiO team that develops the platform under evaluation, so the questionnaire was co-designed in part by the platform's own development side. They did not complete the questionnaire and are not among the nine respondents. This is disclosed so that readers can weigh it: the questionnaire as administered, the full pseudonymised response data, and the analysis of those responses are all published in this repository and can be examined independently.
 
 The following sections summarise the key insights derived from the practice-based evaluation material.
 
@@ -227,7 +245,7 @@ The observations outlined below translate participants' testing experiences into
 
 ## 7. Assessment of Platform Fit for Professional Creative Workflows
 
-In its current iteration, the Hi-Audio platform functions primarily as a lightweight multitrack recording environment rather than a fully featured creative production system.
+In the version evaluated between 13 February and 13 March 2026, the Hi-Audio platform functioned primarily as a lightweight multitrack recording environment rather than a fully featured creative production system. The platform is under active development, so features noted here as absent may since have been added; this assessment should be read as describing that version, not the platform as it stands today.
 
 The platform's web-based simplicity is a clear strength; however, the absence of core editing capabilities (e.g., cut, trim, paste) and dynamic control tools (e.g., automation envelopes) limits its suitability for end-to-end professional production workflows.
 
@@ -235,7 +253,7 @@ For the Female Laptop Orchestra (FLO) to adopt Hi-Audio as a regular tool for di
 
 ## 8. Key Findings and Next Steps
 
-The collective feedback identifies a gap between the current feature set and the requirements of professional creative workflows. While usability and onboarding are promising, several foundational features would significantly enhance suitability for advanced use.
+The collective feedback identifies a gap between the feature set of the version evaluated (13 February – 13 March 2026) and the requirements of professional creative workflows. While usability and onboarding are promising, several foundational features would significantly enhance suitability for advanced use.
 
 The most critical areas for development include improved visual feedback for active states, implementation of standard keyboard shortcuts, support for uncompressed export formats, and basic non-destructive editing tools (e.g., cut, trim, and envelope control).
 
@@ -257,7 +275,7 @@ Continued collaboration between the FLO Lab initiative and the Hi-AUDiO research
 
 ## Appendix A: Introduction, Onboarding, and Evaluation Timeline
 
-This timeline documents the procedural sequence of onboarding, recording, and post-production activities conducted during the evaluation period.
+This timeline documents the full procedural sequence of the project, from initiation and preparatory onboarding through recording and post-production. Note that it extends beyond the evaluation period itself (13/02/2026 – 13/03/2026): the December 2025 meetings and the January–February onboarding sessions were preparatory, undertaken so that participants could use the platform, and are not part of the evaluation window.
 
 ### 2025 — Project Initiation
 
@@ -323,11 +341,40 @@ The screenshots below provide visual documentation of interface states, workflow
 
 ---
 
+## References
+
+Sources cited in this report. The complete annotated list — including the constructs behind each questionnaire block and the methodological sources for the analysis plan — is in [`docs/REFERENCES.md`](./docs/REFERENCES.md).
+
+- Berger, R. (2015). Now I see it, now I don't: Researcher's position and reflexivity in qualitative research. *Qualitative Research, 15*(2), 219–234. https://doi.org/10.1177/1468794112468475
+- Brannick, T., & Coghlan, D. (2007). In defense of being "native": The case for insider academic research. *Organizational Research Methods, 10*(1), 59–74. https://doi.org/10.1177/1094428106289253
+- Brooke, J. (1996). SUS: A "quick and dirty" usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester, & I. L. McClelland (Eds.), *Usability evaluation in industry* (pp. 189–194). Taylor & Francis. https://doi.org/10.1201/9781498710411-35
+- Candy, L. (2006). *Practice based research: A guide* (CCS Report 2006-V1.0). Creativity & Cognition Studios, University of Technology, Sydney. https://www.creativityandcognition.com/wp-content/uploads/2011/04/PBR-Guide-1.1-2006.pdf
+- Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly, 13*(3), 319–340. https://doi.org/10.2307/249008
+- Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1992). Extrinsic and intrinsic motivation to use computers in the workplace. *Journal of Applied Social Psychology, 22*(14), 1111–1132. https://doi.org/10.1111/j.1559-1816.1992.tb00945.x
+- Gil Panal, J. M., David, A., & Richard, G. (2026). The Hi-Audio online platform for recording and distributing multi-track music datasets. *Journal on Audio, Speech, and Music Processing, 2026*(26). https://doi.org/10.1186/s13636-026-00459-0
+- Hart, S. G., & Staveland, L. E. (1988). Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research. In P. A. Hancock & N. Meshkati (Eds.), *Human mental workload* (pp. 139–183). North-Holland. https://doi.org/10.1016/S0166-4115(08)62386-9
+- Hassenzahl, M. (2004). The interplay of beauty, goodness, and usability in interactive products. *Human–Computer Interaction, 19*(4), 319–349. https://doi.org/10.1207/s15327051hci1904_2
+- Lund, A. M. (2001). Measuring usability with the USE questionnaire. *Usability Interface, 8*(2), 3–6.
+- Preston, C. C., & Colman, A. M. (2000). Optimal number of response categories in rating scales: Reliability, validity, discriminating power, and respondent preferences. *Acta Psychologica, 104*(1), 1–15. https://doi.org/10.1016/S0001-6918(99)00050-5
+- Rohrmann, B. (2007). *Verbal qualifiers for rating scales: Sociolinguistic considerations and psychometric data* (Project report). University of Melbourne. https://www.rohrmannresearch.net/pdfs/rohrmann-vqs-report.pdf
+- Schmuckler, M. A. (2001). What is ecological validity? A dimensional analysis. *Infancy, 2*(4), 419–436. https://doi.org/10.1207/S15327078IN0204_02
+- Venkatesh, V. (2000). Determinants of perceived ease of use: Integrating control, intrinsic motivation, and emotion into the technology acceptance model. *Information Systems Research, 11*(4), 342–365. https://doi.org/10.1287/isre.11.4.342.11872
+
+The thematic-coding sources underpinning the survey analysis (Braun & Clarke, 2006; Fereday & Muir-Cochrane, 2006) are listed in [`docs/REFERENCES.md`](./docs/REFERENCES.md) alongside the above.
+
+---
+
 ## Citation
 
-If you use or reference this evaluation report, please cite it as below. A structured [CITATION.cff](CITATION.cff) is also included in this repository, which GitHub uses to generate a "Cite this repository" option automatically.
+This repository contains two citable components. Cite whichever matches what you actually used. A structured [CITATION.cff](CITATION.cff) is also included, which GitHub uses to generate a "Cite this repository" option automatically.
+
+**To cite the evaluation report** — the practice-based memo in this file, and the material in `docs/output.md` and the PDF:
 
 > Brown, N. (2026). *Hi-AUDiO: Practice-Based Evaluation Report*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
+
+**To cite the full repository** — the report together with the participant survey, the pseudonymised response data, and the survey analysis:
+
+> Brown, N., & Hi-AUDiO (2026). *Hi-AUDiO: Practice-Based Evaluation — Report, Participant Survey, and Response Analysis*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
 
 **BibTeX:**
 
@@ -339,7 +386,19 @@ If you use or reference this evaluation report, please cite it as below. A struc
   year        = {2026},
   url         = {https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation}
 }
+
+@misc{Brown2026hiaudiorepo,
+  author       = {Brown, Nela and {Hi-AUDiO}},
+  title        = {Hi-AUDiO: Practice-Based Evaluation --- Report, Participant Survey,
+                  and Response Analysis},
+  year         = {2026},
+  howpublished = {GitHub repository, FLO Lab, Female Laptop Orchestra /
+                  Hi-AUDiO, T{\'e}l{\'e}com Paris},
+  url          = {https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation}
+}
 ```
+
+If you cite specific survey findings, cite the full repository — the figures, thematic coding, and triangulation live in [`docs/analysis_summary.md`](./docs/analysis_summary.md), not in the report.
 
 ---
 
@@ -351,4 +410,6 @@ The evaluator would also like to thank the Female Laptop Orchestra (FLO) support
 
 The Hi-Audio platform is developed as part of the project *Hybrid and Interpretable Deep Neural Audio Machines*, funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
 
-<img src="./images/ERC_logo.png" alt="European Research Council logo" width="250"/>
+Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
+
+<img src="./images/ERC_logo.png" alt="Emblem of the European Union and logo of the European Research Council" width="250"/>

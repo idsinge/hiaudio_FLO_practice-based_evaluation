@@ -19,11 +19,19 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 | docs/ANALYSIS_PLAN.md | Published | Data collection is complete — cleared for publication |
 | docs/participant_survey.md | Published | Data collection is complete — cleared for publication |
 | docs/output.md | Published | Read-only historical record — never edit or delete |
-| docs/participant_survey_responses.csv / .xlsx | Published | Raw response data (no PII columns) — cleared for publication |
-| docs/individual_participant_responses/P01–P09.pdf | Published | Per-respondent submissions, anonymised as P01–P09 — cleared for publication |
-| docs/response_id_mapping.md | Published | Maps PID ↔ original JotForm submission ID |
+| docs/participant_survey_responses.csv / .xlsx | Published | Canonical response data (no PII columns) — already corrected (Q16/Q17 collapsed), not a raw JotForm export |
+| docs/individual_participant_responses/P01–P09.pdf | Published | Per-respondent submissions, pseudonymised as P01–P09 — cleared for publication |
+| docs/response_id_mapping.md | Published | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
+| docs/analysis_summary.md | Awaiting owner approval; untracked | Survey analysis write-up — linked from README's Repository Contents and from §3. The source of truth for the analysis |
+| docs/analysis_summary_print.html | Awaiting owner approval; untracked | Print/PDF rendering of the analysis. Regenerate with `docs/make_print_html.py` after any markdown edit; never hand-edit |
+| docs/make_print_html.py | Awaiting owner approval; untracked | Generator for the print HTML — keeps it reproducible from the markdown |
+| docs/REFERENCES.md | Awaiting owner approval; untracked | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
+| docs/figures/ | Awaiting owner approval; untracked | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |
 | docs/Practice-Based Evaluation...pdf | Published | Original PDF memo — do not modify |
 | CITATION.cff | Published | Structured citation |
+| AGENTS.md | Published | Working instructions for other AI agents — keep aligned with this file |
+| docs/DATA_LICENSE.md | Published | Research-use licence for the response data — legal text, change only on explicit instruction |
+| LICENSE | Published | CC BY 4.0, scoped to exclude the response data — change only on explicit instruction |
 | _config.yml | Published | Jekyll config — only change if explicitly asked |
 | images/ | Published | Static assets — do not modify |
 
@@ -36,11 +44,11 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 - **docs/output.md is untouchable.** Never edit, overwrite, or delete its content. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Do not make further changes.
 - **docs/participant_survey.md, docs/ANALYSIS_PLAN.md, and the response data files are cleared for publication.** Data collection is complete, so the contamination risk that motivated withholding them no longer applies. `invitation_message.md` was removed from the repo entirely (not published).
 - **Acknowledgements is always the last section in README.md**, after any appendices. Never reorder it.
-- **No personal identifiers.** Do not add email addresses, phone numbers, or names beyond what already exists. The institutional email appears as `[available on request]` in docs/participant_survey.md. One exception is already present and accepted: P09's Q7 answer names Nela Brown in a track filename — left as-is per her dual role as questionnaire designer/respondent (see "Respondent overlap" below and CONTEXT.md).
-- **Framework language.** Q18–Q20 were designed for this study and are informed by established usability and technology acceptance literature. Always say "informed by" or "adapts constructs from" — never name or "use"/"apply" specific named instruments (USE, AttrakDiff, UEQ, TAM).
+- **No personal identifiers.** Do not add email addresses, phone numbers, or names beyond what already exists. The institutional email appears as `[available on request]` in docs/participant_survey.md. One exception is already present and accepted: P09's Q7 answer names Nela Brown in a track filename — left as-is per her dual role as questionnaire co-designer/respondent (see "Respondent overlap" below and CONTEXT.md).
+- **Item attribution (corrected 2026-08-20 — the earlier "never name TAM" rule is superseded).** Q18 reproduces Venkatesh's (2000, Appendix 1) four-item Perceived Ease of Use scale and Q19 the three-item Perceived Enjoyment scale from the same appendix, both with the verb tense changed present→past and "the Hi-Audio platform" in place of "the system"; Q20_2 is Davis's (1989) usefulness item with the domain changed; Q20_4, Q16 and Q17 were written for this study. **Q20_1/Q20_3 are attitude and behavioural-intention items whose direct wording source has not been established — do not attribute them to Davis (1989)**, which developed the usefulness and ease-of-use scales only. Cite Venkatesh (2000) for the Q18/Q19 wording; never write that no items are reproduced. Still required: the instrument **as assembled** is not standardised and was never re-validated, so no comparison against published norms and no treating block means as validated subscale scores. **SUS and NASA-TLX were not administered here and none of their items appear** — that claim is safe. **USE, AttrakDiff and UEQ were also not administered and not used as sources, but do not claim zero item overlap for them**: Lund's USE contains close variants of "easy to use", "recommend it to a friend", "fun to use" and "pleasant to use". See `docs/REFERENCES.md` and AGENTS.md Rule 5.
 - **Q16/Q17 are single 7-point questions**, confirmed in the JotForm builder (one matrix row each, blank row-name field). An earlier JotForm export defect split them into 4 bogus sub-columns (`>> Service Quality` etc. — never real form content); `docs/participant_survey_responses.csv`/`.xlsx` have already been corrected to one clean column per question. Usable as the intended headline suitability/artistic-fit metrics with no further preprocessing. See `docs/ANALYSIS_PLAN.md`.
-- **Respondent overlap.** Nela Brown (questionnaire designer, memo author) is also P09 in the response dataset. See "Researcher Positionality" in `docs/ANALYSIS_PLAN.md` before computing or reporting aggregate stats.
-- **No inferential statistics** unless sample size clearly justifies it. Expected ~9 participants. Report means, medians, ranges. Scope all claims to this small expert cohort.
+- **Respondent overlap.** Nela Brown (questionnaire co-designer, memo author) is also P09 in the response dataset. See "Researcher Positionality" in `docs/ANALYSIS_PLAN.md` before computing or reporting aggregate stats.
+- **No inferential statistics** (t-tests, ANOVA, regressions, confidence intervals) unless explicitly instructed. Expected ~9 participants — a sample this small does not justify them on its own, so do not make that judgement call independently. Report means, medians, ranges. Frame all findings as exploratory and descriptive. Scope all claims to this small expert cohort.
 - **Do not push to remote without explicit instruction.**
 
 ---
@@ -54,17 +62,20 @@ Activates when JotForm CSV response data is available. Expected: ~9 rows (one pe
 1. Import CSV; confirm row count.
 2. Rename columns to Q1–Q23 (JotForm headers may differ).
 3. Remove any name, email, IP, or identifier column before any further step.
-4. The response data (`docs/participant_survey_responses.csv`/`.xlsx`, individual PDFs) is already committed and cleared for publication — no further raw-data commit decision needed. Any *new*/derived working file (e.g. a numeric-recoded copy for computing means) is local-only; only commit `analysis_summary.md` once reviewed and approved.
+4. The response data (`docs/participant_survey_responses.csv`/`.xlsx`, individual PDFs) is already committed and cleared for publication — no further raw-data commit decision needed. Any *new*/derived working file (e.g. a numeric-recoded copy for computing means) is local-only; only commit `docs/analysis_summary.md` once reviewed and approved.
 
 ### Quantitative
 
 **Before computing any mean/median for Q16–Q20:** the CSV stores these as text labels ("Strongly disagree" ... "Strongly agree"), not numbers 1–7. Recode to numeric first (see AGENTS.md Step 1b for the exact mapping) — this recoded copy is a local working file, not something to commit; the published CSV/XLSX intentionally keep the original text labels.
 
 **Q1–Q15** — frequency counts and percentages per option; narrative sample description.
-- Q8 is multiple-choice (select all that apply) — count options independently.
+- **Q1 and Q8** are multiple-choice (select all that apply) — count each option independently, not as mutually exclusive.
+- **Q3, Q4, Q6, Q7** use configurable list or multiple-entry widgets. **Q3/Q4** collect tool names and are hand-categorised then counted in the published analysis (say so in the write-up); **Q6/Q7** collect instruments and track content and stay prose-only, without counts.
+- **Map columns by header text, never by position.** A raw JotForm export and the published CSV do not share a column count or ordering, so positional addressing silently produces wrong results.
+- **Never edit the raw response files.** `docs/participant_survey_responses.csv`/`.xlsx` and the individual PDFs are read-only inputs. Derived working copies stay local.
 - Q10 is conditional on Q9 = "No" — use only those rows as denominator.
 
-**Q16 (headline metric) and Q17** are single 7-point rating questions — mean, median, range. Q16 (suitability for professional/artistic use) is reported first and prominently.
+**Q16 (headline metric) and Q17** are single 7-point rating questions — mean, median, range. Q16 (meets the necessary standards as a professional audio recording application) is reported first and prominently. Its construct is professional standards only — artistic-intention support is Q17; do not merge the two into a "professional/artistic" judgement.
 
 **Q18 — Pragmatic Usability (4 items, 7-point matrix)** — mean per item:
 
@@ -94,6 +105,8 @@ Activates when JotForm CSV response data is available. Expected: ~9 rows (one pe
 
 Scale midpoint is 4.0 — reference it when interpreting means.
 
+**Do not reverse-code Q18_2.** It is worded so that a higher score indicates *lower* mental effort, which is intentional and already consistent in direction with the other Q18 items. Reverse-coding it would silently change every Q18 figure. Do not reverse-code it unless explicitly asked.
+
 ### Qualitative
 
 Open-text Q21, Q22, Q23 — thematic coding, hybrid deductive/inductive.
@@ -104,11 +117,11 @@ Open-text Q21, Q22, Q23 — thematic coding, hybrid deductive/inductive.
 |---|---|
 | Q22 (challenges) | §5 challenge taxonomy: visual feedback, transport controls, editing, file format, latency, browser/network compatibility, workflow integration |
 | Q21 (strengths) | §4 Platform Strengths: browser access, no install, multi-track, collaboration, sharing ease |
-| Q23 (use cases) | §7 Platform Fit — also open inductive |
+| Q23 (use cases) | §7 Assessment of Platform Fit as the primary frame, **plus** both the §4 strengths and §5 challenges frames above — and remain open to inductive themes fitting none of them |
 
 **Inductive:** flag themes not covered by deductive frames — these are potential new findings.
 
-**Per-question output:** theme list with short descriptions, anonymised example excerpts, note whether each theme confirms / nuances / contradicts / extends the practice-based memo.
+**Per-question output:** theme list with a short description each (1–2 sentences), **one or two** representative anonymised excerpts per theme — never more — and a note on whether each theme confirms / nuances / contradicts / extends the practice-based memo.
 
 ### Triangulation
 
@@ -116,13 +129,14 @@ Compare survey findings against README.md §4–§7:
 - §4 Platform Strengths ↔ Q21
 - §5 Workflow Challenges ↔ Q22
 - §6 Design Implications ↔ Q22, Q23
-- §7 Platform Fit and Future Use ↔ Q16, Q17, Q20
+- §7 Assessment of Platform Fit ↔ Q16, Q17, Q20
+- §8 Key Findings ↔ which §8 priorities the survey does and does not independently corroborate
 
 Output: triangulation table or narrative noting confirmation, nuance, contradiction, new findings.
 
 ### Deliverables
 
-Produce `analysis_summary.md` (full write-up: sample description, quantitative tables, thematic summaries, triangulation). Do not commit until reviewed and approved.
+Produce `docs/analysis_summary.md` (full write-up: sample description, quantitative tables, thematic summaries, triangulation). Do not commit until reviewed and approved.
 
 ---
 
@@ -130,5 +144,5 @@ Produce `analysis_summary.md` (full write-up: sample description, quantitative t
 
 - Academic, professional tone.
 - Scope claims: "among FLO participants in this study..." — never generalise beyond this sample.
-- For Q18–Q20, note they are study-specific items informed by established approaches, not a validated standardised scale.
+- For Q18–Q20, cite Venkatesh (2000) for the Q18/Q19 item wording and state that the assembled instrument was never re-validated — not that the items were written for this study.
 - Separate descriptive findings from interpretation.
