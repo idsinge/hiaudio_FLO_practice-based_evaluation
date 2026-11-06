@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 198" width="940" height="198" role="img" aria-label="Mean rating across all thirteen items for each of the nine respondents">
+<rect width="940" height="198" fill="#ffffff"/>
+<line x1="60" y1="106" x2="880" y2="106" stroke="#e2e8f0"/>
+<line x1="60.0" y1="100" x2="60.0" y2="112" stroke="#e2e8f0"/>
+<text x="60.0" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">1</text>
+<line x1="196.7" y1="100" x2="196.7" y2="112" stroke="#e2e8f0"/>
+<text x="196.7" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">2</text>
+<line x1="333.3" y1="100" x2="333.3" y2="112" stroke="#e2e8f0"/>
+<text x="333.3" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">3</text>
+<line x1="470.0" y1="100" x2="470.0" y2="112" stroke="#e2e8f0"/>
+<text x="470.0" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">4</text>
+<line x1="606.7" y1="100" x2="606.7" y2="112" stroke="#e2e8f0"/>
+<text x="606.7" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">5</text>
+<line x1="743.3" y1="100" x2="743.3" y2="112" stroke="#e2e8f0"/>
+<text x="743.3" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">6</text>
+<line x1="880.0" y1="100" x2="880.0" y2="112" stroke="#e2e8f0"/>
+<text x="880.0" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">7</text>
+<line x1="470.0" y1="26" x2="470.0" y2="112" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="470.0" y="20" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#dc2626">midpoint</text>
+<circle cx="228.2" cy="84" r="9.5" fill="#0d9488"/>
+<text x="228.2" y="87.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P01</text>
+<text x="228.2" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">2.23</text>
+<circle cx="417.4" cy="84" r="9.5" fill="#0d9488"/>
+<text x="417.4" y="87.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P06</text>
+<text x="417.4" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">3.62</text>
+<circle cx="417.4" cy="62" r="9.5" fill="#0d9488"/>
+<text x="417.4" y="65.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P07</text>
+<circle cx="427.9" cy="40" r="9.5" fill="#0d9488"/>
+<text x="427.9" y="43.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P04</text>
+<text x="427.9" y="163" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">3.69</text>
+<circle cx="533.1" cy="84" r="9.5" fill="#0d9488"/>
+<text x="533.1" y="87.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P03</text>
+<text x="533.1" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">4.46</text>
+<circle cx="543.6" cy="62" r="9.5" fill="#0d9488"/>
+<text x="543.6" y="65.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P05</text>
+<text x="543.6" y="163" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">4.54</text>
+<circle cx="659.2" cy="84" r="9.5" fill="#0d9488"/>
+<text x="659.2" y="87.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P08</text>
+<text x="659.2" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">5.38</text>
+<circle cx="764.4" cy="84" r="9.5" fill="#0d9488"/>
+<text x="764.4" y="87.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P02</text>
+<text x="764.4" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" fill="#475569">6.15</text>
+<circle cx="764.4" cy="62" r="9.5" fill="#0d9488"/>
+<text x="764.4" y="65.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#fff">P09</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 415" width="940" height="415" role="img" aria-label="Mean rating for each of the thirteen items at n=9 and n=8, against the 4.0 scale midpoint">
+<rect width="940" height="415" fill="#ffffff"/>
+<line x1="250.0" y1="32" x2="250.0" y2="365" stroke="#e2e8f0"/>
+<text x="250.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">1</text>
+<line x1="354.0" y1="32" x2="354.0" y2="365" stroke="#e2e8f0"/>
+<text x="354.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">2</text>
+<line x1="458.0" y1="32" x2="458.0" y2="365" stroke="#e2e8f0"/>
+<text x="458.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">3</text>
+<line x1="562.0" y1="32" x2="562.0" y2="365" stroke="#e2e8f0"/>
+<text x="562.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">4</text>
+<line x1="666.0" y1="32" x2="666.0" y2="365" stroke="#e2e8f0"/>
+<text x="666.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">5</text>
+<line x1="770.0" y1="32" x2="770.0" y2="365" stroke="#e2e8f0"/>
+<text x="770.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">6</text>
+<line x1="874.0" y1="32" x2="874.0" y2="365" stroke="#e2e8f0"/>
+<text x="874.0" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">7</text>
+<line x1="562.0" y1="32" x2="562.0" y2="371" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="562.0" y="389" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#dc2626">midpoint 4.0</text>
+<text x="238" y="56.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q16  Meets professional standards</text>
+<line x1="549.0" y1="52.5" x2="562.0" y2="52.5" stroke="#334155" stroke-width="1.5" opacity="0.45"/>
+<circle cx="549.0" cy="52.5" r="4" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+<circle cx="562.0" cy="52.5" r="5" fill="#334155"/>
+<text x="575.0" y="56.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.00</text>
+<text x="238" y="81.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q17  Facilitated artistic intentions</text>
+<line x1="549.0" y1="77.5" x2="585.1" y2="77.5" stroke="#334155" stroke-width="1.5" opacity="0.45"/>
+<circle cx="549.0" cy="77.5" r="4" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+<circle cx="585.1" cy="77.5" r="5" fill="#334155"/>
+<text x="598.1" y="81.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.22</text>
+<text x="238" y="106.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q18_1  Clear and understandable</text>
+<line x1="679.0" y1="102.5" x2="700.7" y2="102.5" stroke="#2563eb" stroke-width="1.5" opacity="0.45"/>
+<circle cx="679.0" cy="102.5" r="4" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+<circle cx="700.7" cy="102.5" r="5" fill="#2563eb"/>
+<text x="713.7" y="106.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">5.33</text>
+<text x="238" y="131.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q18_2  Low mental effort</text>
+<line x1="692.0" y1="127.5" x2="700.7" y2="127.5" stroke="#2563eb" stroke-width="1.5" opacity="0.45"/>
+<circle cx="692.0" cy="127.5" r="4" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+<circle cx="700.7" cy="127.5" r="5" fill="#2563eb"/>
+<text x="713.7" y="131.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">5.33</text>
+<text x="238" y="156.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q18_3  Easy to use</text>
+<line x1="627.0" y1="152.5" x2="654.4" y2="152.5" stroke="#2563eb" stroke-width="1.5" opacity="0.45"/>
+<circle cx="627.0" cy="152.5" r="4" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+<circle cx="654.4" cy="152.5" r="5" fill="#2563eb"/>
+<text x="667.4" y="156.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.89</text>
+<text x="238" y="181.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q18_4  Did what I wanted</text>
+<line x1="549.0" y1="177.5" x2="562.0" y2="177.5" stroke="#2563eb" stroke-width="1.5" opacity="0.45"/>
+<circle cx="549.0" cy="177.5" r="4" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+<circle cx="562.0" cy="177.5" r="5" fill="#2563eb"/>
+<text x="575.0" y="181.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.00</text>
+<text x="238" y="206.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q19_1  Enjoyable</text>
+<line x1="588.0" y1="202.5" x2="608.2" y2="202.5" stroke="#0d9488" stroke-width="1.5" opacity="0.45"/>
+<circle cx="588.0" cy="202.5" r="4" fill="#ffffff" stroke="#0d9488" stroke-width="1.8"/>
+<circle cx="608.2" cy="202.5" r="5" fill="#0d9488"/>
+<text x="621.2" y="206.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.44</text>
+<text x="238" y="231.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q19_2  Pleasant process</text>
+<line x1="614.0" y1="227.5" x2="631.3" y2="227.5" stroke="#0d9488" stroke-width="1.5" opacity="0.45"/>
+<circle cx="614.0" cy="227.5" r="4" fill="#ffffff" stroke="#0d9488" stroke-width="1.8"/>
+<circle cx="631.3" cy="227.5" r="5" fill="#0d9488"/>
+<text x="644.3" y="231.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.67</text>
+<text x="238" y="256.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q19_3  Had fun</text>
+<line x1="575.0" y1="252.5" x2="608.2" y2="252.5" stroke="#0d9488" stroke-width="1.5" opacity="0.45"/>
+<circle cx="575.0" cy="252.5" r="4" fill="#ffffff" stroke="#0d9488" stroke-width="1.8"/>
+<circle cx="608.2" cy="252.5" r="5" fill="#0d9488"/>
+<text x="621.2" y="256.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.44</text>
+<text x="238" y="281.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q20_1  Good idea to use</text>
+<line x1="536.0" y1="277.5" x2="573.6" y2="277.5" stroke="#b45309" stroke-width="1.5" opacity="0.45"/>
+<circle cx="536.0" cy="277.5" r="4" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+<circle cx="573.6" cy="277.5" r="5" fill="#b45309"/>
+<text x="586.6" y="281.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.11</text>
+<text x="238" y="306.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q20_2  Would find useful</text>
+<line x1="497.0" y1="302.5" x2="515.8" y2="302.5" stroke="#b45309" stroke-width="1.5" opacity="0.45"/>
+<circle cx="497.0" cy="302.5" r="4" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+<circle cx="515.8" cy="302.5" r="5" fill="#b45309"/>
+<text x="528.8" y="306.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">3.56</text>
+<text x="238" y="331.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q20_3  Would plan to use</text>
+<line x1="536.0" y1="327.5" x2="550.4" y2="327.5" stroke="#b45309" stroke-width="1.5" opacity="0.45"/>
+<circle cx="536.0" cy="327.5" r="4" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+<circle cx="550.4" cy="327.5" r="5" fill="#b45309"/>
+<text x="563.4" y="331.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">3.89</text>
+<text x="238" y="356.5" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#0f172a">Q20_4  Would recommend</text>
+<line x1="601.0" y1="352.5" x2="631.3" y2="352.5" stroke="#b45309" stroke-width="1.5" opacity="0.45"/>
+<circle cx="601.0" cy="352.5" r="4" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+<circle cx="631.3" cy="352.5" r="5" fill="#b45309"/>
+<text x="644.3" y="356.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" fill="#334155">4.67</text>
+</svg>

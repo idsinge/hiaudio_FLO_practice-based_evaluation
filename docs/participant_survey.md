@@ -3,6 +3,15 @@
 Form ID: 261313989509366
 Source: https://form.jotform.com/hiaudioparis/flo-lab-evaluation
 
+> **Editorial note — added for publication; not shown to participants.**
+> The questions, option lists and consent text below reproduce the questionnaire **as it was administered**. This box, and the two indented "Form-builder note" boxes under Q16 and Q17, were added when the instrument was published and formed no part of what respondents saw. Two further differences from the live form: the institutional contact address in the consent text is replaced by "[available on request]", and the sentence on reviewing session details just below this box describes an instruction participants were given rather than reproducing the form's wording.
+>
+> This questionnaire was designed collaboratively by the FLO Lab director and the Hi-AUDiO Lead Software Engineer — that is, in part by the development side of the platform under evaluation.
+>
+> The FLO Lab director, who co-designed it and authored the practice-based evaluation memo it complements ([memo](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html)), also completed it as one of the nine respondents — **P09** in the published response data. This dual role is disclosed for transparency. Her response is retained in the dataset rather than excluded, and the analysis additionally reports headline results with her excluded so readers can see what difference it makes. The Lead Software Engineer did not complete the questionnaire and is not among the nine respondents.
+>
+> Readers analysing or citing this instrument should account for that overlap. Full treatment: the Positionality section of [`../README.md`](../README.md#positionality), and "Researcher Positionality — Respondent Overlap" in [`ANALYSIS_PLAN.md`](ANALYSIS_PLAN.md), which sets out how P09 is handled (retained in primary n=9 results, additionally reported at n=8, and her agreement with the memo never counted as independent corroboration).
+
 This survey complements the FLO Orchestra practice-based evaluation of the Hi-Audio online platform. It is divided into three sections and gathers musical and technical background and feedback on your experience using the platform. Most questions are required. For open-ended questions, please feel free to provide any details you consider relevant.
 
 To review session details, participants were directed to open a session-review link in Firefox while signed into their Hi-Audio account.
@@ -76,7 +85,7 @@ To review session details, participants were directed to open a session-review l
 
 ---
 
-**Q6. Which musical instruments do you play and at what level?** *(Required)*
+**Q6. Which musical instruments do you play, and at what level?** *(Required)*
 *(Configurable list — Add as many as you can play, with proficiency level)*
 
 | Field | Type |
