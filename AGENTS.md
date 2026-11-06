@@ -14,24 +14,24 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 
 | File | Edit? | Commit? | Purpose |
 |---|---|---|---|
-| README.md | Yes | Yes | Main evaluation report — primary public document |
+| README.md | Yes | Yes | Repository guide — what the repo is, links to the web pages, contents, positionality, licensing, citation |
 | CONTEXT.md | Yes | Yes | LLM/collaborator context — keep it current |
 | docs/ANALYSIS_PLAN.md | Yes | Yes | Statistical analysis plan — data collection closed, cleared for publication |
 | docs/participant_survey.md | Yes | Yes | Survey working copy — data collection closed, cleared for publication |
-| docs/output.md | **Never** | Already published | Original Pandoc conversion — historical record only |
+| docs/output.md | **Never** | Already published | The memo as delivered (original Pandoc conversion) and the source of docs/memo.html |
 | docs/participant_survey_responses.csv / .xlsx | No | Yes | Canonical response data — no PII columns; already corrected (Q16/Q17 collapsed from the bogus 4-column export split), so not a raw JotForm export |
 | docs/individual_participant_responses/P01–P09.pdf | No | Yes | Per-respondent submissions, pseudonymised as P01–P09 |
 | docs/response_id_mapping.md | Yes | Yes | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
-| docs/analysis_summary.md | Yes | Yes | Survey analysis write-up — linked from README's Repository Contents and from §3. The source of truth for the analysis |
-| docs/analysis_summary_print.html | Via script only | Yes | Print/PDF rendering of the analysis. Regenerate with `docs/make_print_html.py` after any edit to the markdown; never hand-edit |
-| docs/make_print_html.py | Yes | Yes | Generator for the print HTML — keeps it reproducible from the markdown |
+| docs/analysis_summary.md | Yes | Yes | Survey analysis by Nela Brown and José M. Gil Panal — source of docs/analysis.html; the source of truth for the analysis |
+| index.html, docs/memo.html, docs/analysis.html | Via script only | Yes | The website (GitHub Pages). Rebuild with `python3 docs/build_pages.py`; never hand-edit |
+| docs/build_pages.py | Yes | Yes | Builds the three web pages — standard library only |
 | docs/REFERENCES.md | Yes | Yes | Annotated reference list; the authority for item attribution (see Rule 5) |
 | docs/figures/ | Via script only | Yes | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG |
-| docs/Practice-Based Evaluation...pdf | No | No | Original PDF memo |
+| docs/Practice-Based Evaluation...pdf | No | No | The memo as delivered (PDF) |
 | CITATION.cff | Yes | Yes | Structured citation for GitHub |
 | CLAUDE.md | Yes | Yes | Working instructions for Claude Code — keep aligned with this file |
 | docs/DATA_LICENSE.md | Only if asked | Yes | Research-use licence for the response data — legal text |
-| LICENSE | Only if asked | Yes | CC BY 4.0, scoped to exclude the response data |
+| LICENSE | Only if asked | Yes | CC BY 4.0, scoped to exclude the response data and the EU/ERC emblem |
 | _config.yml | Only if asked | Only if asked | Jekyll theme config |
 | images/ | No | No | Static images — do not add, remove, rename |
 
@@ -42,7 +42,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 ## Rules — Read These Before Doing Anything
 
 ### Rule 1: docs/output.md is read-only
-`docs/output.md` is the original Pandoc conversion of the evaluation memo from .docx. It is kept for the historical record. Do not edit, overwrite, or delete its content. Ever. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Do not make further changes.
+`docs/output.md` is the original Pandoc conversion of the evaluation memo from .docx: the memo as delivered, and the source of `docs/memo.html`. Do not edit, overwrite, or delete its content. Ever. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Do not make further changes.
 
 ### Rule 2: docs/participant_survey.md, docs/ANALYSIS_PLAN.md, and the response data are cleared for publication
 Data collection from participants is complete, so the risk that motivated withholding these files — contaminating participant responses before they replied — no longer applies. `invitation_message.md` was removed from the repo entirely (not published, not withheld pending approval — simply gone).
@@ -56,7 +56,7 @@ Do not add email addresses, phone numbers, or full names to any file beyond what
 ### Rule 5: Attribute the Q18–Q20 items correctly
 **Corrected 2026-08-20 — an earlier version of this rule said the opposite and is superseded.** Item-level comparison against the primary sources shows that Q18 and Q19 *do* reproduce published scales:
 
-- **Q18** = Venkatesh (2000, Appendix 1) four-item **Perceived Ease of Use** scale, verbatim except the tense is shifted present→past and "the system" becomes "the Hi-Audio platform".
+- **Q18** = Venkatesh (2000, Appendix 1) four-item **Perceived Ease of Use** scale, verbatim except the tense is shifted present→past, "the system" becomes "the Hi-Audio platform", and Q18_2 drops "my" ("a lot of my mental effort" → "a lot of mental effort").
 - **Q19** = the three-item **Perceived Enjoyment** scale from the same appendix, same treatment.
 - **Q20_2** = Davis (1989) perceived-usefulness item, domain changed from "in my job" to "for recording music". **Q20_4** (recommendation), **Q16** and **Q17** were written for this study.
 - **Q20_1 / Q20_3** are attitude and behavioural-intention items in the technology-acceptance tradition, but **their direct wording source has not been established.** Do not attribute them to Davis (1989): that paper developed the perceived-usefulness and perceived-ease-of-use scales, not attitude or intention scales. Either leave their provenance explicitly open, or establish it against a primary source first.
@@ -78,7 +78,7 @@ The expected participant count is approximately 9 FLO performers. This is a smal
 Stage and commit locally only when asked. Never force-push.
 
 ### Rule 8: Respondent overlap — Nela Brown is P09
-Nela Brown co-designed this questionnaire (with the Hi-AUDiO Lead Software Engineer) and authored the evaluation memo, and is also P09 in the response dataset. Before computing or reporting any aggregate statistic or thematic summary, read "Researcher Positionality" in `docs/ANALYSIS_PLAN.md` — it specifies reporting n=9 as primary but also computing n=8 (P09 excluded) for headline metrics, and flagging P09-sourced excerpts in thematic coding.
+Nela Brown co-designed this questionnaire (with José M. Gil Panal, the Hi-AUDiO lead software engineer), authored the evaluation memo, co-authored the survey analysis, and is also P09 in the response dataset. Before computing or reporting any aggregate statistic or thematic summary, read "Researcher Positionality" in `docs/ANALYSIS_PLAN.md` — it specifies reporting n=9 as primary but also computing n=8 (P09 excluded) for headline metrics, and flagging P09-sourced excerpts in thematic coding.
 
 ---
 
@@ -212,7 +212,7 @@ These are open-text responses. Do not run sentiment analysis or automated classi
 
 #### Deductive Coding Frames
 
-The deductive frames come from the evaluation report (README.md). Use these as your starting categories:
+The deductive frames come from the evaluation memo (`docs/output.md`, published as `docs/memo.html`). Use these as your starting categories:
 
 **For Q22 — Challenges encountered:**
 - Visual feedback (waveform display, level meters, VU meters)
@@ -241,14 +241,14 @@ When a participant response raises a theme that does not fit the deductive frame
 
 For each of Q21, Q22, Q23, produce:
 1. A list of identified themes, each with a short description (1–2 sentences).
-2. One or two representative anonymised excerpts per theme.
-3. A note for each theme indicating whether it **confirms**, **nuances**, **contradicts**, or **extends** findings already present in the practice-based memo (README.md).
+2. One or two representative pseudonymised excerpts per theme (attributed by participant ID only).
+3. A note for each theme indicating whether it **confirms**, **nuances**, **contradicts**, or **extends** findings already present in the practice-based memo (`docs/output.md`).
 
 ### Step 8 — Triangulation With the Memo
 
-Compare survey findings against the following sections of README.md:
+Compare survey findings against the following sections of the memo (`docs/output.md`):
 
-| README section | Survey questions to compare |
+| Memo section | Survey questions to compare |
 |---|---|
 | §4 Platform Strengths | Q21 thematic results |
 | §5 Workflow Challenges | Q22 thematic results |
@@ -278,8 +278,8 @@ Do not commit `docs/analysis_summary.md` until reviewed and approved. Keep it lo
 
 - Never commit participant response data to the repo without explicit instruction.
 - Before any commit of response-related files, verify that no **new** names, emails, phone numbers or IP addresses have entered them. This is not a blanket instruction to strip identifiers: the repository deliberately publishes the pseudonymous PIDs, submission dates and PDF ordinals in the response data, and the JotForm submission IDs in `docs/response_id_mapping.md`. Do not remove those, and do not treat their presence as a failed check. The one accepted name is P09's, in her own Q7 answer (Rule 4).
-- Participant responses, when referenced in write-ups, must be anonymised (e.g. "Participant 3 noted that...").
-- The Lead Software Engineer is referred to by role only in public documents — not by name.
+- Participant responses, when referenced in write-ups, are attributed by participant ID only — pseudonymised, never by name (e.g. "P03 noted that...").
+- The Hi-AUDiO lead software engineer is named (José M. Gil Panal) only as co-author of the survey analysis and in README's Positionality section — owner decision, 2026-11-06. Do not add other personal identifiers.
 
 ---
 

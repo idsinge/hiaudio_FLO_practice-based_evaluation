@@ -1,6 +1,6 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Copyright (c) 2026 Nela Brown
+Copyright (c) 2026 Nela Brown and José M. Gil Panal
 
 SCOPE NOTE — this licence does not cover the whole repository.
 
@@ -10,6 +10,10 @@ See docs/DATA_LICENSE.md. The files excluded from CC BY 4.0 are:
   docs/participant_survey_responses.xlsx
   docs/individual_participant_responses/P01.pdf - P09.pdf
   docs/response_id_mapping.md
+
+The EU emblem and ERC logo (images/ERC_logo.png, also shown in README.md and
+in the footer of the web pages) are also excluded. They are not the authors' to
+license; their use follows the European Union's and the ERC's own rules.
 
 Everything else in this repository is licensed CC BY 4.0 on the terms below.
 

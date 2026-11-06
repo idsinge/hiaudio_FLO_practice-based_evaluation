@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use or reference this repository, please cite it as below. To cite the practice-based evaluation report alone, use the preferred-citation entry. NOTE: licensing is split, so no single license identifier applies to the repository as a whole. The report, survey instrument, analysis and images are CC-BY-4.0 (declared on the preferred-citation entry); the participant response data (CSV/XLSX, individual respondent PDFs, ID mapping) is released under a more restrictive research-use licence. LICENSE carries the scope note and docs/DATA_LICENSE.md the data terms."
+message: "If you use or reference this repository, please cite it as below. To cite the evaluation memo alone, use the preferred-citation entry; the survey analysis is listed under references. NOTE: licensing is split, so no single license identifier applies to the repository as a whole. The report, survey instrument, analysis and images (except the EU/ERC emblem) are CC-BY-4.0 (declared on the preferred-citation entry); the participant response data (CSV/XLSX, individual respondent PDFs, ID mapping) is released under a more restrictive research-use licence. LICENSE carries the scope note and docs/DATA_LICENSE.md the data terms."
 title: "Hi-AUDiO: Practice-Based Evaluation — Report, Participant Survey, and Response Analysis"
 type: dataset
 authors:
@@ -7,7 +7,7 @@ authors:
     given-names: Nela
     affiliation: "FLO Lab, Female Laptop Orchestra"
   - name: "Hi-AUDiO"
-date-released: 2026-08-21
+date-released: 2026-11-06
 license-url: "https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/blob/main/LICENSE"
 repository-code: "https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation"
 url: "https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/"
@@ -16,7 +16,8 @@ abstract: >
   platform conducted by nine performers from the Female Laptop Orchestra (FLO): the
   evaluation report, the participant questionnaire as administered, the
   pseudonymised response data from all nine respondents (one of whom co-designed
-  the questionnaire and authored the report — see its positionality note), and
+  the questionnaire, wrote the memo and co-authored the analysis — see the
+  Positionality section of README.md), and
   the analysis of those responses, including descriptive results, thematic
   coding of open questions, and triangulation against the report.
 keywords:
@@ -30,7 +31,8 @@ keywords:
   - survey data
 preferred-citation:
   type: report
-  title: "Hi-AUDiO: Practice-Based Evaluation Report"
+  title: "Practice-Based Evaluation: Hi-AUDiO"
+  url: "https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html"
   license: CC-BY-4.0
   authors:
     - family-names: Brown
@@ -48,3 +50,16 @@ preferred-citation:
     Relates to the project Hybrid and Interpretable Deep Neural Audio Machines,
     funded by the European Research Council (ERC) under the European Union's
     Horizon Europe research and innovation programme (grant agreement No. 101052978).
+references:
+  - type: report
+    title: "Hi-AUDiO FLO Participant Survey — Analysis Summary"
+    authors:
+      - family-names: Brown
+        given-names: Nela
+        affiliation: "FLO Lab, Female Laptop Orchestra"
+      - family-names: "Gil Panal"
+        given-names: "José M."
+        affiliation: "Hi-AUDiO, Télécom Paris"
+    year: 2026
+    url: "https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html"
+    license: CC-BY-4.0

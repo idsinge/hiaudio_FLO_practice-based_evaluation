@@ -14,24 +14,24 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 
 | File | Status | Rule |
 |---|---|---|
-| README.md | Published | Primary public document — edits go here, not docs/output.md |
+| README.md | Published | Repository guide: what the repo is, links to the web pages, contents, positionality, licensing, citation. It no longer contains the memo |
 | CONTEXT.md | Published | LLM/collaborator reference — keep current |
 | docs/ANALYSIS_PLAN.md | Published | Data collection is complete — cleared for publication |
 | docs/participant_survey.md | Published | Data collection is complete — cleared for publication |
-| docs/output.md | Published | Read-only historical record — never edit or delete |
+| docs/output.md | Published | The memo as delivered (Pandoc conversion of the original .docx) and the source of docs/memo.html — never edit or delete |
 | docs/participant_survey_responses.csv / .xlsx | Published | Canonical response data (no PII columns) — already corrected (Q16/Q17 collapsed), not a raw JotForm export |
 | docs/individual_participant_responses/P01–P09.pdf | Published | Per-respondent submissions, pseudonymised as P01–P09 — cleared for publication |
 | docs/response_id_mapping.md | Published | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
-| docs/analysis_summary.md | Awaiting owner approval; untracked | Survey analysis write-up — linked from README's Repository Contents and from §3. The source of truth for the analysis |
-| docs/analysis_summary_print.html | Awaiting owner approval; untracked | Print/PDF rendering of the analysis. Regenerate with `docs/make_print_html.py` after any markdown edit; never hand-edit |
-| docs/make_print_html.py | Awaiting owner approval; untracked | Generator for the print HTML — keeps it reproducible from the markdown |
-| docs/REFERENCES.md | Awaiting owner approval; untracked | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
-| docs/figures/ | Awaiting owner approval; untracked | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |
-| docs/Practice-Based Evaluation...pdf | Published | Original PDF memo — do not modify |
+| docs/analysis_summary.md | Approved by the owner, 2026-11-06 | Survey analysis by Nela Brown and José M. Gil Panal — source of docs/analysis.html and the source of truth for the analysis |
+| index.html, docs/memo.html, docs/analysis.html | Generated | The website (GitHub Pages): landing page, memo page, analysis page. Rebuild with `python3 docs/build_pages.py` after any edit to their sources; never hand-edit |
+| docs/build_pages.py | Published | Builds the three web pages from docs/output.md and docs/analysis_summary.md — standard library only |
+| docs/REFERENCES.md | Published | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
+| docs/figures/ | Published | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |
+| docs/Practice-Based Evaluation...pdf | Published | The memo as delivered (PDF) — do not modify |
 | CITATION.cff | Published | Structured citation |
 | AGENTS.md | Published | Working instructions for other AI agents — keep aligned with this file |
 | docs/DATA_LICENSE.md | Published | Research-use licence for the response data — legal text, change only on explicit instruction |
-| LICENSE | Published | CC BY 4.0, scoped to exclude the response data — change only on explicit instruction |
+| LICENSE | Published | CC BY 4.0, scoped to exclude the response data and the EU/ERC emblem — change only on explicit instruction |
 | _config.yml | Published | Jekyll config — only change if explicitly asked |
 | images/ | Published | Static assets — do not modify |
 
@@ -45,7 +45,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 - **docs/participant_survey.md, docs/ANALYSIS_PLAN.md, and the response data files are cleared for publication.** Data collection is complete, so the contamination risk that motivated withholding them no longer applies. `invitation_message.md` was removed from the repo entirely (not published).
 - **Acknowledgements is always the last section in README.md**, after any appendices. Never reorder it.
 - **No personal identifiers.** Do not add email addresses, phone numbers, or names beyond what already exists. The institutional email appears as `[available on request]` in docs/participant_survey.md. One exception is already present and accepted: P09's Q7 answer names Nela Brown in a track filename — left as-is per her dual role as questionnaire co-designer/respondent (see "Respondent overlap" below and CONTEXT.md).
-- **Item attribution (corrected 2026-08-20 — the earlier "never name TAM" rule is superseded).** Q18 reproduces Venkatesh's (2000, Appendix 1) four-item Perceived Ease of Use scale and Q19 the three-item Perceived Enjoyment scale from the same appendix, both with the verb tense changed present→past and "the Hi-Audio platform" in place of "the system"; Q20_2 is Davis's (1989) usefulness item with the domain changed; Q20_4, Q16 and Q17 were written for this study. **Q20_1/Q20_3 are attitude and behavioural-intention items whose direct wording source has not been established — do not attribute them to Davis (1989)**, which developed the usefulness and ease-of-use scales only. Cite Venkatesh (2000) for the Q18/Q19 wording; never write that no items are reproduced. Still required: the instrument **as assembled** is not standardised and was never re-validated, so no comparison against published norms and no treating block means as validated subscale scores. **SUS and NASA-TLX were not administered here and none of their items appear** — that claim is safe. **USE, AttrakDiff and UEQ were also not administered and not used as sources, but do not claim zero item overlap for them**: Lund's USE contains close variants of "easy to use", "recommend it to a friend", "fun to use" and "pleasant to use". See `docs/REFERENCES.md` and AGENTS.md Rule 5.
+- **Item attribution (corrected 2026-08-20 — the earlier "never name TAM" rule is superseded).** Q18 reproduces Venkatesh's (2000, Appendix 1) four-item Perceived Ease of Use scale and Q19 the three-item Perceived Enjoyment scale from the same appendix, both with the verb tense changed present→past and "the Hi-Audio platform" in place of "the system" (Q18_2 also drops "my"); Q20_2 is Davis's (1989) usefulness item with the domain changed; Q20_4, Q16 and Q17 were written for this study. **Q20_1/Q20_3 are attitude and behavioural-intention items whose direct wording source has not been established — do not attribute them to Davis (1989)**, which developed the usefulness and ease-of-use scales only. Cite Venkatesh (2000) for the Q18/Q19 wording; never write that no items are reproduced. Still required: the instrument **as assembled** is not standardised and was never re-validated, so no comparison against published norms and no treating block means as validated subscale scores. **SUS and NASA-TLX were not administered here and none of their items appear** — that claim is safe. **USE, AttrakDiff and UEQ were also not administered and not used as sources, but do not claim zero item overlap for them**: Lund's USE contains close variants of "easy to use", "recommend it to a friend", "fun to use" and "pleasant to use". See `docs/REFERENCES.md` and AGENTS.md Rule 5.
 - **Q16/Q17 are single 7-point questions**, confirmed in the JotForm builder (one matrix row each, blank row-name field). An earlier JotForm export defect split them into 4 bogus sub-columns (`>> Service Quality` etc. — never real form content); `docs/participant_survey_responses.csv`/`.xlsx` have already been corrected to one clean column per question. Usable as the intended headline suitability/artistic-fit metrics with no further preprocessing. See `docs/ANALYSIS_PLAN.md`.
 - **Respondent overlap.** Nela Brown (questionnaire co-designer, memo author) is also P09 in the response dataset. See "Researcher Positionality" in `docs/ANALYSIS_PLAN.md` before computing or reporting aggregate stats.
 - **No inferential statistics** (t-tests, ANOVA, regressions, confidence intervals) unless explicitly instructed. Expected ~9 participants — a sample this small does not justify them on its own, so do not make that judgement call independently. Report means, medians, ranges. Frame all findings as exploratory and descriptive. Scope all claims to this small expert cohort.
@@ -111,7 +111,7 @@ Scale midpoint is 4.0 — reference it when interpreting means.
 
 Open-text Q21, Q22, Q23 — thematic coding, hybrid deductive/inductive.
 
-**Deductive frames (from README.md):**
+**Deductive frames (from the memo — `docs/output.md`, published as `docs/memo.html`; same section numbers):**
 
 | Question | Coding frame source |
 |---|---|
@@ -121,11 +121,11 @@ Open-text Q21, Q22, Q23 — thematic coding, hybrid deductive/inductive.
 
 **Inductive:** flag themes not covered by deductive frames — these are potential new findings.
 
-**Per-question output:** theme list with a short description each (1–2 sentences), **one or two** representative anonymised excerpts per theme — never more — and a note on whether each theme confirms / nuances / contradicts / extends the practice-based memo.
+**Per-question output:** theme list with a short description each (1–2 sentences), **one or two** representative pseudonymised excerpts per theme — never more — and a note on whether each theme confirms / nuances / contradicts / extends the practice-based memo.
 
 ### Triangulation
 
-Compare survey findings against README.md §4–§7:
+Compare survey findings against the memo's §4–§8 (`docs/output.md`):
 - §4 Platform Strengths ↔ Q21
 - §5 Workflow Challenges ↔ Q22
 - §6 Design Implications ↔ Q22, Q23

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Practice-based evaluation of the Hi-Audio platform by FLO Lab (memo, 22 March 2026)."/>
+<title>Practice-Based Evaluation: Hi-AUDiO — memo by Nela Brown, 22 March 2026</title>
+<style>
+@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+*{box-sizing:border-box}
+body{font:11pt/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:#111827;margin:0;padding:0 0 24pt;
+     background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:190mm;margin:0 auto;padding:10mm 6mm}
+h1{font-size:20pt;line-height:1.25;margin:0 0 4pt;letter-spacing:-.01em}
+h2{font-size:14pt;margin:20pt 0 6pt;padding-bottom:3pt;border-bottom:1.5px solid #111827;break-after:avoid}
+h3{font-size:11.5pt;margin:14pt 0 4pt;color:#1f2937;break-after:avoid}
+h4{font-size:10.5pt;margin:11pt 0 3pt;color:#374151;break-after:avoid}
+p{margin:0 0 7pt;orphans:3;widows:3}
+a{color:#1d4ed8}
+.section-link{color:#475569;margin-inline-start:.35em;text-decoration:none}
+.section-link:hover,.section-link:focus-visible{color:#1d4ed8;text-decoration:underline}
+.section-link:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+strong{font-weight:700}
+code{font:9.5pt ui-monospace,"SF Mono",Menlo,monospace;background:#f1f5f9;padding:.5pt 3pt;border-radius:3px}
+ul,ol{margin:0 0 8pt;padding-left:16pt}
+li{margin-bottom:3.5pt}
+blockquote{margin:7pt 0 9pt;padding:6pt 11pt;border-left:2.5pt solid #94a3b8;background:#f8fafc;
+  font-size:10pt;font-style:italic;color:#1f2937;break-inside:avoid}
+.tablewrap{overflow-x:auto;margin:8pt 0 12pt}
+table{width:100%;border-collapse:collapse;font-size:9pt;break-inside:avoid;
+  font-family:-apple-system,"Helvetica Neue",Helvetica,sans-serif}
+th{background:#f1f5f9;text-align:left;padding:4.5pt 6pt;border:.5pt solid #cbd5e1;font-weight:700;font-size:8.5pt}
+td{padding:4pt 6pt;border:.5pt solid #cbd5e1;vertical-align:top}
+tbody tr:nth-child(even){background:#fafbfc}
+hr{border:0;border-top:.5pt solid #d1d5db;margin:14pt 0}
+figure{margin:12pt 0 16pt;padding:9pt 10pt 4pt;border:.5pt solid #d8dee7;background:#fcfdfe;
+  border-radius:4px;break-inside:avoid}
+figure img{width:100%;height:auto;display:block;margin:0 0 6pt;background:#fff}
+figcaption{font:8.8pt/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#475569}
+.fignum{font-weight:700;color:#111827}
+.docmeta{font:9pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#64748b;
+  border-bottom:.5pt solid #d1d5db;padding-bottom:8pt;margin-bottom:14pt}
+.note{border-radius:4px;padding:7pt 10pt;margin:0 0 14pt;font:9pt/1.45 -apple-system,"Helvetica Neue",Helvetica,sans-serif}
+.note{background:#f8fafc;border:1pt solid #cbd5e1;color:#334155}
+nav.site{display:flex;flex-wrap:wrap;gap:4pt 14pt;align-items:baseline;padding:8pt 0 9pt;margin:0 0 14pt;
+  border-bottom:.5pt solid #d1d5db;font:10pt -apple-system,"Helvetica Neue",Helvetica,sans-serif}
+nav.site a{color:#334155;text-decoration:none}
+nav.site a:hover{text-decoration:underline}
+nav.site a.home{font-weight:700;color:#111827;margin-right:auto}
+nav.site a[aria-current]{color:#111827;font-weight:600}
+@media (max-width:600px){ nav.site a.home{flex-basis:100%} }
+footer.site{margin-top:28pt;padding-top:10pt;border-top:.5pt solid #d1d5db;
+  font:8.5pt/1.45 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#475569}
+footer.site img{width:200px;max-width:60%;height:auto;display:block;margin:0 0 8pt}
+.lead{font-size:12pt;margin:6pt 0 16pt}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:12pt;margin:0 0 16pt}
+.card{display:block;border:1pt solid #cbd5e1;border-radius:6px;padding:12pt 14pt;color:inherit;text-decoration:none;background:#fcfdfe}
+.card:hover,.card:focus{border-color:#1d4ed8;box-shadow:0 1px 6px rgba(29,78,216,.15)}
+.card h2{border:0;margin:0 0 3pt;padding:0;font-size:14pt}
+.card .by{font:9pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#64748b;margin:0 0 7pt}
+.card .go{font:10pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#1d4ed8;font-weight:600}
+.badge{font:8pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;background:#fff7ed;color:#9a3412;
+  border:1pt solid #fdba74;border-radius:3px;padding:0 4pt;vertical-align:middle}
+.small{font-size:10pt;color:#334155}
+.tip{position:relative;border-bottom:1px dotted #64748b;cursor:help}
+.tip:hover::after,.tip:focus::after{content:attr(data-tip);position:absolute;left:0;top:calc(100% + 4px);z-index:20;
+  width:max-content;max-width:min(24rem,80vw);padding:6pt 8pt;background:#111827;color:#f9fafb;border-radius:4px;
+  font:9pt/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;font-weight:400;font-style:normal;
+  white-space:normal;text-align:left;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tip:focus{outline:1px solid #94a3b8;outline-offset:1px}
+@media (hover:none){ .tip{cursor:pointer} }
+main p,main li{overflow-wrap:anywhere}
+figure a.zoom{display:block;cursor:zoom-in}
+dialog.zoom-view{padding:0;margin:0;border:0;background:transparent;width:100vw;height:100vh;max-width:100vw;max-height:100vh}
+dialog.zoom-view[open]{display:flex;overflow:auto}
+dialog.zoom-view::backdrop{background:rgba(15,23,42,.88)}
+dialog.zoom-view img{margin:auto;width:96vw;height:auto;max-height:94vh;object-fit:contain;background:#fff;cursor:zoom-in}
+dialog.zoom-view.actual img{width:auto;max-width:none;max-height:none;cursor:zoom-out}
+dialog.zoom-view .close{position:fixed;top:10px;right:14px;z-index:2;border:0;border-radius:50%;width:40px;height:40px;
+  background:rgba(17,24,39,.75);color:#fff;font:26px/40px -apple-system,"Helvetica Neue",Helvetica,sans-serif;cursor:pointer}
+@media print{ dialog.zoom-view{display:none !important} }
+/* On screen: one column for text, tables and figures alike, sized for comfortable reading,
+   with a larger type scale. Print keeps the A4 sizes above. */
+@media screen{
+  body{font-size:1.125rem;line-height:1.6}
+  .wrap{max-width:52rem;padding:1.5rem 1.25rem 2rem}
+  h1{font-size:1.9rem} h2{font-size:1.4rem} h3{font-size:1.15rem} h4{font-size:1.05rem}
+  code{font-size:.85em} blockquote{font-size:.95em}
+  table{font-size:.9rem} th{font-size:.85rem} figcaption{font-size:.85rem}
+  .docmeta,.note{font-size:.85rem}
+  nav.site{font-size:.95rem} footer.site{font-size:.8rem}
+  .lead{font-size:1.15em} .small{font-size:.95rem}
+  .card h2{font-size:1.3rem} .card .by{font-size:.85rem} .card .go{font-size:.95rem} .badge{font-size:.7rem}
+  .tip:hover::after,.tip:focus::after{font-size:.85rem}
+}
+@media screen and (min-width:60rem){ .wrap{max-width:min(90vw,68rem)} }
+@media print{ nav.site,.section-link{display:none} .wrap{padding:0} .tablewrap{overflow:visible}
+  .tip{border-bottom:none} .tip::after{content:none !important} a{color:inherit} }
+</style></head><body><div class="wrap">
+<nav class="site"><a class="home" href="../index.html">Hi-Audio practice-based evaluation</a><a href="../docs/memo.html" aria-current="page">Memo</a><a href="../docs/analysis.html">Survey analysis</a><a href="https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation">GitHub repository</a></nav>
+<main class="memo">
+<div class="note">The practice-based evaluation memo by Nela Brown (FLO Lab), dated 22 March 2026, reproduced as delivered. <a href="../docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf">Original PDF</a> &middot; licensed CC BY 4.0.</div>
+<h1 id="practice-based-evaluation-hi-audio">Practice-Based Evaluation: Hi-AUDiO</h1>
+<p class="docmeta"><strong>Project / Platform:</strong> Hi-AUDiO / <a href="https://hiaudio.fr">https://hiaudio.fr</a><br/><strong>Client / Lab:</strong> Télécom Paris<br/><strong>Evaluator:</strong> Nela Brown<br/><strong>Role:</strong> Director, FLO Lab<br/><strong>Evaluation Period:</strong> 13/02/2026 - 13/03/2026<br/><strong>Document Date:</strong> 22 March 2026</p>
+<h2 id="summary">Summary <a class="section-link" href="#summary" aria-label="Link to Summary">#</a></h2>
+<p>This memo outlines findings from a practice-based evaluation of the Hi-AUDiO platform, conducted by nine performers from the Female Laptop Orchestra (FLO). The evaluation took place between February 13, 2026, and March 13, 2026, during the production of a collaborative composition intended for the Radiophrenia 2026 festival broadcast. While the platform demonstrated strong accessibility and ease of onboarding through its browser-based design, several workflow limitations were identified when used in a professional context. The observations presented below translate participant feedback into design considerations that may inform future development of the platform.</p>
+<h2 id="1-purpose-of-this-memo">1. Purpose of This Memo <a class="section-link" href="#1-purpose-of-this-memo" aria-label="Link to 1. Purpose of This Memo">#</a></h2>
+<p>The purpose of this memo is to present findings from a practice-based expert evaluation of the Hi-AUDiO platform conducted through artistic use rather than task-based usability testing. The goal of the evaluation was to assess the platform’s suitability for real-world creative workflows, identify strengths and limitations and highlight design considerations relevant to advanced users and artistic contexts. By synthesising qualitative feedback gathered through the evaluation process, the memo identifies workflow bottlenecks and outlines considerations that may inform future platform development and research dissemination.</p>
+<h2 id="2-evaluation-context">2. Evaluation Context <a class="section-link" href="#2-evaluation-context" aria-label="Link to 2. Evaluation Context">#</a></h2>
+<h3 id="21-user-profile">2.1 User Profile <a class="section-link" href="#21-user-profile" aria-label="Link to 2.1 User Profile">#</a></h3>
+<p>The evaluation was conducted by nine members of the Female Laptop Orchestra (FLO), including the FLO Lab director listed above as the ‘Evaluator’. Female Laptop Orchestra (FLO) is an internationally distributed ensemble that regularly incorporates emerging technologies into compositions, recordings, and performances. Within this ecosystem, FLO Lab operates as a practice-based research initiative where new audiovisual tools are tested and evaluated from both artistic and technical perspectives.</p>
+<p>Most FLO members hold academic positions in music, sound, HCI, and related fields, along with extensive experience in the use of professional Digital Audio Workstations (DAWs) and experimental research-stage Web Audio platforms in Networked Music Performance (NMP). This positions FLO, and by extension FLO Lab, as a research-literate group of expert practitioners capable of adapting to diverse creative and technical workflows without formal training.</p>
+<h3 id="22-use-case">2.2 Use Case <a class="section-link" href="#22-use-case" aria-label="Link to 2.2 Use Case">#</a></h3>
+<p>In this evaluation, the Hi-AUDiO platform was used for remote asynchronous recording of 16 audio tracks by FLO members based in Australia, Brazil, Croatia, France, Italy, Poland, Slovakia, Spain and the UK. The recordings were intended as source material for a collaborative composition that would later be mixed offline and submitted to the Radiophrenia 2026 festival.</p>
+<p>Individual recording sessions involved the use of acoustic and electronic instruments, percussion, vocals (utilising audio interfaces and Loopback software for internal audio routing to Firefox), as well as live coding and binaural soundscape recordings.</p>
+<p>The workflow also involved downloading recordings from the Hi-AUDiO platform, converting and importing them into performers’ Digital Audio Workstations (DAWs) for additional DSP processing using audio plug-ins and AI-based tools. The processed material was subsequently uploaded back to the platform.</p>
+<p>As the resulting composition is intended for broadcast at a professional music festival, the project also provides a potential dissemination context for the Hi-AUDiO platform and the associated research project initiative.</p>
+<h3 id="23-scope">2.3 Scope <a class="section-link" href="#23-scope" aria-label="Link to 2.3 Scope">#</a></h3>
+<p>The evaluation focused on the recording interface, transport controls, visual feedback, file management, creative flow and suitability for professional contexts.</p>
+<h2 id="3-methodological-approach">3. Methodological Approach <a class="section-link" href="#3-methodological-approach" aria-label="Link to 3. Methodological Approach">#</a></h2>
+<p>Seven FLO members were onboarded to the Hi-AUDiO platform by the Lead Software Engineer, across two separate two-hour sessions. Two additional FLO members were onboarded by the FLO Lab director, who also coordinated the recording process, organised scheduling, assisted with troubleshooting, and collected participant feedback throughout the evaluation period. The onboarding sessions introduced the platform interface, conducted latency tests, and examined signal flow across different recording configurations.</p>
+<p>Following onboarding, the FLO Lab director created a private Collection titled “<em>FLO - Radiophrenia 2026” a</em>nd Composition within that Collection titled “Hi-Audio Radiophrenia 2026 Jam.”</p>
+<p>The remaining eight performers were invited as members using the Composition Info section, which generated automated email invitations from the Hi-AUDiO platform. Upon registration, participants were able to navigate directly to the shared recording session workspace.</p>
+<p>All tracks were recorded and uploaded between February 13, 2026, and March 3, 2026. The mixing phase took place between March 3 and March 13, 2026. A detailed recording timeline is provided in the Appendix.</p>
+<p>The FLO Lab evaluation approach prioritises ecological validity. Rather than relying on controlled usability tasks, the evaluation followed a practice-based research methodology grounded in real creative activity. Insights were generated through hands-on use of the platform during individual recording sessions, reflecting observations during and after these sessions, and informal comparison with existing tools and workflows.</p>
+<p>Communication between participants took place through a dedicated WhatsApp group created specifically for the testing period, ensuring that discussions related to the Hi-AUDiO platform did not overlap with other FLO projects. WhatsApp was chosen over email to enable rapid communication and troubleshooting during recording sessions. Issues encountered by performers were addressed either directly by the FLO Lab director or communicated to the Lead Software Engineer where necessary.</p>
+<p>The collected material included notes taken during onboarding and recording sessions, informal feedback regarding technical issues encountered during the creative process (such as signal-flow challenges or interface inconsistencies), and suggestions for platform improvement. The following sections summarise the key insights derived from this material.</p>
+<h2 id="4-platform-strengths">4. Platform Strengths <a class="section-link" href="#4-platform-strengths" aria-label="Link to 4. Platform Strengths">#</a></h2>
+<p>This section highlights aspects of the Hi-AUDiO platform that effectively supported the collaborative workflow used by FLO members during the evaluation.</p>
+<h3 id="41-accessibility">4.1 Accessibility <a class="section-link" href="#41-accessibility" aria-label="Link to 4.1 Accessibility">#</a></h3>
+<p>The browser-based architecture was identified as a major strength. Participants noted that the ability to access the recording environment without installing dedicated software significantly lowers the barrier to entry for geographically distributed collaborators and supports cross-platform participation.</p>
+<h3 id="42-ease-of-use">4.2 Ease of Use <a class="section-link" href="#42-ease-of-use" aria-label="Link to 4.2 Ease of Use">#</a></h3>
+<p>Despite the early-stage nature of the platform, the core recording interface was described by several FLO members as <em>“simple and easy to use”</em> for basic recording tasks. This simplicity contributed positively to the onboarding process and allowed performers to begin recording relatively quickly.</p>
+<h3 id="43-interface-discoverability">4.3 Interface Discoverability <a class="section-link" href="#43-interface-discoverability" aria-label="Link to 4.3 Interface Discoverability">#</a></h3>
+<p>Hover-over labels for interface buttons (e.g., the Stop control) were noted as helpful in supporting initial orientation within the platform. These small interface cues helped compensate for the absence of some familiar DAW conventions.</p>
+<h3 id="44-track-annotation">4.4 Track Annotation <a class="section-link" href="#44-track-annotation" aria-label="Link to 4.4 Track Annotation">#</a></h3>
+<p>The ability to attach notes and annotations to individual tracks supported communication between geographically distributed performers. Participants found this feature particularly useful when explaining recording conditions, signal chains, or artistic intentions associated with individual contributions.</p>
+<h2 id="5-observed-workflow-challenges">5. Observed Workflow Challenges <a class="section-link" href="#5-observed-workflow-challenges" aria-label="Link to 5. Observed Workflow Challenges">#</a></h2>
+<p>This section summarises workflow limitations encountered during the evaluation. The observations reflect issues that became visible during real creative use of the platform rather than controlled usability testing.</p>
+<h3 id="51-visual-feedback-and-interface-clarity">5.1 Visual Feedback and Interface Clarity <a class="section-link" href="#51-visual-feedback-and-interface-clarity" aria-label="Link to 5.1 Visual Feedback and Interface Clarity">#</a></h3>
+<p>Several interface elements lacked clear state-change indicators, which occasionally caused uncertainty during recording sessions.</p>
+<p>For example, the Mute and Solo buttons did not provide sufficiently visible confirmation when active. Similarly, the microphone icon used to initiate recording differed from the conventional “record” symbol familiar to most Digital Audio Workstation (DAW) users. Because FLO members were typically recording through external audio interfaces rather than internal microphones, this icon initially caused confusion regarding its function.</p>
+<p>In addition, the visual change indicating that recording had started was extremely subtle. In practice, the transport bar appeared slightly lighter after activation; however, this change was difficult to perceive on many displays and in many lighting conditions, making it unclear whether recording had begun.</p>
+<p>Some performers also noted that dark-blue waveform segments representing silence could be mistaken for inactive or missing audio.</p>
+<h3 id="52-transport-controls-and-navigation">5.2 Transport Controls and Navigation <a class="section-link" href="#52-transport-controls-and-navigation" aria-label="Link to 5.2 Transport Controls and Navigation">#</a></h3>
+<p>Participants reported several missing features commonly found in professional audio software that affected workflow efficiency.</p>
+<p>The absence of standard keyboard shortcuts—most notably the Spacebar for Play/Stop—was reported as slowing down recording sessions because performers needed to move the cursor repeatedly between recording areas and the transport bar.</p>
+<p>Fast Forward and Rewind controls also appeared to jump directly to the beginning or end of the timeline rather than moving incrementally through the recording. This behaviour differed from typical DAW navigation patterns.</p>
+<p>Zoom controls were described as somewhat unresponsive, and the function of the headphones icon (Select Cursor) was not immediately clear to some participants.</p>
+<h3 id="53-recording-workflow-limitations">5.3 Recording Workflow Limitations <a class="section-link" href="#53-recording-workflow-limitations" aria-label="Link to 5.3 Recording Workflow Limitations">#</a></h3>
+<p>Several limitations affected the flexibility of the recording process.</p>
+<p>Participants noted the absence of a pause-and-continue recording option, which would allow performers to temporarily stop recording while maintaining continuity within a single track. Such functionality is widely used in iterative recording workflows.</p>
+<p>The platform also lacked visible input gain control, which was described as critical when working with external recording chains.</p>
+<h3 id="54-editing-and-audio-manipulation">5.4 Editing and Audio Manipulation <a class="section-link" href="#54-editing-and-audio-manipulation" aria-label="Link to 5.4 Editing and Audio Manipulation">#</a></h3>
+<p>Participants identified the absence of basic non-destructive editing tools as a major limitation.</p>
+<p>Common operations such as cutting, trimming, or pasting audio regions—normally performed through shortcuts such as Cmd/Ctrl+C and Cmd/Ctrl+V—were not supported. As a result, several editing tasks had to be deferred to external Digital Audio Workstations during the final mixing stage.</p>
+<p>Similarly, the lack of volume automation or envelope control made it difficult to manage the dynamic balance between tracks or perform basic crossfades directly within the platform.</p>
+<h3 id="55-timeline-manipulation">5.5 Timeline Manipulation <a class="section-link" href="#55-timeline-manipulation" aria-label="Link to 5.5 Timeline Manipulation">#</a></h3>
+<p>The “Shift Audio in Time” feature allowed clips to be repositioned, but participants noted that it was possible to accidentally move audio backwards on the timeline without clear safeguards. Once moved, it was difficult to determine whether the audio had been returned precisely to its original starting position.</p>
+<h3 id="56-signal-flow-and-rendering-stability">5.6 Signal Flow and Rendering Stability <a class="section-link" href="#56-signal-flow-and-rendering-stability" aria-label="Link to 5.6 Signal Flow and Rendering Stability">#</a></h3>
+<p>Some participants experienced long rendering times and occasional audio-quality issues when working with complex signal chains.</p>
+<p>For example, sessions using internal routing tools such as Loopback occasionally produced clipping, digital artefacts, or signal-level drops. These behaviours were particularly noticeable when longer processing chains were involved.</p>
+<h3 id="57-interaction-design-and-gestural-support">5.7 Interaction Design and Gestural Support <a class="section-link" href="#57-interaction-design-and-gestural-support" aria-label="Link to 5.7 Interaction Design and Gestural Support">#</a></h3>
+<p>Participants also noted the absence of several common interaction gestures. For example, pinch-to-zoom functionality was not supported, which limited the ability to quickly inspect waveform details during recording sessions.</p>
+<h3 id="58-file-interoperability">5.8 File Interoperability <a class="section-link" href="#58-file-interoperability" aria-label="Link to 5.8 File Interoperability">#</a></h3>
+<p>The use of .m4a lossy audio formats created friction when exporting files to professional DAWs for offline processing. Several participants reported that this required additional conversion steps before further editing or mixing could take place.</p>
+<h3 id="59-track-management">5.9 Track Management <a class="section-link" href="#59-track-management" aria-label="Link to 5.9 Track Management">#</a></h3>
+<p>Participants also noted that renaming tracks within the interface was not immediately intuitive, which occasionally slowed down the organisation of recording sessions.</p>
+<h2 id="6-design-implications-and-opportunities">6. Design Implications and Opportunities <a class="section-link" href="#6-design-implications-and-opportunities" aria-label="Link to 6. Design Implications and Opportunities">#</a></h2>
+<p>The observations outlined below translate participants’ testing experiences into design implications that may inform future development of the platform.</p>
+<div class="tablewrap"><table><thead><tr><th><strong>Area</strong></th><th><strong>Observation</strong></th><th><strong>Impact on Workflow</strong></th><th><strong>Design Opportunity</strong></th></tr></thead><tbody><tr><td>Accessibility</td><td>Browser-based access enabled participants to join recording sessions without installing dedicated software.</td><td>Lowered barriers to participation for geographically distributed performers.</td><td>Maintain browser-first architecture while expanding professional recording features.</td></tr><tr><td>Interface Clarity</td><td>Some interface elements lacked clear state-change indicators (e.g., Mute, Solo, Record).</td><td>Users were occasionally unsure whether functions were active during recording.</td><td>Introduce clearer visual feedback (colour change, animation, or active-state highlighting).</td></tr><tr><td>Recording Controls</td><td>Recording was initiated via a microphone icon rather than a conventional DAW record symbol.</td><td>Initial confusion regarding recording status, especially for users working with external interfaces.</td><td>Consider adopting industry-standard recording iconography or supplementing with clearer status indicators.</td></tr><tr><td>Transport Controls</td><td>Standard DAW shortcuts such as Spacebar for Play/Stop were not available.</td><td>Slowed down workflow during recording sessions due to repeated cursor navigation.</td><td>Introduce keyboard shortcuts for commonly used transport functions.</td></tr><tr><td>Recording Workflow</td><td>No option to pause recording and continue within the same track.</td><td>Interrupted iterative recording workflows and required multiple takes.</td><td>Implement pause/continue recording functionality.</td></tr><tr><td>Input Control</td><td>Lack of visible input gain controls within the interface.</td><td>Limited ability to adjust recording levels during sessions.</td><td>Introduce basic input level monitoring and gain control tools.</td></tr><tr><td>Editing Capabilities</td><td>Absence of non-destructive editing tools such as cut, trim, and paste operations.</td><td>Participants needed to export files to external DAWs for basic editing tasks.</td><td>Implement lightweight editing tools or improved integration with external DAWs.</td></tr><tr><td>Automation</td><td>No volume envelopes or crossfade functionality.</td><td>Dynamic control and transitions had to be performed during offline mixing.</td><td>Add basic automation or envelope-based gain control.</td></tr><tr><td>Timeline Manipulation</td><td>“Shift Audio in Time” allowed accidental misalignment of clips without safeguards.</td><td>Difficult to reposition clips precisely during recording sessions.</td><td>Add snap-to-grid options or timeline alignment markers.</td></tr><tr><td>Navigation</td><td>Zoom controls were perceived as slow or unresponsive; pinch-to-zoom gestures not supported.</td><td>Reduced efficiency when navigating longer recordings.</td><td>Improve zoom responsiveness and support gesture-based navigation.</td></tr><tr><td>Signal Processing</td><td>Complex signal chains occasionally caused rendering delays and audio artefacts.</td><td>Interrupted creative flow during recording sessions.</td><td>Improve stability when handling longer or more complex audio routing pipelines.</td></tr><tr><td>File Interoperability</td><td>Audio files exported in .m4a lossy format.</td><td>Required conversion before import into professional DAWs.</td><td>Offer optional export in lossless formats such as WAV.</td></tr><tr><td>Track Management</td><td>Renaming tracks was not immediately intuitive.</td><td>Slowed organisation of multi-track sessions.</td><td>Simplify track naming workflow and improve visibility of track metadata.</td></tr><tr><td>Collaboration</td><td>Track annotations supported communication between performers.</td><td>Improved clarity when sharing recordings across distributed participants.</td><td>Expand annotation tools for collaborative documentation.</td></tr></tbody></table></div>
+<h2 id="7-assessment-of-platform-fit-for-professional-creative-workflows">7. Assessment of Platform Fit for Professional Creative Workflows <a class="section-link" href="#7-assessment-of-platform-fit-for-professional-creative-workflows" aria-label="Link to 7. Assessment of Platform Fit for Professional Creative Workflows">#</a></h2>
+<p>In its current iteration, the Hi-AUDiO platform functions primarily as a lightweight multitrack recording environment rather than a fully featured creative production system.</p>
+<p>The platform’s web-based simplicity is a clear strength; however, the absence of core editing capabilities (e.g., cut, trim, paste) and dynamic control tools (e.g., automation envelopes) limits its suitability for end-to-end professional production workflows.</p>
+<p>For the Female Laptop Orchestra (FLO) to adopt Hi-AUDiO as a regular tool for distributed composition, further development would be required to support non-linear editing, advanced signal control, and workflow features aligned with established professional audio practices.</p>
+<h2 id="8-key-findings-and-next-steps">8. Key Findings and Next Steps <a class="section-link" href="#8-key-findings-and-next-steps" aria-label="Link to 8. Key Findings and Next Steps">#</a></h2>
+<p>The collective feedback identifies a gap between the current feature set and the requirements of professional creative workflows. While usability and onboarding are promising, several foundational features would significantly enhance suitability for advanced use.</p>
+<p>The most critical areas for development include improved visual feedback for active states, implementation of standard keyboard shortcuts, support for uncompressed export formats, and basic non-destructive editing tools (e.g., cut, trim, and envelope control).</p>
+<h3 id="81-key-findings">8.1 Key Findings <a class="section-link" href="#81-key-findings" aria-label="Link to 8.1 Key Findings">#</a></h3>
+<p>The browser-based architecture significantly lowers barriers for distributed collaboration.</p>
+<p>Insufficient visual state indicators (e.g., mute, solo, record) occasionally created uncertainty during recording sessions.</p>
+<p>Absence of industry-standard shortcuts and editing tools reduced workflow efficiency for experienced DAW users.</p>
+<p>Exporting in lossy formats introduced additional conversion steps when integrating recordings into professional production environments.</p>
+<p>Despite these limitations, the platform demonstrates strong potential as a lightweight collaborative recording environment if expanded with core workflow features.</p>
+<h3 id="82-potential-for-future-collaboration">8.2 Potential for Future Collaboration <a class="section-link" href="#82-potential-for-future-collaboration" aria-label="Link to 8.2 Potential for Future Collaboration">#</a></h3>
+<p>This evaluation illustrates the value of engaging expert practitioner-users during early-stage development of creative technologies, complementing other forms of testing such as lab-based studies.</p>
+<p>Practice-based evaluations can reveal workflow dynamics, embodied interaction patterns, and creative constraints that are difficult to capture through surveys or task-based metrics alone, particularly for platforms intended for artistic, research, or professional contexts.</p>
+<p>Continued collaboration between the FLO Lab initiative and the Hi-AUDiO research team could support iterative development, artistic experimentation, and potential dissemination through performances, broadcasts, and academic publications.</p>
+<h2 id="9-acknowledgements">9. Acknowledgements <a class="section-link" href="#9-acknowledgements" aria-label="Link to 9. Acknowledgements">#</a></h2>
+<p>The evaluator would like to thank the members of the Female Laptop Orchestra (FLO) for participating in this evaluation, and the Hi-AUDiO team (Lead Software Engineer and Principal Investigator), for providing access to the platform, technical support, and openness during the evaluation period.</p>
+<p>The evaluator would also like to thank the Female Laptop Orchestra (FLO) sponsors Bitwig Studio, PreSonus, Røde Microphones, Audio-Technica, Waves, NETGEAR, and Rogue Amoeba for providing software and hardware used in the evaluation process.</p>
+<h2 id="appendix-a">Appendix A <a class="section-link" href="#appendix-a" aria-label="Link to Appendix A">#</a></h2>
+<h3 id="introduction-onboarding-and-evaluation-timeline">Introduction, Onboarding, and Evaluation Timeline <a class="section-link" href="#introduction-onboarding-and-evaluation-timeline" aria-label="Link to Introduction, Onboarding, and Evaluation Timeline">#</a></h3>
+<p>This timeline documents the procedural sequence of onboarding, recording, and post-production activities conducted during the evaluation period.</p>
+<p><strong>2025 — Project Initiation</strong></p>
+<p><strong>05/12</strong> – meeting (Lead Software Engineer; Principal Investigator; FLO Lab director)</p>
+<p><strong>09/12</strong> – Hi-AUDiO platform demonstration (Lead Software Engineer; FLO Lab director)</p>
+<p><strong>2026 — Onboarding Phase</strong></p>
+<p><strong>29/01</strong> – Onboarding Session 1 (Lead Software Engineer; FLO Lab director)</p>
+<p><strong>30/01</strong> – Editing guide track (binaural soundscape) from 20 to 10 minutes due to file size restriction; uploading guide track to Hi-AUDiO</p>
+<p><strong>30/01</strong> – Onboarding Session 2 (Lead Software Engineer; FLO Lab director; three FLO members)</p>
+<p><strong>04/02</strong> – Onboarding Session 3 (Lead Software Engineer; FLO Lab director; three FLO members)</p>
+<p><strong>05/02</strong> – Onboarding Session 4 (FLO Lab director; one FLO member)</p>
+<p><strong>06/02</strong> – Onboarding Session 5 (FLO Lab director; one FLO member)</p>
+<p><strong>2026 — Recording and Processing Phase</strong></p>
+<p><strong>13/02</strong> – FLO planning meeting</p>
+<p><strong>14/02-16/02</strong> – Recording individual voice tracks in participants’ native languages using varied recording setups</p>
+<p><strong>17/02-19/02</strong> – Downloading and converting guide track; importing into Ableton; mixing and processing individual voice recordings; translating materials into English; uploading processed tracks to Hi-AUDiO platform</p>
+<p><strong>20/02</strong> – Downloading processed tracks, AI-based processing, re-uploading selected material</p>
+<p><strong>21/02-03/03</strong> – Recording instrumental and electronic parts (piano, CubeHarmonic, cello tracks, percussion, SuperCollider, soundscape)</p>
+<p><strong>04/03</strong> – Obtaining .wav files from the Lead Software Engineer</p>
+<p><strong>09/03-13/03</strong> – Final mixing and mastering</p>
+<h2 id="appendix-b">Appendix B <a class="section-link" href="#appendix-b" aria-label="Link to Appendix B">#</a></h2>
+<h3 id="platform-use-and-interface-observations">Platform Use and Interface Observations <a class="section-link" href="#platform-use-and-interface-observations" aria-label="Link to Platform Use and Interface Observations">#</a></h3>
+<p>The screenshots below provide visual documentation of interface states, workflow interactions, and usability observations identified during the practice-based evaluation. They complement the findings presented in Section 5.</p>
+<figure><a class="zoom" href="../images/image1.png" title="Enlarge"><img src="../images/image1.png" alt="Use of the audio routing software Loopback to route audio from a DAW (Bitwig/Ableton) to the Firefox browser. This configuration formed an important part of the recording workflow for FLO performers working with external instruments and DAWs."/></a><figcaption><span class="fignum">Fig B1.</span> Use of the audio routing software Loopback to route audio from a DAW (Bitwig/Ableton) to the Firefox browser. This configuration formed an important part of the recording workflow for FLO performers working with external instruments and DAWs.</figcaption></figure>
+<figure><a class="zoom" href="../images/image2.png" title="Enlarge"><img src="../images/image2.png" alt="The microphone permission icon in the Firefox interface was occasionally hidden, which created uncertainty during the recording setup process."/></a><figcaption><span class="fignum">Fig B2.</span> The microphone permission icon in the Firefox interface was occasionally hidden, which created uncertainty during the recording setup process.</figcaption></figure>
+<figure><a class="zoom" href="../images/image3.png" title="Enlarge"><img src="../images/image3.png" alt="Refreshing the Firefox browser allowed Loopback to be selected as the input device instead of the internal microphone."/></a><figcaption><span class="fignum">Fig B3.</span> Refreshing the Firefox browser allowed Loopback to be selected as the input device instead of the internal microphone.</figcaption></figure>
+<figure><a class="zoom" href="../images/image4.png" title="Enlarge"><img src="../images/image4.png" alt="Transport bar icons change colour only temporarily and, in some cases (e.g., when the microphone icon is activated), appear only slightly lighter. This subtle change made it difficult to determine whether the recording was active."/></a><figcaption><span class="fignum">Fig B4.</span> Transport bar icons change colour only temporarily and, in some cases (e.g., when the microphone icon is activated), appear only slightly lighter. This subtle change made it difficult to determine whether the recording was active.</figcaption></figure>
+<figure><a class="zoom" href="../images/image5.png" title="Enlarge"><img src="../images/image5.png" alt="Dark blue waveform segments representing silence were visually ambiguous and could be misinterpreted during track inspection."/></a><figcaption><span class="fignum">Fig B5.</span> Dark blue waveform segments representing silence were visually ambiguous and could be misinterpreted during track inspection.</figcaption></figure>
+<figure><a class="zoom" href="../images/image6.png" title="Enlarge"><img src="../images/image6.png" alt="Track rendering times were relatively long, and the rendering indicator located at the bottom of the interface became difficult to monitor once several tracks had been recorded."/></a><figcaption><span class="fignum">Fig B6.</span> Track rendering times were relatively long, and the rendering indicator located at the bottom of the interface became difficult to monitor once several tracks had been recorded.</figcaption></figure>
+<figure><a class="zoom" href="../images/image7.png" title="Enlarge"><img src="../images/image7.png" alt="Interaction with the Mute and Solo controls sometimes appeared visually ambiguous, as both buttons could appear active simultaneously."/></a><figcaption><span class="fignum">Fig B7.</span> Interaction with the Mute and Solo controls sometimes appeared visually ambiguous, as both buttons could appear active simultaneously.</figcaption></figure>
+<figure><a class="zoom" href="../images/image8.png" title="Enlarge"><img src="../images/image8.png" alt="Zoom in/out controls demonstrated limited responsiveness during testing, which slowed inspection of recorded tracks."/></a><figcaption><span class="fignum">Fig B8.</span> Zoom in/out controls demonstrated limited responsiveness during testing, which slowed inspection of recorded tracks.</figcaption></figure>
+</main>
+<footer class="site"><img src="../images/ERC_logo.png" alt="Emblem of the European Union and logo of the European Research Council"/><p>The Hi-Audio platform is developed as part of the project <em>Hybrid and Interpretable Deep Neural Audio Machines</em>, funded by the European Research Council (ERC) under the European Union&rsquo;s Horizon Europe research and innovation programme (grant agreement No. 101052978).</p><p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.</p><p>Survey questions, response data, licences and citation details: <a href="https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation">GitHub repository</a>.</p></footer>
+</div>
+<dialog id="zoom" class="zoom-view" aria-label="Enlarged figure">
+<form method="dialog"><button class="close" aria-label="Close">&times;</button></form><img alt=""/></dialog>
+<script>
+(function () {
+  var d = document.getElementById("zoom");
+  if (!d || typeof d.showModal !== "function") return;  /* no dialog support: the link opens the image */
+  var big = d.querySelector("img");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a.zoom");
+    if (!a || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    var img = a.querySelector("img");
+    d.classList.remove("actual");
+    big.src = a.getAttribute("href");
+    big.alt = img ? img.alt : "";
+    d.showModal();
+  });
+  big.addEventListener("click", function (e) {      /* toggle full size, when the image is larger than the screen */
+    e.stopPropagation();
+    if (d.classList.contains("actual") || big.naturalWidth > window.innerWidth) d.classList.toggle("actual");
+  });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });   /* click outside the image */
+  d.addEventListener("close", function () { big.removeAttribute("src"); });
+})();
+</script>
+</body></html>

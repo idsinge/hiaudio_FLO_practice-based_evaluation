@@ -1,5 +1,7 @@
 # Analysis Plan
 
+> **Note added 2026-11-06.** When this plan was written, `README.md` contained the practice-based evaluation memo. The memo is now published on its own, exactly as its author delivered it ([memo](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html); source: [`output.md`](output.md)), and `README.md` describes the repository. References below to sections of `README.md` therefore refer to the memo's sections, which keep the same numbers; the positionality disclosure formerly in `README.md` §3 is now in the Positionality section of `README.md` and in §8 of the analysis. The plan itself is unchanged. One detail found on the same date: Q18_2 also drops "my" from Venkatesh's wording ("a lot of my mental effort" → "a lot of mental effort").
+
 ## Purpose
 
 This document outlines the planned approach for processing and analysing responses to the Hi-AUDiO participant survey. The survey is designed as a companion instrument to the practice-based evaluation report and is intended to complement, refine, and contextualise the findings already presented in the repository.

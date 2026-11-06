@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Practice-based evaluation of the Hi-Audio platform by the Female Laptop Orchestra (FLO), with the evaluation memo and the participant survey analysis."/>
+<title>Practice-based evaluation of the Hi-Audio platform — FLO Lab</title>
+<style>
+@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+*{box-sizing:border-box}
+body{font:11pt/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:#111827;margin:0;padding:0 0 24pt;
+     background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:190mm;margin:0 auto;padding:10mm 6mm}
+h1{font-size:20pt;line-height:1.25;margin:0 0 4pt;letter-spacing:-.01em}
+h2{font-size:14pt;margin:20pt 0 6pt;padding-bottom:3pt;border-bottom:1.5px solid #111827;break-after:avoid}
+h3{font-size:11.5pt;margin:14pt 0 4pt;color:#1f2937;break-after:avoid}
+h4{font-size:10.5pt;margin:11pt 0 3pt;color:#374151;break-after:avoid}
+p{margin:0 0 7pt;orphans:3;widows:3}
+a{color:#1d4ed8}
+.section-link{color:#475569;margin-inline-start:.35em;text-decoration:none}
+.section-link:hover,.section-link:focus-visible{color:#1d4ed8;text-decoration:underline}
+.section-link:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+strong{font-weight:700}
+code{font:9.5pt ui-monospace,"SF Mono",Menlo,monospace;background:#f1f5f9;padding:.5pt 3pt;border-radius:3px}
+ul,ol{margin:0 0 8pt;padding-left:16pt}
+li{margin-bottom:3.5pt}
+blockquote{margin:7pt 0 9pt;padding:6pt 11pt;border-left:2.5pt solid #94a3b8;background:#f8fafc;
+  font-size:10pt;font-style:italic;color:#1f2937;break-inside:avoid}
+.tablewrap{overflow-x:auto;margin:8pt 0 12pt}
+table{width:100%;border-collapse:collapse;font-size:9pt;break-inside:avoid;
+  font-family:-apple-system,"Helvetica Neue",Helvetica,sans-serif}
+th{background:#f1f5f9;text-align:left;padding:4.5pt 6pt;border:.5pt solid #cbd5e1;font-weight:700;font-size:8.5pt}
+td{padding:4pt 6pt;border:.5pt solid #cbd5e1;vertical-align:top}
+tbody tr:nth-child(even){background:#fafbfc}
+hr{border:0;border-top:.5pt solid #d1d5db;margin:14pt 0}
+figure{margin:12pt 0 16pt;padding:9pt 10pt 4pt;border:.5pt solid #d8dee7;background:#fcfdfe;
+  border-radius:4px;break-inside:avoid}
+figure img{width:100%;height:auto;display:block;margin:0 0 6pt;background:#fff}
+figcaption{font:8.8pt/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#475569}
+.fignum{font-weight:700;color:#111827}
+.docmeta{font:9pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#64748b;
+  border-bottom:.5pt solid #d1d5db;padding-bottom:8pt;margin-bottom:14pt}
+.note{border-radius:4px;padding:7pt 10pt;margin:0 0 14pt;font:9pt/1.45 -apple-system,"Helvetica Neue",Helvetica,sans-serif}
+.note{background:#f8fafc;border:1pt solid #cbd5e1;color:#334155}
+nav.site{display:flex;flex-wrap:wrap;gap:4pt 14pt;align-items:baseline;padding:8pt 0 9pt;margin:0 0 14pt;
+  border-bottom:.5pt solid #d1d5db;font:10pt -apple-system,"Helvetica Neue",Helvetica,sans-serif}
+nav.site a{color:#334155;text-decoration:none}
+nav.site a:hover{text-decoration:underline}
+nav.site a.home{font-weight:700;color:#111827;margin-right:auto}
+nav.site a[aria-current]{color:#111827;font-weight:600}
+@media (max-width:600px){ nav.site a.home{flex-basis:100%} }
+footer.site{margin-top:28pt;padding-top:10pt;border-top:.5pt solid #d1d5db;
+  font:8.5pt/1.45 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#475569}
+footer.site img{width:200px;max-width:60%;height:auto;display:block;margin:0 0 8pt}
+.lead{font-size:12pt;margin:6pt 0 16pt}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:12pt;margin:0 0 16pt}
+.card{display:block;border:1pt solid #cbd5e1;border-radius:6px;padding:12pt 14pt;color:inherit;text-decoration:none;background:#fcfdfe}
+.card:hover,.card:focus{border-color:#1d4ed8;box-shadow:0 1px 6px rgba(29,78,216,.15)}
+.card h2{border:0;margin:0 0 3pt;padding:0;font-size:14pt}
+.card .by{font:9pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#64748b;margin:0 0 7pt}
+.card .go{font:10pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#1d4ed8;font-weight:600}
+.badge{font:8pt -apple-system,"Helvetica Neue",Helvetica,sans-serif;background:#fff7ed;color:#9a3412;
+  border:1pt solid #fdba74;border-radius:3px;padding:0 4pt;vertical-align:middle}
+.small{font-size:10pt;color:#334155}
+.tip{position:relative;border-bottom:1px dotted #64748b;cursor:help}
+.tip:hover::after,.tip:focus::after{content:attr(data-tip);position:absolute;left:0;top:calc(100% + 4px);z-index:20;
+  width:max-content;max-width:min(24rem,80vw);padding:6pt 8pt;background:#111827;color:#f9fafb;border-radius:4px;
+  font:9pt/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;font-weight:400;font-style:normal;
+  white-space:normal;text-align:left;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tip:focus{outline:1px solid #94a3b8;outline-offset:1px}
+@media (hover:none){ .tip{cursor:pointer} }
+main p,main li{overflow-wrap:anywhere}
+figure a.zoom{display:block;cursor:zoom-in}
+dialog.zoom-view{padding:0;margin:0;border:0;background:transparent;width:100vw;height:100vh;max-width:100vw;max-height:100vh}
+dialog.zoom-view[open]{display:flex;overflow:auto}
+dialog.zoom-view::backdrop{background:rgba(15,23,42,.88)}
+dialog.zoom-view img{margin:auto;width:96vw;height:auto;max-height:94vh;object-fit:contain;background:#fff;cursor:zoom-in}
+dialog.zoom-view.actual img{width:auto;max-width:none;max-height:none;cursor:zoom-out}
+dialog.zoom-view .close{position:fixed;top:10px;right:14px;z-index:2;border:0;border-radius:50%;width:40px;height:40px;
+  background:rgba(17,24,39,.75);color:#fff;font:26px/40px -apple-system,"Helvetica Neue",Helvetica,sans-serif;cursor:pointer}
+@media print{ dialog.zoom-view{display:none !important} }
+/* On screen: one column for text, tables and figures alike, sized for comfortable reading,
+   with a larger type scale. Print keeps the A4 sizes above. */
+@media screen{
+  body{font-size:1.125rem;line-height:1.6}
+  .wrap{max-width:52rem;padding:1.5rem 1.25rem 2rem}
+  h1{font-size:1.9rem} h2{font-size:1.4rem} h3{font-size:1.15rem} h4{font-size:1.05rem}
+  code{font-size:.85em} blockquote{font-size:.95em}
+  table{font-size:.9rem} th{font-size:.85rem} figcaption{font-size:.85rem}
+  .docmeta,.note{font-size:.85rem}
+  nav.site{font-size:.95rem} footer.site{font-size:.8rem}
+  .lead{font-size:1.15em} .small{font-size:.95rem}
+  .card h2{font-size:1.3rem} .card .by{font-size:.85rem} .card .go{font-size:.95rem} .badge{font-size:.7rem}
+  .tip:hover::after,.tip:focus::after{font-size:.85rem}
+}
+@media screen and (min-width:60rem){ .wrap{max-width:min(90vw,68rem)} }
+@media print{ nav.site,.section-link{display:none} .wrap{padding:0} .tablewrap{overflow:visible}
+  .tip{border-bottom:none} .tip::after{content:none !important} a{color:inherit} }
+</style></head><body><div class="wrap">
+<nav class="site"><a class="home" href="index.html">Hi-Audio practice-based evaluation</a><a href="docs/memo.html">Memo</a><a href="docs/analysis.html">Survey analysis</a><a href="https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation">GitHub repository</a></nav>
+<main class="index">
+<h1>Practice-Based Evaluation of the Hi-Audio Platform</h1>
+<p class="lead">In February and March 2026, nine performers from the Female Laptop Orchestra (FLO) used the
+Hi-Audio web platform (<a href="https://hiaudio.fr">hiaudio.fr</a>) to record the source tracks of a collaborative
+composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. Two documents report on that evaluation.</p>
+<div class="cards">
+<a class="card" href="docs/memo.html"><h2>Practice-based evaluation memo</h2>
+<p class="by">Nela Brown, FLO Lab &middot; 22 March 2026</p>
+<p>The evaluator&rsquo;s account of the recording project: platform strengths, workflow challenges, design
+implications and fit for professional creative work. Reproduced as delivered.</p>
+<span class="go">Read the memo &rarr;</span></a>
+<a class="card" href="docs/analysis.html"><h2>Participant survey analysis</h2>
+<p class="by">Nela Brown and José M. Gil Panal &middot; 2026</p>
+<p>Descriptive results from a follow-up questionnaire answered by nine FLO performers, compared section by
+section with the memo&rsquo;s findings.</p>
+<span class="go">Read the analysis &rarr;</span></a>
+</div>
+<p class="small">The memo is also available as the <a href="docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf">original PDF</a>. The survey questions,
+the pseudonymised response data, licences and citation details are in the
+<a href="https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation">GitHub repository</a>.</p>
+</main>
+<footer class="site"><img src="images/ERC_logo.png" alt="Emblem of the European Union and logo of the European Research Council"/><p>The Hi-Audio platform is developed as part of the project <em>Hybrid and Interpretable Deep Neural Audio Machines</em>, funded by the European Research Council (ERC) under the European Union&rsquo;s Horizon Europe research and innovation programme (grant agreement No. 101052978).</p><p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.</p><p>Survey questions, response data, licences and citation details: <a href="https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation">GitHub repository</a>.</p></footer>
+</div>
+<dialog id="zoom" class="zoom-view" aria-label="Enlarged figure">
+<form method="dialog"><button class="close" aria-label="Close">&times;</button></form><img alt=""/></dialog>
+<script>
+(function () {
+  var d = document.getElementById("zoom");
+  if (!d || typeof d.showModal !== "function") return;  /* no dialog support: the link opens the image */
+  var big = d.querySelector("img");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a.zoom");
+    if (!a || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    var img = a.querySelector("img");
+    d.classList.remove("actual");
+    big.src = a.getAttribute("href");
+    big.alt = img ? img.alt : "";
+    d.showModal();
+  });
+  big.addEventListener("click", function (e) {      /* toggle full size, when the image is larger than the screen */
+    e.stopPropagation();
+    if (d.classList.contains("actual") || big.naturalWidth > window.innerWidth) d.classList.toggle("actual");
+  });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });   /* click outside the image */
+  d.addEventListener("close", function () { big.removeAttribute("src"); });
+})();
+</script>
+</body></html>

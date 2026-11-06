@@ -9,7 +9,7 @@
 - `docs/individual_participant_responses/P01.pdf` – `P09.pdf`
 - `docs/response_id_mapping.md`
 
-Everything else in this repository — the evaluation report (`README.md`), the original memo and its PDF, `docs/output.md`, the survey instrument (`docs/participant_survey.md`), the analysis plan, `docs/analysis_summary.md`, and the images — is licensed **CC BY 4.0** and is unaffected by this file.
+Everything else in this repository — `README.md`, the original memo and its PDF, `docs/output.md`, the survey instrument (`docs/participant_survey.md`), the analysis plan, `docs/analysis_summary.md`, the web pages, and the images — is licensed **CC BY 4.0** and is unaffected by this file. The one exception is the EU emblem and ERC logo, which neither licence covers (see [`LICENSE`](../LICENSE)).
 
 ## Why this data is licensed differently
 
@@ -25,10 +25,10 @@ You may access, download, and use these files **for non-commercial academic rese
 
 1. **Attribution.** Cite the repository as set out in the "Citation" section of `README.md`.
 2. **No redistribution.** Do not republish, mirror, or redistribute these files, in whole or in part, in original or modified form. Link to this repository instead.
-3. **No commercial use.** Do not use these files, or anything derived from them, for commercial purposes.
+3. **No commercial use.** Do not use these files, or anything you derive from them, for commercial purposes. This applies to the response records only: the results already published in this repository's CC BY 4.0 files — the analysis, its figures and tables, and the excerpts it quotes — stay under CC BY 4.0.
 4. **No re-identification.** Do not attempt to identify any participant, and do not combine these files with other information in order to do so. Do not contact participants on the basis of this data.
-5. **Publish results, not records.** You may publish aggregate findings, statistics, and brief anonymised excerpts. Do not publish reproductions of the record-level data.
-6. **Withdrawal.** If a participant withdraws consent, the corresponding records will be removed from this repository. On being notified of such a removal, delete any local copies of the affected records.
+5. **Publish results, not records.** You may publish aggregate findings, statistics, and brief pseudonymised excerpts (identified by participant ID only, as in the analysis). Do not publish reproductions of the record-level data.
+6. **Withdrawal.** If a participant withdraws consent, the corresponding records will be removed from this repository. On being notified of such a removal, delete any local copies of the affected records. Removal changes the current files only: earlier copies — in the Git history, in forks, and in downloads — may remain.
 7. **Retention.** Do not retain local copies longer than your research purpose requires.
 
 ## No warranty
