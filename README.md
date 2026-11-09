@@ -10,7 +10,7 @@ The platform itself is described in Gil Panal, David and Richard (2026). A compl
 
 | Document | Authors | Read | Source in this repository |
 |---|---|---|---|
-| Practice-based evaluation memo, 22 March 2026, reproduced as delivered | Nela Brown | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html) · [original PDF](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | [`docs/output.md`](./docs/output.md) |
+| Practice-based evaluation memo, 22 March 2026, reproduced as delivered; amended by the author, 9 November 2026 (§3) | Nela Brown | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html) · [PDF](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | [`docs/output.md`](./docs/output.md) |
 | Participant survey analysis | Nela Brown, José M. Gil Panal | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html) | [`docs/analysis_summary.md`](./docs/analysis_summary.md) |
 
 The web pages are generated from those sources by [`docs/build_pages.py`](./docs/build_pages.py). Edit the sources, never the HTML, and rebuild with `python3 docs/build_pages.py`.
@@ -25,7 +25,7 @@ The table below lists everything published in the repository.
 | Web pages | [`docs/memo.html`](./docs/memo.html) | The memo as a web page, built from `docs/output.md` |
 | Web pages | [`docs/analysis.html`](./docs/analysis.html) | The survey analysis as a web page, built from `docs/analysis_summary.md` |
 | Web pages | [`docs/build_pages.py`](./docs/build_pages.py) | Builds the three pages above (standard-library Python) |
-| Memo | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The memo as delivered, as a PDF |
+| Memo | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The memo as delivered, as a PDF; amended by the author, 9 November 2026 (§3) |
 | Memo | [`docs/output.md`](./docs/output.md) | The Pandoc conversion of the memo's original `.docx`, kept unchanged except for 8 relative image paths updated when the file moved into `docs/` |
 | Memo | `images/` | The memo's Appendix B screenshots (`image1.png`–`image8.png`) and the EU/ERC emblem (`ERC_logo.png`) |
 | Survey | [`docs/participant_survey.md`](./docs/participant_survey.md) | The participant questionnaire, as administered via JotForm (23 questions, three sections) |

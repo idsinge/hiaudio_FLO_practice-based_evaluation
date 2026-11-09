@@ -18,7 +18,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 | CONTEXT.md | Yes | Yes | LLM/collaborator context — keep it current |
 | docs/ANALYSIS_PLAN.md | Yes | Yes | Statistical analysis plan — data collection closed, cleared for publication |
 | docs/participant_survey.md | Yes | Yes | Survey working copy — data collection closed, cleared for publication |
-| docs/output.md | **Never** | Already published | The memo as delivered (original Pandoc conversion) and the source of docs/memo.html |
+| docs/output.md | **Never** | Already published | The memo as delivered (original Pandoc conversion, with the author's one-word amendment of 2026-11-09 — see Rule 1) and the source of docs/memo.html |
 | docs/participant_survey_responses.csv / .xlsx | No | Yes | Canonical response data — no PII columns; already corrected (Q16/Q17 collapsed from the bogus 4-column export split), so not a raw JotForm export |
 | docs/individual_participant_responses/P01–P09.pdf | No | Yes | Per-respondent submissions, pseudonymised as P01–P09 |
 | docs/response_id_mapping.md | Yes | Yes | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
@@ -27,7 +27,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 | docs/build_pages.py | Yes | Yes | Builds the three web pages — standard library only |
 | docs/REFERENCES.md | Yes | Yes | Annotated reference list; the authority for item attribution (see Rule 5) |
 | docs/figures/ | Via script only | Yes | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG |
-| docs/Practice-Based Evaluation...pdf | No | No | The memo as delivered (PDF) |
+| docs/Practice-Based Evaluation...pdf | No | No | The memo as delivered (PDF); replaced on 2026-11-09 by the author's amended version (§3) |
 | CITATION.cff | Yes | Yes | Structured citation for GitHub |
 | CLAUDE.md | Yes | Yes | Working instructions for Claude Code — keep aligned with this file |
 | docs/DATA_LICENSE.md | Only if asked | Yes | Research-use licence for the response data — legal text |
@@ -42,7 +42,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 ## Rules — Read These Before Doing Anything
 
 ### Rule 1: docs/output.md is read-only
-`docs/output.md` is the original Pandoc conversion of the evaluation memo from .docx: the memo as delivered, and the source of `docs/memo.html`. Do not edit, overwrite, or delete its content. Ever. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Do not make further changes.
+`docs/output.md` is the original Pandoc conversion of the evaluation memo from .docx: the memo as delivered, and the source of `docs/memo.html`. Do not edit, overwrite, or delete its content. Ever. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Second exception, 2026-11-09, at the author's request and authorised by the repo owner: Nela Brown amended her memo, so §3's "across two separate two-hour sessions" now reads "across three separate two-hour sessions", as in her amended PDF (Appendix A lists three onboarding sessions led by the Lead Software Engineer). Do not make further changes unless the author amends the memo again and the owner authorises it.
 
 ### Rule 2: docs/participant_survey.md, docs/ANALYSIS_PLAN.md, and the response data are cleared for publication
 Data collection from participants is complete, so the risk that motivated withholding these files — contaminating participant responses before they replied — no longer applies. `invitation_message.md` was removed from the repo entirely (not published, not withheld pending approval — simply gone).

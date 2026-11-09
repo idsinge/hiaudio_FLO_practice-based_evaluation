@@ -18,7 +18,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 | CONTEXT.md | Published | LLM/collaborator reference — keep current |
 | docs/ANALYSIS_PLAN.md | Published | Data collection is complete — cleared for publication |
 | docs/participant_survey.md | Published | Data collection is complete — cleared for publication |
-| docs/output.md | Published | The memo as delivered (Pandoc conversion of the original .docx) and the source of docs/memo.html — never edit or delete |
+| docs/output.md | Published | The memo as delivered (Pandoc conversion of the original .docx, with the author's one-word amendment of 2026-11-09 — see Hard Rules) and the source of docs/memo.html — never edit or delete |
 | docs/participant_survey_responses.csv / .xlsx | Published | Canonical response data (no PII columns) — already corrected (Q16/Q17 collapsed), not a raw JotForm export |
 | docs/individual_participant_responses/P01–P09.pdf | Published | Per-respondent submissions, pseudonymised as P01–P09 — cleared for publication |
 | docs/response_id_mapping.md | Published | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
@@ -27,7 +27,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 | docs/build_pages.py | Published | Builds the three web pages from docs/output.md and docs/analysis_summary.md — standard library only |
 | docs/REFERENCES.md | Published | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
 | docs/figures/ | Published | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |
-| docs/Practice-Based Evaluation...pdf | Published | The memo as delivered (PDF) — do not modify |
+| docs/Practice-Based Evaluation...pdf | Published | The memo as delivered (PDF); replaced on 2026-11-09 by the author's amended version (§3) — do not modify |
 | CITATION.cff | Published | Structured citation |
 | AGENTS.md | Published | Working instructions for other AI agents — keep aligned with this file |
 | docs/DATA_LICENSE.md | Published | Research-use licence for the response data — legal text, change only on explicit instruction |
@@ -41,7 +41,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 
 ## Hard Rules
 
-- **docs/output.md is untouchable.** Never edit, overwrite, or delete its content. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Do not make further changes.
+- **docs/output.md is untouchable.** Never edit, overwrite, or delete its content. Exception already used once: when the file was relocated from repo root into `docs/`, its 8 relative image paths (`./images/imageN.png`) were updated to `../images/imageN.png` so they keep resolving from the new location — a path fix required by the move, not a content edit. Second exception, 2026-11-09, at the author's request and authorised by the repo owner: Nela Brown amended her memo, so §3's "across two separate two-hour sessions" now reads "across three separate two-hour sessions", as in her amended PDF (Appendix A lists three onboarding sessions led by the Lead Software Engineer). Do not make further changes unless the author amends the memo again and the owner authorises it.
 - **docs/participant_survey.md, docs/ANALYSIS_PLAN.md, and the response data files are cleared for publication.** Data collection is complete, so the contamination risk that motivated withholding them no longer applies. `invitation_message.md` was removed from the repo entirely (not published).
 - **Acknowledgements is always the last section in README.md**, after any appendices. Never reorder it.
 - **No personal identifiers.** Do not add email addresses, phone numbers, or names beyond what already exists. The institutional email appears as `[available on request]` in docs/participant_survey.md. One exception is already present and accepted: P09's Q7 answer names Nela Brown in a track filename — left as-is per her dual role as questionnaire co-designer/respondent (see "Respondent overlap" below and CONTEXT.md).

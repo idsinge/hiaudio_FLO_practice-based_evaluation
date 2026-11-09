@@ -30,8 +30,8 @@ Do not add names, email addresses, or personal identifiers to any file in this r
 | File | Status | Purpose |
 |---|---|---|
 | README.md | Published | Repository guide: what the repo is, links to the web pages, contents, positionality, licensing, citation. Until 2026-11-06 it also carried an edited version of the memo; it no longer does |
-| docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf | Published | The memo as delivered (PDF) |
-| docs/output.md | Published | The memo as delivered: the original Pandoc conversion from .docx, and the source of `docs/memo.html`. Do not edit or delete |
+| docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf | Published | The memo as delivered (PDF); replaced on 2026-11-09 by the author's amended version (§3) |
+| docs/output.md | Published | The memo as delivered: the original Pandoc conversion from .docx, with the author's one-word amendment of 2026-11-09 (§3), and the source of `docs/memo.html`. Do not edit or delete |
 | docs/participant_survey.md | Published | Working copy of the JotForm survey — data collection is complete, cleared for publication |
 | docs/ANALYSIS_PLAN.md | Published | Planned approach for processing and analysing survey responses — data collection is complete, cleared for publication |
 | docs/participant_survey_responses.csv / .xlsx | Published | Pseudonymised respondent-level response data (9 rows, one per respondent), no name/email/IP columns |
@@ -142,7 +142,7 @@ Q16 (meets the necessary standards as a professional audio recording application
 The Acknowledgements section is always last in README.md — after appendices. Do not move it.
 
 ### docs/output.md
-This file is the original Pandoc conversion from the .docx memo. It is kept as a historical reference. Do not edit, overwrite, or delete it.
+This file is the original Pandoc conversion from the .docx memo and, since 2026-11-06, the source of `docs/memo.html`. One word was changed on 2026-11-09 at the author's request, with the owner's authorisation (§3: "two" → "three" onboarding sessions; see the 2026-11-09 handoff). Do not edit, overwrite, or delete it otherwise.
 
 ---
 
@@ -176,16 +176,30 @@ Nela Brown co-designed the questionnaire (with the Hi-AUDiO Lead Software Engine
 ## What Comes Next
 
 1. ~~The owner's verification and approval of `docs/analysis_summary.md`~~ — **approved 2026-11-06**; its Status line and every draft mention were removed.
-2. Release date: `CITATION.cff` `date-released` and the analysis's "last revised" line both say 2026-11-06; change both if the merge into `main` happens on another day.
-3. Publish: the 2026-11-06 work is committed on `tempbranch` on top of "temporal changes" (`a6888c6`); fast-forward `main` to it and push both remotes (`origin`, `gitlab`). GitHub Pages builds the site from the root of `main` (Cayman theme; the new `index.html` takes the place of the README rendering), so the website goes live only after the merge. Then check the three pages at https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/.
+2. ~~Release date of the 2026-11-06 work~~ — merged that day. `CITATION.cff` `date-released` now says 2026-11-09, for the memo amendment; change it if that is merged on another day. The analysis's "last revised" line stays 2026-11-06, because the analysis did not change.
+3. ~~Publish the 2026-11-06 work~~ — merged into `main` on GitHub (PR #2, `75b2fa5`) and on GitLab (`c3985c8`). The two `main` branches have identical trees but different merge commits, so neither can be fast-forwarded to the other: publish later work as a branch pushed to both remotes and merged on each.
 4. Parked, owner's call (legal text, change only on instruction): a private withdrawal contact for `docs/DATA_LICENSE.md`. No address was given on 2026-11-06, so the Contact line still says "contact available on request via the repository".
+5. **Publish the memo amendment (owner).** Branch `memo-amendment-2026-11-09`: push it to `origin` and `gitlab` and merge it on each. Then check that the memo page says "three" and that the PDF link serves the new file (SHA-256 `d62ef12d…`), and tell Nela Brown it is live.
+6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), `CITATION.cff` (`preferred-citation`), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
+7. **Analysis DOI — parked (Nela Brown and José M. Gil Panal).** To be requested once both authors are happy with the analysis. No deadline set.
 ---
 
 ## Current Session Status
 
 This section captures the latest working state so the project can be resumed easily in a later session.
 
-### Latest handoff — 2026-11-06 (JotForm cross-check, analysis edits, three-part publication)
+### Latest handoff — 2026-11-09 (the author's amendment to the memo)
+
+- **Request (Nela Brown, received 2026-11-09).** She amended §3 of her memo: the Lead Software Engineer onboarded seven FLO members "across three separate two-hour sessions", not "two", as Appendix A shows. She supplied the amended PDF and asked for it to replace the old one and for the sentence to be fixed wherever it appears; she will then deposit the memo on Zenodo for a DOI.
+- **The amended PDF was checked before use.** Its text differs from the previous PDF by that one word only. Pages 1 and 3–12 render pixel-identical; page 2 was re-rendered (a few line breaks moved, and its last line is no longer justified). The PDF metadata is unchanged (creation date 1 April 2026). Appendix A supports "three": Sessions 1–3 (29/01, 30/01, 04/02) were led by the Lead Software Engineer, and 1 (the director) + 3 + 3 = 7, as the owner confirmed on 2026-08-20.
+- **Where the sentence was:** only in `docs/output.md` and the page built from it, `docs/memo.html`. README stopped reproducing the memo on 2026-11-06, so it had no copy to fix.
+- **Owner decisions (2026-11-09).** (1) Both read-only rules waived for this amendment: the PDF is replaced byte-for-byte as received, under the same file name so existing links still work (SHA-256 `5a6c896c…` → `d62ef12d…`), and the one word is changed in `docs/output.md` — the second recorded exception (CLAUDE.md Hard Rules, AGENTS.md Rule 1). (2) The amendment is stated on the memo page, the landing page and README as "amended by the author, 9 November 2026 (§3)"; the neighbouring "original PDF" link texts now say "PDF", so they are not read as pointing to the pre-amendment file. (3) The other §3/Appendix A difference — the guide track uploaded on 30/01, before §3's "between February 13, 2026, and March 3, 2026" — is not raised with the author (owner's decision) and stays as delivered.
+- **Supersedes** the 2026-11-06 "no corrections note" and "two places where §3 differs from Appendix A" (one remains: the guide track), and, for the memo only, "Not wanted for now: … a Zenodo DOI": the memo gets a DOI through the author's own Zenodo deposit. A repository-level DOI and a v1.0 tag are still not wanted.
+- **Also corrected:** the `docs/output.md` note under Key Design Decisions called the file "a historical reference"; it has been the source of `docs/memo.html` since 2026-11-06.
+- **Files changed:** the PDF; `docs/output.md` (one word); `docs/build_pages.py` (`MEMO_AMENDMENT`, memo-page note, landing-page card and PDF link, docstring); rebuilt `docs/memo.html` and `index.html` (`docs/analysis.html` rebuilt byte-identical); README (the memo rows of two tables); CLAUDE.md and AGENTS.md (rule and inventory); this file; `CITATION.cff` `date-released` 2026-11-06 → 2026-11-09.
+- **Committed on branch `memo-amendment-2026-11-09`, not pushed.** Next: items 5–7 of What Comes Next.
+
+### Handoff — 2026-11-06 (JotForm cross-check, analysis edits, three-part publication)
 
 - **JotForm exports of 2026-11-03 cross-checked, and not added to the repository** (they carry all nine IP addresses). Same nine submissions; all nine submission IDs match `docs/response_id_mapping.md`; the published CSV equals the export on all 288 shared cells apart from export formatting. JotForm's CSV now exports Q16/Q17 as single columns, identical to the corrected published ones. JotForm's Visual Report agrees with every Q1–Q15 count and every Q18–Q20 distribution but is broken for Q16/Q17: it plots "2 answers" against the template rows "Service Quality / Cleanliness / Responsiveness / Friendliness", so JotForm still stores those labels somewhere. Every figure in the analysis was re-derived from the export and matches.
 - **Rounding corrected.** Three n = 8 means in §5 had been rounded half-to-even (5.125 → 5.12, 4.625 → 4.62, 4.125 → 4.12); they now round half up (5.13, 4.63, 4.13) and the §5 note states the rule. Under half up, −0.125 rounds to −0.12, so the Δ for Q16 and Q18_4 is unchanged — an earlier message in the session wrongly said it should become −0.13.
