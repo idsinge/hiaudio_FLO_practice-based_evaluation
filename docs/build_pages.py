@@ -6,7 +6,8 @@
 Writes three pages. All three are derived files: never hand-edit them, rebuild them.
 
   index.html          landing page at the repository root, linking the two documents
-  docs/memo.html      the practice-based evaluation memo exactly as its author delivered it.
+  docs/memo.html      the practice-based evaluation memo exactly as its author delivered it,
+                      including her amendment of 9 November 2026 (see MEMO_AMENDMENT).
                       Source: docs/output.md, the Pandoc conversion of the original .docx,
                       which this script reads and never modifies. The script only lays the
                       text out (the conversion's bold heading lines become headings, its raw
@@ -47,6 +48,10 @@ INDEX_OUT = ROOT / "index.html"
 
 REPO_URL = "https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation"
 MEMO_PDF = "docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf"
+# The author's amendment to the memo as delivered: Nela Brown changed "two" to "three" onboarding
+# sessions in section 3 of her PDF; docs/output.md carries the same change, made at her request.
+# Stated on the memo page and the landing page.
+MEMO_AMENDMENT = "amended by the author, 9 November 2026 (§3)"
 # The title printed at the head of every page of the original PDF; docs/output.md has none.
 MEMO_TITLE = "Practice-Based Evaluation: Hi-AUDiO"
 SITE_NAME = "Hi-Audio practice-based evaluation"
@@ -518,8 +523,9 @@ def build_memo(memo_md: str, memo_raw: str) -> str:
     date = re.search(r"\*\*Document Date:\*\*\s*(.+?)\s*$", memo_raw, re.M).group(1)
     note = (
         '<div class="note">The practice-based evaluation memo by Nela Brown (FLO Lab), dated %s, '
-        'reproduced as delivered. <a href="../%s">Original PDF</a> &middot; licensed CC BY 4.0.</div>'
-        % (html.escape(date), MEMO_PDF)
+        'reproduced as delivered; %s: the onboarding sentence now says &ldquo;three separate two-hour '
+        'sessions&rdquo;, previously &ldquo;two&rdquo;. <a href="../%s">PDF</a> &middot; licensed CC BY 4.0.</div>'
+        % (html.escape(date), html.escape(MEMO_AMENDMENT), MEMO_PDF)
     )
     return page("%s — memo by Nela Brown, %s" % (MEMO_TITLE, date), note + "\n" + convert(memo_md),
                 "../", "memo", "Practice-based evaluation of the Hi-Audio platform by FLO Lab (memo, %s)." % date)
@@ -539,7 +545,7 @@ composition, which was then mixed offline for the Radiophrenia 2026 festival bro
 <a class="card" href="docs/memo.html"><h2>Practice-based evaluation memo</h2>
 <p class="by">Nela Brown, FLO Lab &middot; %s</p>
 <p>The evaluator&rsquo;s account of the recording project: platform strengths, workflow challenges, design
-implications and fit for professional creative work. Reproduced as delivered.</p>
+implications and fit for professional creative work. Reproduced as delivered; %s.</p>
 <span class="go">Read the memo &rarr;</span></a>
 <a class="card" href="docs/analysis.html"><h2>Participant survey analysis%s</h2>
 <p class="by">%s &middot; %s</p>
@@ -547,10 +553,10 @@ implications and fit for professional creative work. Reproduced as delivered.</p
 section with the memo&rsquo;s findings.</p>
 <span class="go">Read the analysis &rarr;</span></a>
 </div>
-<p class="small">The memo is also available as the <a href="%s">original PDF</a>. The survey questions,
+<p class="small">The memo is also available as a <a href="%s">PDF</a>. The survey questions,
 the pseudonymised response data, licences and citation details are in the
 <a href="%s">GitHub repository</a>.</p>""" % (
-        html.escape(date), badge, html.escape(authors), year, MEMO_PDF, REPO_URL)
+        html.escape(date), html.escape(MEMO_AMENDMENT), badge, html.escape(authors), year, MEMO_PDF, REPO_URL)
     return page("Practice-based evaluation of the Hi-Audio platform — FLO Lab", body, "", "index",
                 "Practice-based evaluation of the Hi-Audio platform by the Female Laptop Orchestra (FLO), "
                 "with the evaluation memo and the participant survey analysis.")

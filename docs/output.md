@@ -89,7 +89,7 @@ professional contexts.
 **3. Methodological Approach**
 
 Seven FLO members were onboarded to the Hi-AUDiO platform by the Lead
-Software Engineer, across two separate two-hour sessions. Two additional
+Software Engineer, across three separate two-hour sessions. Two additional
 FLO members were onboarded by the FLO Lab director, who also coordinated
 the recording process, organised scheduling, assisted with
 troubleshooting, and collected participant feedback throughout the
