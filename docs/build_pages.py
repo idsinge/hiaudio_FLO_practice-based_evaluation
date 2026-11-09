@@ -48,8 +48,9 @@ INDEX_OUT = ROOT / "index.html"
 
 REPO_URL = "https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation"
 MEMO_PDF = "docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf"
-# The author's amendment to the memo as delivered (Nela Brown changed "two" to "three" onboarding
-# sessions in section 3, in the PDF and in docs/output.md). Stated on the memo page and the landing page.
+# The author's amendment to the memo as delivered: Nela Brown changed "two" to "three" onboarding
+# sessions in section 3 of her PDF; docs/output.md carries the same change, made at her request.
+# Stated on the memo page and the landing page.
 MEMO_AMENDMENT = "amended by the author, 9 November 2026 (§3)"
 # The title printed at the head of every page of the original PDF; docs/output.md has none.
 MEMO_TITLE = "Practice-Based Evaluation: Hi-AUDiO"

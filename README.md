@@ -26,7 +26,7 @@ The table below lists everything published in the repository.
 | Web pages | [`docs/analysis.html`](./docs/analysis.html) | The survey analysis as a web page, built from `docs/analysis_summary.md` |
 | Web pages | [`docs/build_pages.py`](./docs/build_pages.py) | Builds the three pages above (standard-library Python) |
 | Memo | [`docs/Practice-Based Evaluation of the Hi-AUDiO platform by FLO Lab .pdf`](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | The memo as delivered, as a PDF; amended by the author, 9 November 2026 (§3) |
-| Memo | [`docs/output.md`](./docs/output.md) | The Pandoc conversion of the memo's original `.docx`, kept unchanged except for 8 relative image paths updated when the file moved into `docs/` |
+| Memo | [`docs/output.md`](./docs/output.md) | The Pandoc conversion of the memo's original `.docx`, kept unchanged except for 8 relative image paths updated when the file moved into `docs/`, and the author's one-word amendment of 9 November 2026 (§3) |
 | Memo | `images/` | The memo's Appendix B screenshots (`image1.png`–`image8.png`) and the EU/ERC emblem (`ERC_logo.png`) |
 | Survey | [`docs/participant_survey.md`](./docs/participant_survey.md) | The participant questionnaire, as administered via JotForm (23 questions, three sections) |
 | Survey | [`docs/ANALYSIS_PLAN.md`](./docs/ANALYSIS_PLAN.md) | The planned approach for analysing the survey responses: quantitative and thematic-coding methodology, triangulation against the memo |

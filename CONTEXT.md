@@ -182,6 +182,7 @@ Nela Brown co-designed the questionnaire (with the Hi-AUDiO Lead Software Engine
 5. **Publish the memo amendment (owner).** Branch `memo-amendment-2026-11-09`: push it to `origin` and `gitlab` and merge it on each. Then check that the memo page says "three" and that the PDF link serves the new file (SHA-256 `d62ef12d…`), and tell Nela Brown it is live.
 6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), `CITATION.cff` (`preferred-citation`), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
 7. **Analysis DOI — parked (Nela Brown and José M. Gil Panal).** To be requested once both authors are happy with the analysis. No deadline set.
+8. **Confirm or drop (owner):** the 2026-11-09 handoff line "A repository-level DOI and a v1.0 tag are still not wanted" was inferred from the owner's go-ahead on the plan, not stated explicitly.
 ---
 
 ## Current Session Status
@@ -197,7 +198,8 @@ This section captures the latest working state so the project can be resumed eas
 - **Supersedes** the 2026-11-06 "no corrections note" and "two places where §3 differs from Appendix A" (one remains: the guide track), and, for the memo only, "Not wanted for now: … a Zenodo DOI": the memo gets a DOI through the author's own Zenodo deposit. A repository-level DOI and a v1.0 tag are still not wanted.
 - **Also corrected:** the `docs/output.md` note under Key Design Decisions called the file "a historical reference"; it has been the source of `docs/memo.html` since 2026-11-06.
 - **Files changed:** the PDF; `docs/output.md` (one word); `docs/build_pages.py` (`MEMO_AMENDMENT`, memo-page note, landing-page card and PDF link, docstring); rebuilt `docs/memo.html` and `index.html` (`docs/analysis.html` rebuilt byte-identical); README (the memo rows of two tables); CLAUDE.md and AGENTS.md (rule and inventory); this file; `CITATION.cff` `date-released` 2026-11-06 → 2026-11-09.
-- **Committed on branch `memo-amendment-2026-11-09`, not pushed.** Next: items 5–7 of What Comes Next.
+- **Self-review of `2fc79f2` (same day) found three wording defects introduced by that commit, fixed in a follow-up commit on the same branch:** README's `docs/output.md` row still said "kept unchanged except for 8 relative image paths" (the row had been missed); CLAUDE.md Hard Rules and AGENTS.md Rule 1 still said "Exception already used once" beside the second exception; the `MEMO_AMENDMENT` comment in `docs/build_pages.py` said Nela Brown made the change in `docs/output.md` (she amended the PDF; the repo copy was changed at her request). The comment fix leaves the rebuilt pages byte-identical.
+- **Committed on branch `memo-amendment-2026-11-09` (two commits: the amendment, then the self-review fixes), not pushed.** Next: items 5–8 of What Comes Next.
 
 ### Handoff — 2026-11-06 (JotForm cross-check, analysis edits, three-part publication)
 
