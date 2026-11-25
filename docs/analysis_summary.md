@@ -3,9 +3,7 @@
 **Authors:** [Nela Brown](https://nelabrown.blogspot.com/) ([FLO Lab](https://femalelaptoporchestra.org/flo-lab/), [Female Laptop Orchestra](https://femalelaptoporchestra.org/)) and [José M. Gil Panal](https://github.com/gilpanal) ([Hi-AUDiO](https://hi-audio.imt.fr/), Télécom Paris)  
 **Prepared:** 2026-08-19 · last revised 2026-11-25
 
-Between 13 February and 13 March 2026, nine performers from the Female Laptop Orchestra (FLO) worked remotely on *From this world to…*, a piece for the Radiophrenia radio festival. They used Hi-Audio to listen to one another’s tracks in a web browser and to record or upload their own parts at different times. Together they contributed 16 tracks. The final mix was made offline.
-
-FLO Lab director Nela Brown documented what happened during the project in an [evaluation memo](memo.html). Between May and July, all nine performers answered a follow-up survey. This report examines how well Hi-Audio served their recording needs and where their recollections agree with or add to the memo.
+All nine Female Laptop Orchestra (FLO) performers who evaluated Hi-Audio answered a follow-up survey. This report examines how well the platform met their recording needs and compares their responses with the findings in Nela Brown’s [evaluation memo](memo.html).
 
 ## At a glance
 
