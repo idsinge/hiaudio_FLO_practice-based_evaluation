@@ -1,6 +1,6 @@
 # Hi-AUDiO and FLO Lab: practice-based evaluation materials
 
-This repository publishes a practice-based evaluation of the [Hi-Audio](https://hiaudio.fr) web platform. Between 13 February and 13 March 2026, nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/) used the platform to record the source tracks of a collaborative composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. The FLO Lab director reported the evaluation in a memo, and a follow-up participant survey was analysed afterwards. Both documents, the survey instrument and the pseudonymised response data are published here.
+This repository publishes a practice-based evaluation of the [Hi-Audio](https://hiaudio.fr) web platform. Between 13 February and 13 March 2026, nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/) used the platform to record the source tracks of a collaborative composition, which was then mixed offline for the [Radiophrenia 2026](https://radiophrenia.scot/) festival broadcast ([*From this world to…*](https://femalelaptoporchestra.org/performances/), 5–6 September 2026). The [FLO Lab](https://femalelaptoporchestra.org/flo-lab/) director, [Nela Brown](https://nelabrown.blogspot.com/), reported the evaluation in a memo, and a follow-up participant survey was analysed afterwards. Both documents, the survey instrument and the pseudonymised response data are published here.
 
 The platform itself is described in Gil Panal, David and Richard (2026). A complementary task-based usability study of the platform, conducted with 22 participants using the System Usability Scale (SUS; Brooke, 1996) and the NASA Task Load Index (NASA-TLX; Hart & Staveland, 1988), is available at [hiaudio_user_evaluation_results](https://github.com/idsinge/hiaudio_user_evaluation_results).
 
@@ -48,7 +48,7 @@ The response data is **pseudonymised rather than anonymised**: each row is one r
 
 ## Positionality
 
-The participant questionnaire was designed collaboratively by Nela Brown, FLO Lab director, and José M. Gil Panal, lead software engineer of the Hi-AUDiO project, who also co-authored the survey analysis. Two aspects of that arrangement are disclosed here for transparency.
+The participant questionnaire was designed collaboratively by Nela Brown, FLO Lab director, and [José M. Gil Panal](https://github.com/gilpanal), lead software engineer of the [Hi-AUDiO project](https://hi-audio.imt.fr/), who also co-authored the survey analysis. Two aspects of that arrangement are disclosed here for transparency.
 
 First, Nela Brown, who wrote the memo, also completed the questionnaire as one of the nine respondents (participant P09 in the published response data). Her response is retained in the dataset rather than excluded, consistent with the practice-based, practitioner-embedded nature of this evaluation (Brannick & Coghlan, 2007; Berger, 2015), and the analysis reports every rating both with and without it. One consequence of this disclosed dual role: her name appears once in the response data itself, in a track filename she references in her own answer — left unredacted, since she is the memo's named author.
 
@@ -102,7 +102,7 @@ This repository contains two separately citable outputs. Cite whichever matches 
 
 ## Acknowledgements
 
-The Hi-Audio platform is developed as part of the project *Hybrid and Interpretable Deep Neural Audio Machines*, funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
+The Hi-Audio platform is developed as part of the project [*Hybrid and Interpretable Deep Neural Audio Machines*](https://cordis.europa.eu/project/id/101052978), funded by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme (grant agreement No. 101052978).
 
 Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
 

@@ -153,8 +153,8 @@ dialog.zoom-view .close{position:fixed;top:10px;right:14px;z-index:2;border:0;bo
 
 # Funding acknowledgement and the Horizon Europe disclaimer, word for word as in README.md.
 FUNDING = (
-    "The Hi-Audio platform is developed as part of the project <em>Hybrid and Interpretable Deep "
-    "Neural Audio Machines</em>, funded by the European Research Council (ERC) under the European "
+    "The Hi-Audio platform is developed as part of the project <a href=\"https://cordis.europa.eu/project/id/101052978\"><em>Hybrid and Interpretable Deep "
+    "Neural Audio Machines</em></a>, funded by the European Research Council (ERC) under the European "
     "Union&rsquo;s Horizon Europe research and innovation programme (grant agreement No. 101052978)."
 )
 DISCLAIMER = (
@@ -524,7 +524,7 @@ def build_analysis(md: str, smap: dict[str, str]) -> str:
 def build_memo(memo_md: str, memo_raw: str) -> str:
     date = re.search(r"\*\*Document Date:\*\*\s*(.+?)\s*$", memo_raw, re.M).group(1)
     note = (
-        '<div class="note">The practice-based evaluation memo by Nela Brown (FLO Lab), dated %s, '
+        '<div class="note">The practice-based evaluation memo by <a href="https://nelabrown.blogspot.com/">Nela Brown</a> (<a href="https://femalelaptoporchestra.org/flo-lab/">FLO Lab</a>), dated %s, '
         'reproduced as delivered; %s: the onboarding sentence now says &ldquo;three separate two-hour '
         'sessions&rdquo;, previously &ldquo;two&rdquo;. <a href="../%s">PDF</a> &middot; licensed CC BY 4.0.</div>'
         % (html.escape(date), html.escape(MEMO_AMENDMENT), MEMO_PDF)
@@ -536,14 +536,15 @@ def build_memo(memo_md: str, memo_raw: str) -> str:
 def build_index(analysis_md: str, memo_raw: str) -> str:
     date = re.search(r"\*\*Document Date:\*\*\s*(.+?)\s*$", memo_raw, re.M).group(1)
     authors = re.search(r"^\*\*Authors:\*\*\s*(.+?)\s*$", analysis_md, re.M).group(1)
-    authors = re.sub(r"\s*\([^)]*\)", "", authors)
+    authors = re.sub(r"\s*\([^)]*\)", "", LINK_RE.sub(r"\1", authors))  # drop Markdown links, then affiliations
     year = re.search(r"^\*\*Prepared:\*\*\s*(20\d\d)", analysis_md, re.M).group(1)
     badge = ' <span class="badge">Draft</span>' if is_draft(analysis_md) else ""
     analysis_title = analysis_md.split("\n", 1)[0].lstrip("# ").strip()
     body = """<h1>%s</h1>
-<p class="lead">In February and March 2026, nine performers from the Female Laptop Orchestra (FLO) used the
+<p class="lead">In February and March 2026, nine performers from the <a href="https://femalelaptoporchestra.org/">Female Laptop Orchestra (FLO)</a> used the
 Hi-Audio web platform (<a href="https://hiaudio.fr">hiaudio.fr</a>) to record the source tracks of a collaborative
-composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. Two documents report on that evaluation.</p>
+composition, which was then mixed offline for the <a href="https://radiophrenia.scot/">Radiophrenia 2026</a> festival broadcast
+(<a href="https://femalelaptoporchestra.org/performances/"><em>From this world to&hellip;</em></a>, 5&ndash;6 September 2026). Two documents report on that evaluation.</p>
 <div class="cards">
 <a class="card" href="docs/memo.html"><h2>%s</h2>
 <p class="by">Nela Brown, FLO Lab &middot; %s</p>
@@ -556,7 +557,7 @@ implications and fit for professional creative work. Reproduced as delivered; %s
 section with the memo&rsquo;s findings.</p>
 <span class="go">Read the analysis &rarr;</span></a>
 </div>
-<p class="small">The memo is also available as a <a href="%s">PDF</a>. The survey questions,
+<p class="small">The memo&rsquo;s author, <a href="https://nelabrown.blogspot.com/">Nela Brown</a>, directs <a href="https://femalelaptoporchestra.org/flo-lab/">FLO Lab</a>, the research branch of the Female Laptop Orchestra. She co-authored the survey analysis with <a href="https://github.com/gilpanal">José M. Gil Panal</a>, lead software engineer of the <a href="https://hi-audio.imt.fr/">Hi-AUDiO</a> project at Télécom Paris. The memo is also available as a <a href="%s">PDF</a>. The survey questions,
 the pseudonymised response data, licences and citation details are in the
 <a href="%s">GitHub repository</a>.</p>""" % (
         html.escape(SITE_TITLE), html.escape(MEMO_TITLE), html.escape(date), html.escape(MEMO_AMENDMENT),
