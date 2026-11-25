@@ -13,7 +13,7 @@ The platform itself is described in Gil Panal, David and Richard (2026). A compl
 | *Practice-Based Evaluation: Hi-AUDiO* — evaluation memo, 22 March 2026, reproduced as delivered; amended by the author, 9 November 2026 (§3) | Nela Brown | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html) · [PDF](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | [`docs/output.md`](./docs/output.md) |
 | *Hi-AUDiO FLO Participant Survey — Analysis Summary* | Nela Brown, José M. Gil Panal | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html) | [`docs/analysis_summary.md`](./docs/analysis_summary.md) |
 
-The web pages are generated from those sources by [`docs/build_pages.py`](./docs/build_pages.py). Edit the sources, never the HTML, and rebuild with `python3 docs/build_pages.py`.
+The web pages are generated from those sources by [`docs/build_pages.py`](./docs/build_pages.py). Edit the sources, never the HTML, and rebuild with `python3 docs/build_pages.py`. The "How to cite" box at the end of the memo and analysis pages is taken from the [Citation](#citation) section below.
 
 ## Repository contents
 
