@@ -3,18 +3,17 @@
 **Authors:** [Nela Brown](https://nelabrown.blogspot.com/) ([FLO Lab](https://femalelaptoporchestra.org/flo-lab/), [Female Laptop Orchestra](https://femalelaptoporchestra.org/)) and [José M. Gil Panal](https://github.com/gilpanal) ([Hi-AUDiO](https://hi-audio.imt.fr/), Télécom Paris)  
 **Prepared:** 2026-08-19 · last revised 2026-11-25
 
-All nine Female Laptop Orchestra (FLO) performers who evaluated Hi-Audio answered a follow-up survey. This report examines how well the platform met their recording needs and compares their responses with the findings in Nela Brown’s [evaluation memo](memo.html).
+This page presents the results of a follow-up survey completed by all nine Female Laptop Orchestra (FLO) performers who used the Hi-Audio online platform to record or upload tracks for a shared composition. It examines what worked well, what got in the way, and whether performers felt Hi-Audio met professional recording standards. It also compares their responses with the findings in Nela Brown’s [evaluation memo](memo.html).
 
 ## At a glance
 
-Performers valued having one place to bring their recordings together. They differed on whether Hi-Audio offered what they expected from professional recording software.
+- **Did Hi-Audio meet the necessary standards as a professional audio recording application?** Three performers agreed, four chose neutral and two disagreed. The average was 4.00 out of 7, the neutral point. Among the eight performers other than Brown, who led the evaluation, it was 3.88.
+- **What worked well?** Five of the six performers who described a strength mentioned collaborating or hearing the other tracks. Four mentioned ease of use.
+- **How did the other ratings compare?** Across all nine performers, clarity and low mental effort during initial use had the highest average ratings, both 5.33 out of 7. The statement about finding Hi-Audio useful for recording music had the lowest average, 3.56.
+- **What got in the way?** Of the six performers who described a difficulty, three mentioned waiting for a track to be ready and two wanted to cut passages or change the volume over time within a take.
+- **Did other performers raise the memo’s four priorities?** Two also asked for basic editing tools. Only Brown mentioned difficulty seeing which controls were active. Nobody mentioned keyboard shortcuts or uncompressed export formats in the optional question about difficulties.
 
-- **Did Hi-Audio meet professional recording standards?** Three performers agreed, four chose neutral and two disagreed. Their average was exactly the neutral point, 4.00 out of 7.
-- **What worked well?** Of the six performers who described a strength, five mentioned collaborating or hearing the other tracks and four mentioned ease of use. Across all nine, clarity and low mental effort received the highest average ratings, both 5.33 out of 7.
-- **What got in the way?** Of the six performers who described a difficulty, three mentioned waiting for a new track to be ready. Two wanted to cut passages or change the volume within a take. The lowest-rated statement was about finding Hi-Audio useful for recording music (3.56 out of 7).
-- **Which improvements did other performers ask for?** Of the four changes Brown prioritised in her memo, basic editing also came up in two other performers’ comments. Only Brown mentioned difficulty seeing which buttons were active. Nobody mentioned keyboard shortcuts or saving uncompressed audio files in the open question about difficulties.
-
-These findings describe one ensemble’s experience. Brown also performed and answered the survey. The average for professional standards was 3.88 among the other eight performers.
+Where the survey and memo addressed the same issues, their findings agreed fully or in part. Support from performers other than Brown was clearest for collaboration, ease of use, waits for tracks and basic editing. The findings describe this ensemble’s experience.
 
 ## Contents
 
@@ -37,7 +36,7 @@ These findings describe one ensemble’s experience. Brown also performed and an
 
 ## 1. How we analysed the survey
 
-Performers answered 23 questions about their musical background, how they contributed tracks, and their experience of Hi-Audio. All nine answered the rating questions. The three questions that invited comments were optional, so the number of replies varies. The [appendix gives the wording of every question](#appendix-survey-questions).
+The [recording project](../index.html) took place remotely in February and March 2026. The nine performers completed the follow-up survey between 20 May and 3 July 2026. It contained 23 questions about their musical background, how they contributed tracks, and their experience of Hi-Audio. All nine answered the rating questions. The question about similar platforms (Q3) and the three questions inviting comments (Q21–Q23) were optional. The follow-up about skipping the latency test (Q10) was also optional and appeared only after a “No” answer to Q9. The [appendix gives the wording of every question](#appendix-survey-questions).
 
 For background and equipment, we counted how many people chose each answer. Two questions allowed several selections. We grouped the names of music tools by hand before counting them (Q3 and Q4). Performers also listed instruments and the sounds they contributed (Q6 and Q7). We summarised those lists in prose, without counting individual instruments or sounds.
 
@@ -47,7 +46,7 @@ We summarised the nine performers’ answers to each question separately because
 
 For the written answers, one researcher grouped comments by topic. The initial topics came from the memo, such as ease of use and editing. The researcher also recorded ideas that went beyond it. We then compared the comments and ratings with the memo’s observations on strengths, difficulties and suitability for professional work (memo §4–§8).
 
-The labels P01 to P09 identify individual performers. P09 is Brown, who wrote the memo and helped design the questionnaire. We include her in the main results and show every rating again for the other eight. We also identify the comments for which she is the only source. This small group from one ensemble supports a descriptive account. We did not use significance tests, confidence intervals or regressions.
+The labels P01 to P09 identify individual performers. P09 is Brown, who led the evaluation, wrote the memo and helped design the questionnaire. We include her in the main results and show every rating again for the other eight. We also identify the comments for which she is the only source. This small group from one ensemble supports a descriptive account. We did not use significance tests, confidence intervals or regressions.
 
 ---
 
@@ -61,18 +60,18 @@ All nine respondents were instrumentalists or vocalists. Many had other musical 
 
 | Musical role | Performers out of nine |
 |---|---|
-| Instrumentalist or vocalist | 9 (100%) |
+| Performer (instrumentalist / vocalist) | 9 (100%) |
 | Improviser | 6 (67%) |
 | Composer or arranger | 4 (44%) |
 | Sound engineer | 3 (33%) |
 | Educator | 3 (33%) |
 | Producer | 2 (22%) |
-| Ensemble leader | 1 (11%) |
-| Audio researcher | 1 (11%) |
+| Ensemble Leader | 1 (11%) |
+| Audio Researcher | 1 (11%) |
 
-Their instruments included keyboards, piano, synthesizers, guitar, bass guitar, saxophone, cello, flute, bagpipes, percussion and voice (Q6). Players rated their proficiency from beginner to expert or professional. Most reported at least intermediate proficiency on one instrument.
+Their instruments included keyboards, piano, synthesizers, guitar, bass guitar, saxophone, cello, flute, bagpipes, percussion and voice (Q6). Players rated their proficiency from beginner to expert or professional. All nine reported at least intermediate proficiency on one instrument.
 
-Five of the nine (56%) had previously used a browser-based recording tool, and four (44%) had not (Q2). Asked which comparable platforms they knew (Q3), five named Sonobus, two named SoundJack and two named BandLab.
+Five of the nine (56%) had previously used a browser-based recording tool, and four (44%) had not (Q2). Seven answered the optional question about comparable platforms (Q3). Five named Sonobus, two named SoundJack and two named BandLab.
 
 The software they usually used to make music (Q4) gives a sense of the tools they brought to this project. Four named a version of Ableton and three named Bitwig, both digital audio workstations (DAWs), the software musicians use to record, edit and mix audio. Three also named the web platform Playsound.space. Reaper, Cubase, Digital Performer, Adobe Audition, Vital, Loopback and Audio Hijack each appeared once. For tools named in both lists, we counted each person once in the appropriate category. For example, P02 listed Bitwig among comparable platforms as well as under usual software, and P06 listed Sonobus in both places.
 
@@ -111,7 +110,7 @@ Seven performers (78%) spent at least 30 minutes on the platform, and five worke
 
 ## 3. Did Hi-Audio meet professional recording standards?
 
-The main survey question (Q16) asked whether Hi-Audio met the standards performers expected of a professional audio recording application. It asked for their judgement after making the piece. A separate question asked whether the platform helped them realise their artistic intentions.
+After making the piece, performers rated their agreement with the statement that Hi-Audio “meets the necessary standards as a professional audio recording application” (Q16). A separate question asked whether the platform helped them realise their artistic intentions.
 
 The nine answers ranged from 1 (*Strongly disagree*) to 6 (*Agree*). Four performers chose 4, the neutral response. Two disagreed (one at 1 and one at 3), and three agreed (two at 5 and one at 6). Nobody selected 2 or 7. Both the mean and the median were 4, but the responses on either side show that performers differed in their assessment.
 
@@ -149,7 +148,7 @@ One performer described being able to hear the other tracks easily. Two wanted t
 
 ### How easy was Hi-Audio to use?
 
-Performers generally found the interface clear and felt that it required little mental effort. Those two statements had the highest means in the survey, both 5.33. Getting Hi-Audio to do what the performer wanted was a different matter. That average was 4.00, with answers spanning the entire scale. These four questions cover *Perceived Ease of Use* (Q18, Venkatesh, 2000).
+When recalling their initial experience, performers generally agreed that their interaction with Hi-Audio was clear and required little mental effort. Those two statements had the highest means in the survey, both 5.33. Getting Hi-Audio to do what the performer wanted was a different matter. That average was 4.00, with answers spanning the entire scale. These four questions cover *Perceived Ease of Use* (Q18, Venkatesh, 2000).
 
 | Survey item | Statement in brief | Mean | Median | Range |
 |---|---|---|---|---|
@@ -276,7 +275,7 @@ Of the six performers who described a difficulty, three reported waiting and two
 
 The memo also records long rendering times (§5.6). Its example describes distortion while routing audio through Loopback. The survey comments support the observation about waiting and leave its technical cause open. The separate latency question (Q9) concerned a test run *before* recording. Nobody described that test as a difficulty.
 
-**Editing a take (2 of 6).** P08 wanted to cut, copy and paste a passage and change its volume over time. P01 wanted to choose where recording started, crop a file and adjust its volume. P01 opened with “No challanges, but” and then explained why those missing tools mattered for professional use. This performer gave the lowest rating for professional standards (1) and also rated support for artistic intentions at the bottom of the observed range (2).
+**Editing a take (2 of 6).** P08 wanted to cut, copy and paste a passage and change its volume over time. P01 wanted to choose where recording started, crop a file and change its volume over time. P01 opened with “No challanges, but” and then explained why those missing tools mattered for professional use. This performer gave the lowest rating for professional standards (1) and also rated support for artistic intentions at the bottom of the observed range (2).
 
 > P08: *"...i would have used it for recording if there was a way to cut, copy, and paste sections of the recording. It would also have been useful to manage the volume enveloppe..."*
 > P01: *"No challanges, but it's too basic to use professionally, as we cant choose the record point, can't crop or edit the sound files or do basic sound volume enveloping, so it has no advantage comparing to other software"*
@@ -377,11 +376,11 @@ Performers chose what to write about. The survey did not ask about each feature,
 
 ## 9. Conclusions
 
-For this ensemble, the clearest value of Hi-Audio was in building a piece together. Performers could contribute when they were ready, hear one another’s tracks and get started with an interface several found easy to understand. They were more divided on whether the platform met their standards for professional recording. Four chose neutral, three leaned towards agreement and two towards disagreement.
+The memo describes how the ensemble used Hi-Audio to contribute 16 source tracks remotely at different times for a piece mixed offline (memo §2.2). Five of the six performers who described a strength mentioned collaborating or hearing other tracks. When asked whether Hi-Audio met the necessary standards as a professional audio recording application, four chose neutral, three agreed to varying degrees and two disagreed to varying degrees.
 
 The written answers make that distinction concrete. Waiting for a track was the most frequent difficulty. Editing mattered particularly to the performer who gave the lowest professional-standards rating and explained that they could neither choose a recording start point nor shape the sound afterwards. The survey supports those accounts of difficulty. It leaves open how far they explain the group’s lower rating for usefulness in future recording work.
 
-Taken together, the project and the survey show where Hi-Audio fitted into this production. The musicians used it to assemble 16 source tracks and mixed the piece offline. Of the four improvements prioritised in the memo, basic editing was the one other performers also requested. Remote teaching, proposed by the evaluator alone, remains an idea for a different version of the platform.
+Of the four improvements prioritised in the memo, basic editing was the only one requested by performers other than the memo’s author. Remote teaching, proposed by the evaluator alone, remains an idea for a different version of the platform.
 
 ## References
 
