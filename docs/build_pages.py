@@ -56,7 +56,7 @@ MEMO_AMENDMENT = "amended by the author, 9 November 2026 (§3)"
 MEMO_TITLE = "Practice-Based Evaluation: Hi-AUDiO"
 SITE_NAME = "Hi-Audio practice-based evaluation"
 # The landing page's heading and tab title; README.md's H1 and _config.yml's title use the same text.
-SITE_TITLE = "Hi-Audio and FLO Lab: practice-based evaluation materials"
+SITE_TITLE = "Hi-AUDiO and FLO Lab: practice-based evaluation materials"
 
 STYLE = """<style>
 @page { size: A4; margin: 18mm 16mm 20mm 16mm; }

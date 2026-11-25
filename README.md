@@ -1,4 +1,4 @@
-# Hi-Audio and FLO Lab: practice-based evaluation materials
+# Hi-AUDiO and FLO Lab: practice-based evaluation materials
 
 This repository publishes a practice-based evaluation of the [Hi-Audio](https://hiaudio.fr) web platform. Between 13 February and 13 March 2026, nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/) used the platform to record the source tracks of a collaborative composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. The FLO Lab director reported the evaluation in a memo, and a follow-up participant survey was analysed afterwards. Both documents, the survey instrument and the pseudonymised response data are published here.
 
@@ -76,7 +76,7 @@ This repository contains two separately citable outputs. Cite whichever matches 
 
 > Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO*. FLO Lab. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html
 
-**To cite the survey analysis** — including any specific survey finding, figure, or theme:
+**To cite the survey analysis or the response data** — including any specific survey finding, figure, or theme:
 
 > Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO FLO Participant Survey — Analysis Summary*. FLO Lab / Hi-AUDiO, Télécom Paris. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html
 

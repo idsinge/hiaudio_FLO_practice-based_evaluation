@@ -23,7 +23,7 @@ You may access, download, and use these files **for non-commercial academic rese
 
 ## Conditions
 
-1. **Attribution.** Cite the repository as set out in the "Citation" section of `README.md`.
+1. **Attribution.** Cite the survey analysis as set out in the "Citation" section of `README.md`.
 2. **No redistribution.** Do not republish, mirror, or redistribute these files, in whole or in part, in original or modified form. Link to this repository instead.
 3. **No commercial use.** Do not use these files, or anything you derive from them, for commercial purposes. This applies to the response records only: the results already published in this repository's CC BY 4.0 files — the analysis, its figures and tables, and the excerpts it quotes — stay under CC BY 4.0.
 4. **No re-identification.** Do not attempt to identify any participant, and do not combine these files with other information in order to do so. Do not contact participants on the basis of this data.
