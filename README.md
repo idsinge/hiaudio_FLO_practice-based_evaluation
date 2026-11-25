@@ -1,4 +1,4 @@
-# Hi-Audio Platform: Practice-Based Evaluation by FLO Lab
+# Hi-Audio and FLO Lab: practice-based evaluation materials
 
 This repository publishes a practice-based evaluation of the [Hi-Audio](https://hiaudio.fr) web platform. Between 13 February and 13 March 2026, nine performers from the [Female Laptop Orchestra (FLO)](https://femalelaptoporchestra.org/) used the platform to record the source tracks of a collaborative composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. The FLO Lab director reported the evaluation in a memo, and a follow-up participant survey was analysed afterwards. Both documents, the survey instrument and the pseudonymised response data are published here.
 
@@ -10,8 +10,8 @@ The platform itself is described in Gil Panal, David and Richard (2026). A compl
 
 | Document | Authors | Read | Source in this repository |
 |---|---|---|---|
-| Practice-based evaluation memo, 22 March 2026, reproduced as delivered; amended by the author, 9 November 2026 (§3) | Nela Brown | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html) · [PDF](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | [`docs/output.md`](./docs/output.md) |
-| Participant survey analysis | Nela Brown, José M. Gil Panal | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html) | [`docs/analysis_summary.md`](./docs/analysis_summary.md) |
+| *Practice-Based Evaluation: Hi-AUDiO* — evaluation memo, 22 March 2026, reproduced as delivered; amended by the author, 9 November 2026 (§3) | Nela Brown | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html) · [PDF](./docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf) | [`docs/output.md`](./docs/output.md) |
+| *Hi-AUDiO FLO Participant Survey — Analysis Summary* | Nela Brown, José M. Gil Panal | [Web page](https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html) | [`docs/analysis_summary.md`](./docs/analysis_summary.md) |
 
 The web pages are generated from those sources by [`docs/build_pages.py`](./docs/build_pages.py). Edit the sources, never the HTML, and rebuild with `python3 docs/build_pages.py`.
 
@@ -36,7 +36,6 @@ The table below lists everything published in the repository.
 | Response data | [`docs/participant_survey_responses.csv`](./docs/participant_survey_responses.csv) / [`.xlsx`](./docs/participant_survey_responses.xlsx) | Pseudonymised respondent-level responses from all 9 participants, one row per respondent. Rows carry a submission date, not a participant ID; use `docs/response_id_mapping.md` to link a row to its P01–P09 identifier |
 | Response data | [`docs/individual_participant_responses/`](https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation/tree/main/docs/individual_participant_responses) | Per-respondent submission exports (`P01.pdf`–`P09.pdf`), pseudonymised by participant ID |
 | Response data | [`docs/response_id_mapping.md`](./docs/response_id_mapping.md) | Maps each participant ID (P01–P09) to its original JotForm submission identifier, for cross-referencing the CSV/XLSX rows against the individual PDFs |
-| About the repository | [`CITATION.cff`](CITATION.cff) | Structured citation metadata (also powers GitHub's "Cite this repository" button) |
 | About the repository | [`LICENSE`](LICENSE) | CC BY 4.0 — covers everything **except** the participant response data |
 | About the repository | [`docs/DATA_LICENSE.md`](./docs/DATA_LICENSE.md) | Research-use licence governing the participant response data (CSV/XLSX, individual PDFs, ID mapping) |
 | About the repository | [`CONTEXT.md`](CONTEXT.md) | Project background and working notes for collaborators |
@@ -71,19 +70,15 @@ Sources cited in this file. The complete annotated list, including the sources b
 
 ## Citation
 
-This repository contains three citable components. Cite whichever matches what you actually used. A structured [CITATION.cff](CITATION.cff) is also included, which GitHub uses to generate a "Cite this repository" option automatically.
+This repository contains two separately citable outputs. Cite whichever matches what you actually used.
 
 **To cite the evaluation memo:**
 
-> Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO* [Evaluation memo, 22 March 2026]. FLO Lab, Female Laptop Orchestra. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html
+> Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO*. FLO Lab. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html
 
 **To cite the survey analysis** — including any specific survey finding, figure, or theme:
 
-> Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO FLO Participant Survey — Analysis Summary*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html
-
-**To cite the full repository** — the memo together with the participant survey, the pseudonymised response data, and the survey analysis:
-
-> Brown, N., & Hi-AUDiO (2026). *Hi-AUDiO: Practice-Based Evaluation — Report, Participant Survey, and Response Analysis*. FLO Lab, Female Laptop Orchestra / Hi-AUDiO, Télécom Paris. https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
+> Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO FLO Participant Survey — Analysis Summary*. FLO Lab / Hi-AUDiO, Télécom Paris. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html
 
 **BibTeX:**
 
@@ -91,29 +86,17 @@ This repository contains three citable components. Cite whichever matches what y
 @techreport{Brown2026hiaudio,
   author      = {Brown, Nela},
   title       = {Practice-Based Evaluation: Hi-{AUDiO}},
-  type        = {Evaluation memo},
-  institution = {FLO Lab, Female Laptop Orchestra},
+  institution = {FLO Lab},
   year        = {2026},
-  month       = mar,
   url         = {https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html}
 }
 
 @techreport{BrownGilPanal2026survey,
   author      = {Brown, Nela and Gil Panal, Jos{\'e} M.},
   title       = {Hi-{AUDiO} {FLO} Participant Survey --- Analysis Summary},
-  institution = {FLO Lab, Female Laptop Orchestra / Hi-AUDiO, T{\'e}l{\'e}com Paris},
+  institution = {FLO Lab / Hi-AUDiO, T{\'e}l{\'e}com Paris},
   year        = {2026},
   url         = {https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/analysis.html}
-}
-
-@misc{Brown2026hiaudiorepo,
-  author       = {Brown, Nela and {Hi-AUDiO}},
-  title        = {Hi-AUDiO: Practice-Based Evaluation --- Report, Participant Survey,
-                  and Response Analysis},
-  year         = {2026},
-  howpublished = {GitHub repository, FLO Lab, Female Laptop Orchestra /
-                  Hi-AUDiO, T{\'e}l{\'e}com Paris},
-  url          = {https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation}
 }
 ```
 

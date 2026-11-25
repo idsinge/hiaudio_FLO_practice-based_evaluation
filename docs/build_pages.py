@@ -55,6 +55,8 @@ MEMO_AMENDMENT = "amended by the author, 9 November 2026 (§3)"
 # The title printed at the head of every page of the original PDF; docs/output.md has none.
 MEMO_TITLE = "Practice-Based Evaluation: Hi-AUDiO"
 SITE_NAME = "Hi-Audio practice-based evaluation"
+# The landing page's heading and tab title; README.md's H1 and _config.yml's title use the same text.
+SITE_TITLE = "Hi-Audio and FLO Lab: practice-based evaluation materials"
 
 STYLE = """<style>
 @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
@@ -528,7 +530,7 @@ def build_memo(memo_md: str, memo_raw: str) -> str:
         % (html.escape(date), html.escape(MEMO_AMENDMENT), MEMO_PDF)
     )
     return page("%s — memo by Nela Brown, %s" % (MEMO_TITLE, date), note + "\n" + convert(memo_md),
-                "../", "memo", "Practice-based evaluation of the Hi-Audio platform by FLO Lab (memo, %s)." % date)
+                "../", "memo", "%s — evaluation memo by Nela Brown (FLO Lab), %s." % (MEMO_TITLE, date))
 
 
 def build_index(analysis_md: str, memo_raw: str) -> str:
@@ -537,17 +539,18 @@ def build_index(analysis_md: str, memo_raw: str) -> str:
     authors = re.sub(r"\s*\([^)]*\)", "", authors)
     year = re.search(r"^\*\*Prepared:\*\*\s*(20\d\d)", analysis_md, re.M).group(1)
     badge = ' <span class="badge">Draft</span>' if is_draft(analysis_md) else ""
-    body = """<h1>Practice-Based Evaluation of the Hi-Audio Platform</h1>
+    analysis_title = analysis_md.split("\n", 1)[0].lstrip("# ").strip()
+    body = """<h1>%s</h1>
 <p class="lead">In February and March 2026, nine performers from the Female Laptop Orchestra (FLO) used the
 Hi-Audio web platform (<a href="https://hiaudio.fr">hiaudio.fr</a>) to record the source tracks of a collaborative
 composition, which was then mixed offline for the Radiophrenia 2026 festival broadcast. Two documents report on that evaluation.</p>
 <div class="cards">
-<a class="card" href="docs/memo.html"><h2>Practice-based evaluation memo</h2>
+<a class="card" href="docs/memo.html"><h2>%s</h2>
 <p class="by">Nela Brown, FLO Lab &middot; %s</p>
 <p>The evaluator&rsquo;s account of the recording project: platform strengths, workflow challenges, design
 implications and fit for professional creative work. Reproduced as delivered; %s.</p>
 <span class="go">Read the memo &rarr;</span></a>
-<a class="card" href="docs/analysis.html"><h2>Participant survey analysis%s</h2>
+<a class="card" href="docs/analysis.html"><h2>%s%s</h2>
 <p class="by">%s &middot; %s</p>
 <p>Descriptive results from a follow-up questionnaire answered by nine FLO performers, compared section by
 section with the memo&rsquo;s findings.</p>
@@ -556,8 +559,9 @@ section with the memo&rsquo;s findings.</p>
 <p class="small">The memo is also available as a <a href="%s">PDF</a>. The survey questions,
 the pseudonymised response data, licences and citation details are in the
 <a href="%s">GitHub repository</a>.</p>""" % (
-        html.escape(date), html.escape(MEMO_AMENDMENT), badge, html.escape(authors), year, MEMO_PDF, REPO_URL)
-    return page("Practice-based evaluation of the Hi-Audio platform — FLO Lab", body, "", "index",
+        html.escape(SITE_TITLE), html.escape(MEMO_TITLE), html.escape(date), html.escape(MEMO_AMENDMENT),
+        html.escape(analysis_title), badge, html.escape(authors), year, MEMO_PDF, REPO_URL)
+    return page(SITE_TITLE, body, "", "index",
                 "Practice-based evaluation of the Hi-Audio platform by the Female Laptop Orchestra (FLO), "
                 "with the evaluation memo and the participant survey analysis.")
 

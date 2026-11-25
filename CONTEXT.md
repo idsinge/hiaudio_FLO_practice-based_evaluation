@@ -44,7 +44,6 @@ Do not add names, email addresses, or personal identifiers to any file in this r
 | docs/REFERENCES.md | Approved by the owner, 2026-11-06 | Annotated reference list for every source cited in README, the memo, ANALYSIS_PLAN and the analysis; carries the corrected item-attribution table |
 | AGENTS.md / CLAUDE.md | Published | Working instructions for AI agents and collaborators — keep the two aligned |
 | CONTEXT.md | This file | Context for LLMs and collaborators |
-| CITATION.cff | Published | Structured citation for GitHub's "Cite this repository" button |
 | LICENSE | Published | CC BY 4.0 — scoped to exclude the participant response data (see docs/DATA_LICENSE.md) |
 | docs/DATA_LICENSE.md | Published | Research-use licence covering the participant response data |
 | _config.yml | Published | Jekyll Cayman theme for GitHub Pages |
@@ -176,20 +175,29 @@ Nela Brown co-designed the questionnaire (with the Hi-AUDiO Lead Software Engine
 ## What Comes Next
 
 1. ~~The owner's verification and approval of `docs/analysis_summary.md`~~ — **approved 2026-11-06**; its Status line and every draft mention were removed.
-2. ~~Release date of the 2026-11-06 work~~ — merged that day. `CITATION.cff` `date-released` now says 2026-11-09, for the memo amendment; change it if that is merged on another day. The analysis's "last revised" line stays 2026-11-06, because the analysis did not change.
+2. ~~Release date of the 2026-11-06 work~~ — merged that day. `CITATION.cff`, which carried a release date, was removed on 2026-11-25. The analysis's "last revised" line now says 2026-11-25, for the citation changes (its memo reference); change it if those are merged on another day.
 3. ~~Publish the 2026-11-06 work~~ — merged into `main` on GitHub (PR #2, `75b2fa5`) and on GitLab (`c3985c8`). The two `main` branches have identical trees but different merge commits, so neither can be fast-forwarded to the other: publish later work as a branch pushed to both remotes and merged on each.
 4. Parked, owner's call (legal text, change only on instruction): a private withdrawal contact for `docs/DATA_LICENSE.md`. No address was given on 2026-11-06, so the Contact line still says "contact available on request via the repository".
-5. **Publish the memo amendment (owner).** Branch `memo-amendment-2026-11-09`: push it to `origin` and `gitlab` and merge it on each. Then check that the memo page says "three" and that the PDF link serves the new file (SHA-256 `d62ef12d…`), and tell Nela Brown it is live.
-6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), `CITATION.cff` (`preferred-citation`), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
+5. ~~Publish the memo amendment~~ — merged into `main` on GitHub (PR #3, `6fffb7d`) and on GitLab; the live memo page says "three" (checked 2026-11-25).
+6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
 7. **Analysis DOI — parked (Nela Brown and José M. Gil Panal).** To be requested once both authors are happy with the analysis. No deadline set.
-8. **Confirm or drop (owner):** the 2026-11-09 handoff line "A repository-level DOI and a v1.0 tag are still not wanted" was inferred from the owner's go-ahead on the plan, not stated explicitly.
+8. ~~Confirm or drop (owner)~~ — confirmed 2026-11-25 for the DOI: the repository-level citation was removed, so there is no repository-level DOI. The v1.0 tag was not discussed.
+9. **Publish the citation changes (owner).** Branch `citations-2026-11-25`: push it to `origin` and `gitlab` and merge it on each. Then check README, the landing page and the memo and analysis pages on GitHub.
+10. **Data-licence attribution — owner's call (legal text, change only on instruction).** Condition 1 of `docs/DATA_LICENSE.md` still says "Cite the repository as set out in the 'Citation' section of `README.md`", but README has had no repository citation since 2026-11-25.
 ---
 
 ## Current Session Status
 
 This section captures the latest working state so the project can be resumed easily in a later session.
 
-### Latest handoff — 2026-11-09 (the author's amendment to the memo)
+### Latest handoff — 2026-11-25 (citations: the memo's formal title; two citable outputs)
+
+- **Owner decisions (2026-11-25).** (1) Every citation of the memo uses its formal title as printed on the memo itself, *Practice-Based Evaluation: Hi-AUDiO*, with FLO Lab as publisher: "Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO*. FLO Lab." plus the memo-page URL. The analysis is cited as "Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO FLO Participant Survey — Analysis Summary*. FLO Lab / Hi-AUDiO, Télécom Paris." plus the analysis-page URL. BibTeX matches both (the memo entry no longer carries a `type` or `month`). (2) The repository-level citation is removed: the README entry, its BibTeX, and `CITATION.cff`, whose top level was that same citation ("Brown & Hi-AUDiO", combined title). The memo and the analysis are now cited as two separate outputs, each with its own authors. (3) Headings that read as other versions of the memo's title now use one neutral repository name, "Hi-Audio and FLO Lab: practice-based evaluation materials": README's H1, the landing page's heading and tab title, and the `_config.yml` site title (shown on the Jekyll-rendered pages; changed with the owner's approval). The landing-page cards and README's "Read online" table name both documents by their formal titles. The PDF keeps its file name so existing links still work.
+- **Files changed:** README.md; `docs/analysis_summary.md` (the memo reference; "last revised" 2026-11-06 → 2026-11-25); `docs/build_pages.py` (`SITE_TITLE`; landing-page heading, tab title and card titles; memo-page meta description); rebuilt `index.html`, `docs/memo.html` and `docs/analysis.html`; `_config.yml` (title only); `CITATION.cff` deleted; the file inventories in README, this file, AGENTS.md and CLAUDE.md.
+- **Left as is:** the analysis's author line keeps "Nela Brown (FLO Lab, Female Laptop Orchestra)" — an affiliation, not a citation; the navigation label `SITE_NAME`; the historical handoffs below that mention `CITATION.cff`.
+- **Open:** What Comes Next items 9 and 10. Committed on branch `citations-2026-11-25`; not pushed.
+
+### Handoff — 2026-11-09 (the author's amendment to the memo)
 
 - **Request (Nela Brown, received 2026-11-09).** She amended §3 of her memo: the Lead Software Engineer onboarded seven FLO members "across three separate two-hour sessions", not "two", as Appendix A shows. She supplied the amended PDF and asked for it to replace the old one and for the sentence to be fixed wherever it appears; she will then deposit the memo on Zenodo for a DOI.
 - **The amended PDF was checked before use.** Its text differs from the previous PDF by that one word only. Pages 1 and 3–12 render pixel-identical; page 2 was re-rendered (a few line breaks moved, and its last line is no longer justified). The PDF metadata is unchanged (creation date 1 April 2026). Appendix A supports "three": Sessions 1–3 (29/01, 30/01, 04/02) were led by the Lead Software Engineer, and 1 (the director) + 3 + 3 = 7, as the owner confirmed on 2026-08-20.

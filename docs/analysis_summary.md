@@ -1,7 +1,7 @@
 # Hi-AUDiO FLO Participant Survey — Analysis Summary
 
 **Authors:** Nela Brown (FLO Lab, Female Laptop Orchestra) and José M. Gil Panal (Hi-AUDiO, Télécom Paris)  
-**Prepared:** 2026-08-19; last revised 2026-11-06  
+**Prepared:** 2026-08-19; last revised 2026-11-25  
 **Data source:** `docs/participant_survey_responses.csv` (n = 9, 33 columns; Q16/Q17 already corrected to single-item columns)  
 
 **At a glance.** Among the nine participants from the Female Laptop Orchestra (FLO), the headline rating — whether the platform meets the necessary standards as a professional audio recording application (Q16) — is centred on the scale midpoint: mean 4.00 of 7 (3.88 excluding P09), with individual ratings from 1 to 6. Clarity and low mental effort were the highest-rated items (5.33 each) and usefulness for recording music the lowest (3.56). In the open answers, the collaborative multi-track setting (5 of 6 Q21 answers) and ease of use (4 of 6) were the strengths most often named; waiting for tracks to process (3 of 6 substantive Q22 answers) and missing editing tools (2 of 6) were the most frequent challenges. Where the survey speaks to the practice-based evaluation memo (Brown, 2026), it agrees with it — fully on some points, partly on others — and contradicts none of it; but it gives no independent support to three of the four development priorities in memo §8 ([§7.1](#71-memo-findings-the-survey-does-not-corroborate)). All results are descriptive and limited to this small expert cohort ([§8](#8-limitations-and-researcher-positionality)).
@@ -318,7 +318,7 @@ Survey findings agree with the practice-based memo where they overlap, fully or 
 
 ## References
 
-- Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO* [Evaluation memo, 22 March 2026]. FLO Lab, Female Laptop Orchestra. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html
+- Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO*. FLO Lab. https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/docs/memo.html
 - Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. *MIS Quarterly, 13*(3), 319–340. https://doi.org/10.2307/249008
 - Davis, F. D., Bagozzi, R. P., & Warshaw, P. R. (1992). Extrinsic and intrinsic motivation to use computers in the workplace. *Journal of Applied Social Psychology, 22*(14), 1111–1132. https://doi.org/10.1111/j.1559-1816.1992.tb00945.x
 - Venkatesh, V. (2000). Determinants of perceived ease of use: Integrating control, intrinsic motivation, and emotion into the technology acceptance model. *Information Systems Research, 11*(4), 342–365. https://doi.org/10.1287/isre.11.4.342.11872

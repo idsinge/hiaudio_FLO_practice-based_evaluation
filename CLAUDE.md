@@ -28,7 +28,6 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 | docs/REFERENCES.md | Published | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
 | docs/figures/ | Published | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |
 | docs/Practice-Based Evaluation...pdf | Published | The memo as delivered (PDF); replaced on 2026-11-09 by the author's amended version (§3) — do not modify |
-| CITATION.cff | Published | Structured citation |
 | AGENTS.md | Published | Working instructions for other AI agents — keep aligned with this file |
 | docs/DATA_LICENSE.md | Published | Research-use licence for the response data — legal text, change only on explicit instruction |
 | LICENSE | Published | CC BY 4.0, scoped to exclude the response data and the EU/ERC emblem — change only on explicit instruction |

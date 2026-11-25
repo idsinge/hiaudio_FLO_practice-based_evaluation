@@ -28,7 +28,6 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 | docs/REFERENCES.md | Yes | Yes | Annotated reference list; the authority for item attribution (see Rule 5) |
 | docs/figures/ | Via script only | Yes | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG |
 | docs/Practice-Based Evaluation...pdf | No | No | The memo as delivered (PDF); replaced on 2026-11-09 by the author's amended version (§3) |
-| CITATION.cff | Yes | Yes | Structured citation for GitHub |
 | CLAUDE.md | Yes | Yes | Working instructions for Claude Code — keep aligned with this file |
 | docs/DATA_LICENSE.md | Only if asked | Yes | Research-use licence for the response data — legal text |
 | LICENSE | Only if asked | Yes | CC BY 4.0, scoped to exclude the response data and the EU/ERC emblem |
