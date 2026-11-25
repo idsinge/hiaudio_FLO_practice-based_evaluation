@@ -14,7 +14,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 
 | File | Status | Rule |
 |---|---|---|
-| README.md | Published | Repository guide: what the repo is, links to the web pages, contents, positionality, licensing, citation. It no longer contains the memo |
+| README.md | Published | Repository guide: what the repo is, links to the web pages, contents, positionality, licensing, citation. It no longer contains the memo. Its Citation section is also the source of the "How to cite" boxes on the memo and analysis pages (rebuild after editing it) |
 | CONTEXT.md | Published | LLM/collaborator reference — keep current |
 | docs/ANALYSIS_PLAN.md | Published | Data collection is complete — cleared for publication |
 | docs/participant_survey.md | Published | Data collection is complete — cleared for publication |
@@ -23,7 +23,7 @@ A public academic repository publishing a practice-based evaluation of the Hi-Au
 | docs/individual_participant_responses/P01–P09.pdf | Published | Per-respondent submissions, pseudonymised as P01–P09 — cleared for publication |
 | docs/response_id_mapping.md | Published | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
 | docs/analysis_summary.md | Approved by the owner, 2026-11-06 | Survey analysis by Nela Brown and José M. Gil Panal — source of docs/analysis.html and the source of truth for the analysis |
-| index.html, docs/memo.html, docs/analysis.html | Generated | The website (GitHub Pages): landing page, memo page, analysis page. Rebuild with `python3 docs/build_pages.py` after any edit to their sources; never hand-edit |
+| index.html, docs/memo.html, docs/analysis.html | Generated | The website (GitHub Pages): landing page, memo page, analysis page. Rebuild with `python3 docs/build_pages.py` after any edit to their sources (`docs/output.md`, `docs/analysis_summary.md`, and README's Citation section); never hand-edit |
 | docs/build_pages.py | Published | Builds the three web pages from docs/output.md and docs/analysis_summary.md — standard library only |
 | docs/REFERENCES.md | Published | Annotated reference list; the authority for item attribution (see "Item attribution" under Hard Rules) |
 | docs/figures/ | Published | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG — the figures must stay reproducible from the CSV |

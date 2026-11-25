@@ -14,7 +14,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 
 | File | Edit? | Commit? | Purpose |
 |---|---|---|---|
-| README.md | Yes | Yes | Repository guide — what the repo is, links to the web pages, contents, positionality, licensing, citation |
+| README.md | Yes | Yes | Repository guide — what the repo is, links to the web pages, contents, positionality, licensing, citation. Its Citation section is also the source of the "How to cite" boxes on the memo and analysis pages (rebuild after editing it) |
 | CONTEXT.md | Yes | Yes | LLM/collaborator context — keep it current |
 | docs/ANALYSIS_PLAN.md | Yes | Yes | Statistical analysis plan — data collection closed, cleared for publication |
 | docs/participant_survey.md | Yes | Yes | Survey working copy — data collection closed, cleared for publication |
@@ -23,7 +23,7 @@ This repository publishes a practice-based evaluation of the Hi-Audio web audio 
 | docs/individual_participant_responses/P01–P09.pdf | No | Yes | Per-respondent submissions, pseudonymised as P01–P09 |
 | docs/response_id_mapping.md | Yes | Yes | Maps PID ↔ original JotForm submission ID; also documents the identifier scheme and the reverse-chronological CSV row order |
 | docs/analysis_summary.md | Yes | Yes | Survey analysis by Nela Brown and José M. Gil Panal — source of docs/analysis.html; the source of truth for the analysis |
-| index.html, docs/memo.html, docs/analysis.html | Via script only | Yes | The website (GitHub Pages). Rebuild with `python3 docs/build_pages.py`; never hand-edit |
+| index.html, docs/memo.html, docs/analysis.html | Via script only | Yes | The website (GitHub Pages). Rebuild with `python3 docs/build_pages.py` after editing `docs/output.md`, `docs/analysis_summary.md` or README's Citation section; never hand-edit |
 | docs/build_pages.py | Yes | Yes | Builds the three web pages — standard library only |
 | docs/REFERENCES.md | Yes | Yes | Annotated reference list; the authority for item attribution (see Rule 5) |
 | docs/figures/ | Via script only | Yes | Analysis figures (SVG) + `make_figures.py`. Regenerate with the script; never hand-edit an SVG |

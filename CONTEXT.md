@@ -180,23 +180,25 @@ Nela Brown co-designed the questionnaire (with the Hi-AUDiO Lead Software Engine
 3. ~~Publish the 2026-11-06 work~~ — merged into `main` on GitHub (PR #2, `75b2fa5`) and on GitLab (`c3985c8`). The two `main` branches have identical trees but different merge commits, so neither can be fast-forwarded to the other: publish later work as a branch pushed to both remotes and merged on each.
 4. Parked, owner's call (legal text, change only on instruction): a private withdrawal contact for `docs/DATA_LICENSE.md`. No address was given on 2026-11-06, so the Contact line still says "contact available on request via the repository".
 5. ~~Publish the memo amendment~~ — merged into `main` on GitHub (PR #3, `6fffb7d`) and on GitLab; the live memo page says "three" (checked 2026-11-25).
-6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
+6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX) and the memo reference in `docs/analysis_summary.md`, then rebuild the pages (the pages' citation boxes follow README).
 7. **Analysis DOI — parked (Nela Brown and José M. Gil Panal).** To be requested once both authors are happy with the analysis. No deadline set.
 8. ~~Confirm or drop (owner)~~ — confirmed 2026-11-25 for the DOI: the repository-level citation was removed, so there is no repository-level DOI. The v1.0 tag was not discussed.
 9. ~~Publish the citation changes~~ — merged on GitHub (PR #4, `071723c`) and on GitLab; the live landing and analysis pages checked 2026-11-25.
 10. ~~Data-licence attribution~~ — changed 2026-11-25 on the owner's instruction: condition 1 of `docs/DATA_LICENSE.md` now says "Cite the survey analysis as set out in the 'Citation' section of `README.md`", and README introduces the analysis citation as covering the survey analysis or the response data.
-11. **Publish the external links (owner).** Branch `links-2026-11-25`: push it to `origin` and `gitlab` and merge it on each.
+11. ~~Publish the external links~~ — merged on GitHub (PR #5, `38e6322`) and on GitLab (`506f2f3`).
+12. **Publish the citation boxes (owner).** Branch `cite-boxes-2026-11-25`: push it to `origin` and `gitlab` and merge it on each.
 ---
 
 ## Current Session Status
 
 This section captures the latest working state so the project can be resumed easily in a later session.
 
-### Latest handoff — 2026-11-25, later (external links)
+### Latest handoff — 2026-11-25, later (external links; citation boxes)
 
 - **Citation changes published:** merged on GitHub (PR #4, `071723c`) and on GitLab; the live pages show them.
-- **External links added (owner request).** README's opening paragraph links Radiophrenia 2026, the broadcast piece (*From this world to…*, 5–6 September 2026, on FLO's performances page), FLO Lab and Nela Brown's personal page. The landing page links FLO, Radiophrenia 2026 and the piece, and names the memo's author with links to her page and FLO Lab. The memo-page note links Nela Brown and FLO Lab; the analysis's author line links both authors (José M. Gil Panal to his GitHub profile), FLO Lab, FLO and Hi-AUDiO. README's positionality section links José M. Gil Panal and the Hi-AUDiO project page; the README acknowledgements and the page footer link the project name to its CORDIS page. `build_index` now drops Markdown links from that author line before building the landing-page by-line. The piece's title and dates are taken from FLO's performances page. No change to `docs/output.md`, the PDF, the survey instrument or the data.
-- **Open:** What Comes Next item 11.
+- **External links added (owner request).** README's opening paragraph links Radiophrenia 2026, the broadcast piece (*From this world to…*, 5–6 September 2026, on FLO's performances page), FLO Lab and Nela Brown's personal page. The landing page links FLO, Radiophrenia 2026 and the piece, and names the memo's author with links to her page and FLO Lab. On the memo page, the separate note box is gone (owner request): the memo's own header fields keep their text, Nela Brown and FLO Lab are linked in them, and four rows follow Document Date (Last modified — 9 November 2026; PDF; Licence; How to cite); the analysis's author line links both authors (José M. Gil Panal to his GitHub profile), FLO Lab, FLO and Hi-AUDiO. README's positionality section links José M. Gil Panal and the Hi-AUDiO project page; the README acknowledgements and the page footer link the project name to its CORDIS page. `build_index` now drops Markdown links from that author line before building the landing-page by-line. The piece's title and dates are taken from FLO's performances page. No change to `docs/output.md`, the PDF, the survey instrument or the data.
+- **Citation boxes (owner request).** The memo and analysis pages now end with a "How to cite" box (the citation and its BibTeX), linked from the top of each page (the memo's "How to cite" header row; the last item of the analysis's Contents list, added by the generator so the Markdown carries no link that works only on the web page). `build_pages.py` reads both from README's Citation section, so a DOI added there reaches the pages on the next rebuild. The analysis box adds that the same citation covers the response data.
+- **Open:** What Comes Next item 12.
 
 ### Handoff — 2026-11-25 (citations: the memo's formal title; two citable outputs)
 

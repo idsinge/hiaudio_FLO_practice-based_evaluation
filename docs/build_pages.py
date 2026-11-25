@@ -12,8 +12,13 @@ Writes three pages. All three are derived files: never hand-edit them, rebuild t
                       which this script reads and never modifies. The script only lays the
                       text out (the conversion's bold heading lines become headings, its raw
                       <img> tags become figures, Pandoc's direction/underline tags are
-                      dropped) and adds the site header and footer around it.
+                      dropped), adds the site header and footer around it, and adds two links and four rows
+                      (last modified, PDF, licence, how to cite) to the memo's header
+                      fields without changing their text.
   docs/analysis.html  the participant survey analysis. Source: docs/analysis_summary.md.
+
+The memo and analysis pages each end with a "How to cite" box. Its citation and BibTeX are read
+from the Citation section of README.md, so the citations are kept in one place.
 
 Standard library only, so it runs wherever python3 does. It handles the markdown subset the
 two sources use: ATX headings, paragraphs with hard breaks, pipe tables, blockquotes, bullet
@@ -45,12 +50,13 @@ MEMO_SRC = DOCS / "output.md"
 ANALYSIS_OUT = DOCS / "analysis.html"
 MEMO_OUT = DOCS / "memo.html"
 INDEX_OUT = ROOT / "index.html"
+README_SRC = ROOT / "README.md"  # its Citation section feeds the "How to cite" boxes
 
 REPO_URL = "https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation"
 MEMO_PDF = "docs/Practice-Based%20Evaluation%20of%20the%20Hi-AUDiO%20platform%20by%20FLO%20Lab%20.pdf"
 # The author's amendment to the memo as delivered: Nela Brown changed "two" to "three" onboarding
 # sessions in section 3 of her PDF; docs/output.md carries the same change, made at her request.
-# Stated on the memo page and the landing page.
+# Stated in full on the landing page; its date is the memo page's "Last modified" row.
 MEMO_AMENDMENT = "amended by the author, 9 November 2026 (§3)"
 # The title printed at the head of every page of the original PDF; docs/output.md has none.
 MEMO_TITLE = "Practice-Based Evaluation: Hi-AUDiO"
@@ -95,6 +101,11 @@ figcaption{font:8.8pt/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;co
   border-bottom:.5pt solid #d1d5db;padding-bottom:8pt;margin-bottom:14pt}
 .note{border-radius:4px;padding:7pt 10pt;margin:0 0 14pt;font:9pt/1.45 -apple-system,"Helvetica Neue",Helvetica,sans-serif}
 .note{background:#f8fafc;border:1pt solid #cbd5e1;color:#334155}
+.cite{margin:28pt 0 0;padding:9pt 12pt;border:1pt solid #cbd5e1;border-radius:4px;background:#f8fafc;font:9.5pt/1.5 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:#334155}
+.cite h2{font-size:11pt;margin:0 0 5pt;border:none;padding:0}
+.cite p{margin:0 0 5pt}
+.cite summary{cursor:pointer}
+.cite pre{white-space:pre-wrap;font-size:8.5pt;margin:5pt 0 0}
 nav.site{display:flex;flex-wrap:wrap;gap:4pt 14pt;align-items:baseline;padding:8pt 0 9pt;margin:0 0 14pt;
   border-bottom:.5pt solid #d1d5db;font:10pt -apple-system,"Helvetica Neue",Helvetica,sans-serif}
 nav.site a{color:#334155;text-decoration:none}
@@ -514,22 +525,66 @@ def page(title: str, body: str, root: str, current: str, description: str = "") 
     )
 
 
+def readme_citation(lead: str, bibkey: str) -> tuple[str, str]:
+    """The citation after the line starting with `lead` in README's Citation section, and the
+    BibTeX entry with key `bibkey`. README is the one place the citations are kept."""
+    readme = README_SRC.read_text(encoding="utf-8")
+    sec = readme.split("\n## Citation\n", 1)[1].split("\n## ", 1)[0]
+    cit = re.search(re.escape(lead) + r".*?\n\n> (.+?)\n", sec, re.S)
+    bib = re.search(r"(@\w+\{" + re.escape(bibkey) + r",.*?\n\})", sec, re.S)
+    if not (cit and bib):
+        raise SystemExit("README.md Citation section: no citation or BibTeX entry for " + bibkey)
+    return cit.group(1).strip(), bib.group(1)
+
+
+def cite_box(lead: str, bibkey: str, note: str = "") -> str:
+    citation, bibtex = readme_citation(lead, bibkey)
+    return ('<section class="cite" id="how-to-cite"><h2>How to cite</h2>\n<p>%s</p>%s\n'
+            '<details><summary>BibTeX</summary><pre>%s</pre></details></section>'
+            % (inline(citation), note, html.escape(bibtex)))
+
+
 def build_analysis(md: str, smap: dict[str, str]) -> str:
     title = md.split("\n", 1)[0].lstrip("# ").strip()
-    body = add_tips(convert(md), question_map(md), smap)
+    body = add_tips(convert(md), question_map(md), smap) + "\n" + cite_box(
+        "**To cite the survey analysis", "BrownGilPanal2026survey",
+        "<p>Use the same citation for the pseudonymised response data.</p>")
+    # "How to cite" as the last item of the Contents list (web page only: the anchor exists only here)
+    k = body.index("<ul>", body.index('<h2 id="contents">'))
+    depth = 0
+    for m in re.finditer(r"<ul>|</ul>", body[k:]):
+        depth += 1 if m.group(0) == "<ul>" else -1
+        if depth == 0:
+            end = k + m.start()
+            break
+    body = body[:end] + '<li><a href="#how-to-cite">How to cite</a></li>' + body[end:]
     return page(title, body, "../", "analysis",
                 "Participant survey analysis of the practice-based evaluation of the Hi-Audio platform.")
 
 
 def build_memo(memo_md: str, memo_raw: str) -> str:
     date = re.search(r"\*\*Document Date:\*\*\s*(.+?)\s*$", memo_raw, re.M).group(1)
-    note = (
-        '<div class="note">The practice-based evaluation memo by <a href="https://nelabrown.blogspot.com/">Nela Brown</a> (<a href="https://femalelaptoporchestra.org/flo-lab/">FLO Lab</a>), dated %s, '
-        'reproduced as delivered; %s: the onboarding sentence now says &ldquo;three separate two-hour '
-        'sessions&rdquo;, previously &ldquo;two&rdquo;. <a href="../%s">PDF</a> &middot; licensed CC BY 4.0.</div>'
-        % (html.escape(date), html.escape(MEMO_AMENDMENT), MEMO_PDF)
-    )
-    return page("%s — memo by Nela Brown, %s" % (MEMO_TITLE, date), note + "\n" + convert(memo_md),
+    body = convert(memo_md)
+    # The memo's own header fields keep their text: the page links two of them and adds four rows.
+    last_modified = re.search(r"\d{1,2} \w+ \d{4}", MEMO_AMENDMENT).group(0)
+    added = ('<br/><strong>Last modified:</strong> %s'
+             '<br/><strong>PDF:</strong> <a href="../%s">download</a>'
+             '<br/><strong>Licence:</strong> CC BY 4.0'
+             '<br/><strong>How to cite:</strong> <a href="#how-to-cite">see the end of this page</a>'
+             % (html.escape(last_modified), MEMO_PDF))
+    for old, new in (
+        ("<strong>Evaluator:</strong> Nela Brown<br/>",
+         '<strong>Evaluator:</strong> <a href="https://nelabrown.blogspot.com/">Nela Brown</a><br/>'),
+        ("<strong>Role:</strong> Director, FLO Lab<br/>",
+         '<strong>Role:</strong> Director, <a href="https://femalelaptoporchestra.org/flo-lab/">FLO Lab</a><br/>'),
+        ("<strong>Document Date:</strong> %s</p>" % html.escape(date),
+         "<strong>Document Date:</strong> %s%s</p>" % (html.escape(date), added)),
+    ):
+        if body.count(old) != 1:
+            raise SystemExit("memo header field not found: " + old)
+        body = body.replace(old, new)
+    return page("%s — memo by Nela Brown, %s" % (MEMO_TITLE, date),
+                body + "\n" + cite_box("**To cite the evaluation memo:**", "Brown2026hiaudio"),
                 "../", "memo", "%s — evaluation memo by Nela Brown (FLO Lab), %s." % (MEMO_TITLE, date))
 
 
