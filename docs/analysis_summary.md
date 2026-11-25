@@ -1,6 +1,6 @@
 # Hi-AUDiO FLO Participant Survey — Analysis Summary
 
-**Authors:** Nela Brown (FLO Lab, Female Laptop Orchestra) and José M. Gil Panal (Hi-AUDiO, Télécom Paris)  
+**Authors:** [Nela Brown](https://nelabrown.blogspot.com/) ([FLO Lab](https://femalelaptoporchestra.org/flo-lab/), [Female Laptop Orchestra](https://femalelaptoporchestra.org/)) and [José M. Gil Panal](https://github.com/gilpanal) ([Hi-AUDiO](https://hi-audio.imt.fr/), Télécom Paris)  
 **Prepared:** 2026-08-19; last revised 2026-11-25  
 **Data source:** `docs/participant_survey_responses.csv` (n = 9, 33 columns; Q16/Q17 already corrected to single-item columns)  
 

@@ -12,6 +12,7 @@ The repository is public and hosted on GitHub Pages. It is intended to support o
 
 **Repo:** https://github.com/idsinge/hiaudio_FLO_practice-based_evaluation
 **GitHub Pages:** https://idsinge.github.io/hiaudio_FLO_practice-based_evaluation/
+**External links used in README and the web pages:** FLO https://femalelaptoporchestra.org/ · FLO Lab https://femalelaptoporchestra.org/flo-lab/ · FLO performances https://femalelaptoporchestra.org/performances/ · Nela Brown https://nelabrown.blogspot.com/ · José M. Gil Panal https://github.com/gilpanal · Hi-AUDiO project https://hi-audio.imt.fr/ · CORDIS project page https://cordis.europa.eu/project/id/101052978 · Radiophrenia https://radiophrenia.scot/. Not linked yet: FLO research https://femalelaptoporchestra.org/research/ — it lists the memo under an earlier title; link it once that entry shows the formal title.
 
 ---
 
@@ -182,15 +183,22 @@ Nela Brown co-designed the questionnaire (with the Hi-AUDiO Lead Software Engine
 6. **Memo DOI (Nela Brown).** She deposits the memo on Zenodo once the amendment is live. When the DOI arrives, add it to README (citation and BibTeX), the memo reference in `docs/analysis_summary.md` and the memo-page note, then rebuild the pages.
 7. **Analysis DOI — parked (Nela Brown and José M. Gil Panal).** To be requested once both authors are happy with the analysis. No deadline set.
 8. ~~Confirm or drop (owner)~~ — confirmed 2026-11-25 for the DOI: the repository-level citation was removed, so there is no repository-level DOI. The v1.0 tag was not discussed.
-9. **Publish the citation changes (owner).** Branch `citations-2026-11-25`: push it to `origin` and `gitlab` and merge it on each. Then check README, the landing page and the memo and analysis pages on GitHub.
+9. ~~Publish the citation changes~~ — merged on GitHub (PR #4, `071723c`) and on GitLab; the live landing and analysis pages checked 2026-11-25.
 10. ~~Data-licence attribution~~ — changed 2026-11-25 on the owner's instruction: condition 1 of `docs/DATA_LICENSE.md` now says "Cite the survey analysis as set out in the 'Citation' section of `README.md`", and README introduces the analysis citation as covering the survey analysis or the response data.
+11. **Publish the external links (owner).** Branch `links-2026-11-25`: push it to `origin` and `gitlab` and merge it on each.
 ---
 
 ## Current Session Status
 
 This section captures the latest working state so the project can be resumed easily in a later session.
 
-### Latest handoff — 2026-11-25 (citations: the memo's formal title; two citable outputs)
+### Latest handoff — 2026-11-25, later (external links)
+
+- **Citation changes published:** merged on GitHub (PR #4, `071723c`) and on GitLab; the live pages show them.
+- **External links added (owner request).** README's opening paragraph links Radiophrenia 2026, the broadcast piece (*From this world to…*, 5–6 September 2026, on FLO's performances page), FLO Lab and Nela Brown's personal page. The landing page links FLO, Radiophrenia 2026 and the piece, and names the memo's author with links to her page and FLO Lab. The memo-page note links Nela Brown and FLO Lab; the analysis's author line links both authors (José M. Gil Panal to his GitHub profile), FLO Lab, FLO and Hi-AUDiO. README's positionality section links José M. Gil Panal and the Hi-AUDiO project page; the README acknowledgements and the page footer link the project name to its CORDIS page. `build_index` now drops Markdown links from that author line before building the landing-page by-line. The piece's title and dates are taken from FLO's performances page. No change to `docs/output.md`, the PDF, the survey instrument or the data.
+- **Open:** What Comes Next item 11.
+
+### Handoff — 2026-11-25 (citations: the memo's formal title; two citable outputs)
 
 - **Owner decisions (2026-11-25).** (1) Every citation of the memo uses its formal title as printed on the memo itself, *Practice-Based Evaluation: Hi-AUDiO*, with FLO Lab as publisher: "Brown, N. (2026). *Practice-Based Evaluation: Hi-AUDiO*. FLO Lab." plus the memo-page URL. The analysis is cited as "Brown, N., & Gil Panal, J. M. (2026). *Hi-AUDiO FLO Participant Survey — Analysis Summary*. FLO Lab / Hi-AUDiO, Télécom Paris." plus the analysis-page URL. BibTeX matches both (the memo entry no longer carries a `type` or `month`). (2) The repository-level citation is removed: the README entry, its BibTeX, and `CITATION.cff`, whose top level was that same citation ("Brown & Hi-AUDiO", combined title). The memo and the analysis are now cited as two separate outputs, each with its own authors. Users of the response data cite the survey analysis. (3) Headings that read as other versions of the memo's title now use one neutral repository name, "Hi-AUDiO and FLO Lab: practice-based evaluation materials": README's H1, the landing page's heading and tab title, and the `_config.yml` site title (shown on the Jekyll-rendered pages; changed with the owner's approval). The landing-page cards and README's "Read online" table name both documents by their formal titles. The PDF keeps its file name so existing links still work.
 - **Files changed:** README.md; `docs/analysis_summary.md` (the memo reference; "last revised" 2026-11-06 → 2026-11-25); `docs/build_pages.py` (`SITE_TITLE`; landing-page heading, tab title and card titles; memo-page meta description); rebuilt `index.html`, `docs/memo.html` and `docs/analysis.html`; `_config.yml` (title only); `docs/DATA_LICENSE.md` (condition 1 only, on the owner's instruction: users of the response data cite the survey analysis); `CITATION.cff` deleted; the file inventories in README, this file, AGENTS.md and CLAUDE.md.
