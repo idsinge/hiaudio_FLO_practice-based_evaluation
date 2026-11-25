@@ -22,7 +22,8 @@ from the Citation section of README.md, so the citations are kept in one place.
 
 Standard library only, so it runs wherever python3 does. It handles the markdown subset the
 two sources use: ATX headings, paragraphs with hard breaks, pipe tables, blockquotes, bullet
-lists, horizontal rules, images with figure captions, and inline bold / italic / code / links.
+lists, horizontal rules, images with figure captions, standalone anchors for earlier section
+links, and inline bold / italic / code / links.
 
 On the analysis page, single question references (Q16, Q18_1, ...) get a hover/focus pop-up
 with the question's wording, read from the analysis's own "Appendix: Survey questions" table.
@@ -219,6 +220,7 @@ def slug(text: str) -> str:
 
 
 IMG_RE = re.compile(r"^!\[(.*)\]\((.+)\)$")
+ANCHOR_RE = re.compile(r'<a id="[a-z0-9_-]+"></a>')
 CAP_RE = re.compile(r"^\*\*\*(Fig(?:ure)? [A-Z]?\d+\.)\*\*\s*(.*?)\*$")
 ROW_SEP_RE = re.compile(r"^\|[\s:|-]+\|$")
 
@@ -242,6 +244,11 @@ def convert(md: str) -> str:
 
         if stripped == "---":
             out.append("<hr/>")
+            i += 1
+            continue
+
+        if ANCHOR_RE.fullmatch(stripped):
+            out.append(stripped)
             i += 1
             continue
 
@@ -321,7 +328,7 @@ def convert(md: str) -> str:
         while i < n and lines[i].strip():
             raw = lines[i]
             s = raw.strip()
-            if s == "---" or s.startswith(("#", "|", ">", "- ")) or IMG_RE.match(s):
+            if s == "---" or s.startswith(("#", "|", ">", "- ")) or IMG_RE.match(s) or ANCHOR_RE.fullmatch(s):
                 break
             para.append(inline(s) + ("\x01" if raw.endswith("  ") else ""))
             i += 1
@@ -596,10 +603,10 @@ def build_index(analysis_md: str, memo_raw: str) -> str:
     badge = ' <span class="badge">Draft</span>' if is_draft(analysis_md) else ""
     analysis_title = analysis_md.split("\n", 1)[0].lstrip("# ").strip()
     body = """<h1>%s</h1>
-<p class="lead">In February and March 2026, nine performers from the <a href="https://femalelaptoporchestra.org/">Female Laptop Orchestra (FLO)</a> used the
-Hi-Audio web platform (<a href="https://hiaudio.fr">hiaudio.fr</a>) to record the source tracks of a collaborative
-composition, which was then mixed offline for the <a href="https://radiophrenia.scot/">Radiophrenia 2026</a> festival broadcast
-(<a href="https://femalelaptoporchestra.org/performances/"><em>From this world to&hellip;</em></a>, 5&ndash;6 September 2026). Two documents report on that evaluation.</p>
+<p class="lead">Between 13 February and 13 March 2026, nine performers from the <a href="https://femalelaptoporchestra.org/">Female Laptop Orchestra (FLO)</a>
+worked remotely on <a href="https://femalelaptoporchestra.org/performances/"><em>From this world to&hellip;</em></a>.
+Using <a href="https://hiaudio.fr">Hi-Audio</a> in a web browser, they listened to one another&rsquo;s tracks and recorded or uploaded their own parts at different times.
+Together they contributed 16 tracks. The piece was mixed offline for the <a href="https://radiophrenia.scot/">Radiophrenia 2026</a> radio festival broadcast on 5&ndash;6 September 2026.</p>
 <div class="cards">
 <a class="card" href="docs/memo.html"><h2>%s</h2>
 <p class="by">Nela Brown, FLO Lab &middot; %s</p>
@@ -608,8 +615,8 @@ implications and fit for professional creative work. Reproduced as delivered; %s
 <span class="go">Read the memo &rarr;</span></a>
 <a class="card" href="docs/analysis.html"><h2>%s%s</h2>
 <p class="by">%s &middot; %s</p>
-<p>Descriptive results from a follow-up questionnaire answered by nine FLO performers, compared section by
-section with the memo&rsquo;s findings.</p>
+<p>Between May and July 2026, all nine performers answered a follow-up survey about recording with Hi-Audio.
+The analysis compares their responses with the memo&rsquo;s findings.</p>
 <span class="go">Read the analysis &rarr;</span></a>
 </div>
 <p class="small">The memo&rsquo;s author, <a href="https://nelabrown.blogspot.com/">Nela Brown</a>, directs <a href="https://femalelaptoporchestra.org/flo-lab/">FLO Lab</a>, the research branch of the Female Laptop Orchestra. She co-authored the survey analysis with <a href="https://github.com/gilpanal">José M. Gil Panal</a>, lead software engineer of the <a href="https://hi-audio.imt.fr/">Hi-AUDiO</a> project at Télécom Paris. The memo is also available as a <a href="%s">PDF</a>. The survey questions,
