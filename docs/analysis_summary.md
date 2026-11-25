@@ -1,320 +1,387 @@
 # Hi-AUDiO FLO Participant Survey — Analysis Summary
 
 **Authors:** [Nela Brown](https://nelabrown.blogspot.com/) ([FLO Lab](https://femalelaptoporchestra.org/flo-lab/), [Female Laptop Orchestra](https://femalelaptoporchestra.org/)) and [José M. Gil Panal](https://github.com/gilpanal) ([Hi-AUDiO](https://hi-audio.imt.fr/), Télécom Paris)  
-**Prepared:** 2026-08-19; last revised 2026-11-25  
-**Data source:** `docs/participant_survey_responses.csv` (n = 9, 33 columns; Q16/Q17 already corrected to single-item columns)  
+**Prepared:** 2026-08-19 · last revised 2026-11-25
 
-**At a glance.** Among the nine participants from the Female Laptop Orchestra (FLO), the headline rating — whether the platform meets the necessary standards as a professional audio recording application (Q16) — is centred on the scale midpoint: mean 4.00 of 7 (3.88 excluding P09), with individual ratings from 1 to 6. Clarity and low mental effort were the highest-rated items (5.33 each) and usefulness for recording music the lowest (3.56). In the open answers, the collaborative multi-track setting (5 of 6 Q21 answers) and ease of use (4 of 6) were the strengths most often named; waiting for tracks to process (3 of 6 substantive Q22 answers) and missing editing tools (2 of 6) were the most frequent challenges. Where the survey speaks to the practice-based evaluation memo (Brown, 2026), it agrees with it — fully on some points, partly on others — and contradicts none of it; but it gives no independent support to three of the four development priorities in memo §8 ([§7.1](#71-memo-findings-the-survey-does-not-corroborate)). All results are descriptive and limited to this small expert cohort ([§8](#8-limitations-and-researcher-positionality)).
+Between 13 February and 13 March 2026, nine performers from the Female Laptop Orchestra (FLO) worked remotely on *From this world to…*, a piece for the Radiophrenia radio festival. They used Hi-Audio to listen to one another’s tracks in a web browser and to record or upload their own parts at different times. Together they contributed 16 tracks. The final mix was made offline.
+
+FLO Lab director Nela Brown documented what happened during the project in an [evaluation memo](memo.html). Between May and July, all nine performers answered a follow-up survey. This report examines how well Hi-Audio served their recording needs and where their recollections agree with or add to the memo.
+
+## At a glance
+
+Performers valued having one place to bring their recordings together. They differed on whether Hi-Audio offered what they expected from professional recording software.
+
+- **Did Hi-Audio meet professional recording standards?** Three performers agreed, four chose neutral and two disagreed. Their average was exactly the neutral point, 4.00 out of 7.
+- **What worked well?** Of the six performers who described a strength, five mentioned collaborating or hearing the other tracks and four mentioned ease of use. Across all nine, clarity and low mental effort received the highest average ratings, both 5.33 out of 7.
+- **What got in the way?** Of the six performers who described a difficulty, three mentioned waiting for a new track to be ready. Two wanted to cut passages or change the volume within a take. The lowest-rated statement was about finding Hi-Audio useful for recording music (3.56 out of 7).
+- **Which improvements did other performers ask for?** Of the four changes Brown prioritised in her memo, basic editing also came up in two other performers’ comments. Only Brown mentioned difficulty seeing which buttons were active. Nobody mentioned keyboard shortcuts or saving uncompressed audio files in the open question about difficulties.
+
+These findings describe one ensemble’s experience. Brown also performed and answered the survey. The average for professional standards was 3.88 among the other eight performers.
 
 ## Contents
 
-- [1. Scope and Analytic Approach](#1-scope-and-analytic-approach)
-- [2. Sample Description (Q1–Q15)](#2-sample-description-q1q15)
-- [3. Q16 — Headline Result](#3-q16--headline-result)
-- [4. Q16–Q20 — Quantitative Results](#4-q16q20--quantitative-results)
-- [5. P09-Excluded Sensitivity Analysis (n = 8)](#5-p09-excluded-sensitivity-analysis-n--8)
-- [6. Q21–Q23 — Thematic Findings](#6-q21q23--thematic-findings)
-- [7. Triangulation with the Practice-Based Memo](#7-triangulation-with-the-practice-based-memo)
-  - [7.1 Memo findings the survey does not corroborate](#71-memo-findings-the-survey-does-not-corroborate)
-- [8. Limitations and Researcher Positionality](#8-limitations-and-researcher-positionality)
+- [1. How we analysed the survey](#1-how-we-analysed-the-survey)
+- [2. Who took part and how they recorded](#2-who-took-part-and-how-they-recorded)
+- [3. Did Hi-Audio meet professional recording standards?](#3-did-hi-audio-meet-professional-recording-standards)
+- [4. How performers rated the recording experience](#4-how-performers-rated-the-recording-experience)
+- [5. The ratings with and without the evaluator](#5-the-ratings-with-and-without-the-evaluator)
+- [6. What performers said in their own words](#6-what-performers-said-in-their-own-words)
+- [7. How the survey compares with the evaluation memo](#7-how-the-survey-compares-with-the-evaluation-memo)
+- [7.1 Which development priorities did other performers raise?](#71-which-development-priorities-did-other-performers-raise)
+- [8. What limits the conclusions?](#8-what-limits-the-conclusions)
 - [9. Conclusions](#9-conclusions)
 - [References](#references)
 - [Appendix: Survey questions](#appendix-survey-questions)
 
 ---
 
-## 1. Scope and Analytic Approach
+<a id="1-scope-and-analytic-approach"></a>
 
-This document analyses the nine responses to the Hi-AUDiO FLO participant survey and triangulates them against §4–§8 of the practice-based evaluation memo (Brown, 2026). Q1–Q20 are summarised descriptively (frequencies, means, medians, ranges). The four free-text list items are handled differently from the fixed-option questions — entries in Q3 and Q4 were categorised by hand and then counted, while Q6 and Q7 are summarised in prose without counts. The open questions Q21–Q23 are analysed through hybrid deductive/inductive thematic coding — answers are grouped under topics taken from the memo (deductive) and under new topics raised by respondents (inductive); findings are then compared against the memo to identify confirmation, nuance, contradiction, or new findings. The full wording of every question is given in the Appendix.
+## 1. How we analysed the survey
 
-The analysis is exploratory and descriptive. **No inferential statistics** (confidence intervals, significance tests, regressions) are computed or implied, consistent with the small, non-random, single-organisation expert cohort (n = 9 FLO performers). All findings below are scoped to FLO participants in this study and should not be generalised beyond it.
+Performers answered 23 questions about their musical background, how they contributed tracks, and their experience of Hi-Audio. All nine answered the rating questions. The three questions that invited comments were optional, so the number of replies varies. The [appendix gives the wording of every question](#appendix-survey-questions).
 
-Each respondent has a participant identifier (PID), assigned in submission order from P01 (20 May 2026) to P09 (3 July 2026). Each submission date is unique and appears both in the CSV and in that respondent's PDF in `docs/individual_participant_responses/`, whose `Submission N` ordinal matches the participant number. The per-respondent attributions in [§5](#5-p09-excluded-sensitivity-analysis-n--8) and [§6](#6-q21q23--thematic-findings) rest on this numbering.
+For background and equipment, we counted how many people chose each answer. Two questions allowed several selections. We grouped the names of music tools by hand before counting them (Q3 and Q4). Performers also listed instruments and the sounds they contributed (Q6 and Q7). We summarised those lists in prose, without counting individual instruments or sounds.
 
-One respondent, **P09, is Nela Brown: a co-designer of the questionnaire, the author of the practice-based memo and a co-author of this analysis**. This is treated throughout as a disclosed methodological condition: her response is retained in all primary (n = 9) results, and headline quantitative items are additionally reported with her excluded (n = 8). Full treatment, including the other author's role, is in [§8](#8-limitations-and-researcher-positionality) below.
+For the 13 rating statements, we converted agreement into numbers from 1 (*Strongly disagree*) to 7 (*Strongly agree*). A rating of 4 meant *Neither disagree nor agree*. The tables give the mean (average), the median (middle of the ordered responses) and the range (lowest to highest response). A mean near 4 can result from people holding quite different views. Some questions came from published scales. We used each rating descriptively because the combined questionnaire had not been validated for this group. The [appendix explains where the questions came from](#where-the-rating-questions-came-from).
 
-**Provenance of the rating items.** Q18 and Q19 reproduce published technology-acceptance scales: Q18 is the four-item Perceived Ease of Use scale and Q19 the three-item Perceived Enjoyment scale, both as worded in Venkatesh (2000, Appendix 1) — adapted there from Davis (1989) and Davis, Bagozzi and Warshaw (1992) respectively — with the verb tense changed from present to past ("I find…" → "I found…") and the platform named in place of "the system"; Q18_2 also drops one word ("a lot of my mental effort" → "a lot of mental effort"). Q20_2 is Davis's (1989) perceived-usefulness item with the domain changed from "in my job" to "for recording music." Q20_1 and Q20_3 are attitude and behavioural-intention items in the technology-acceptance tradition, but their direct wording source has not been established and none is claimed here. Q20_4, and the single items Q16 and Q17, were written for this study.
+For the written answers, one researcher grouped comments by topic. The initial topics came from the memo, such as ease of use and editing. The researcher also recorded ideas that went beyond it. We then compared the comments and ratings with the memo’s observations on strengths, difficulties and suitability for professional work (memo §4–§8).
 
-Two consequences follow. The instrument *as assembled* is not a standardised questionnaire and was not re-validated for this population: items were recombined across sources and n = 9 cannot establish reliability. Separately, the source scales were written to be answered about a system in current use, whereas this survey was answered retrospectively, months after the evaluation period ([§8](#8-limitations-and-researcher-positionality)). Results are therefore descriptive throughout — not compared against published norms for any source scale, and block means are not treated as validated subscale scores.
-
----
-
-## 2. Sample Description (Q1–Q15)
-
-Nine FLO performers completed the survey. All percentages below use n = 9 as the denominator unless otherwise noted.
-
-**Musical roles (Q1, select all that apply — 29 selections across 9 respondents, ≈3.2 roles per person on average):** Performer (instrumentalist/vocalist) 9/9 (100%), Improviser 6/9 (67%), Composer or arranger 4/9 (44%), Sound engineer 3/9 (33%), Educator 3/9 (33%), Producer 2/9 (22%), Ensemble Leader 1/9 (11%), Audio Researcher 1/9 (11%). The cohort is a multi-role expert group rather than single-specialism performers.
-
-**Prior browser-based recording tool experience (Q2):** 5/9 (56%) had prior experience, 4/9 (44%) did not. Tools named elsewhere in the survey (Q3/Q4) include SoundJack, Sonobus, and BandLab.
-
-**Similar platforms and digital audio workstations (DAWs) — Q3 and Q4:** Sonobus was the most commonly named comparable platform (Q3: 5/9 respondents), with SoundJack and BandLab tied for second (2/9 each). Software normally used (Q4) was broad and professional-grade: the Ableton family (Ableton/Ableton Live/Ableton Lite) named by 4/9 respondents, Bitwig by 3/9, and Playsound.space — a web-based platform rather than a DAW — also by 3/9, with single mentions of Reaper, Cubase, Digital Performer, Adobe Audition, Vital, and routing/utility tools (Loopback, Audio Hijack). Both are free-text list widgets, so a few entries cross the two categories (P02 listed Bitwig, a DAW, under Q3; P06 listed Sonobus, a network-collaboration tool, under Q4); the counts above follow each tool's actual category rather than the field it was typed into, and no reported figure is affected.
-
-**External audio interface use (Q5):** "Yes, always" 4/9 (44%), "Yes, sometimes" 3/9 (33%), "No — I use built-in audio (laptop or phone microphone)" 2/9 (22%). 78% used an external interface at least some of the time.
-
-**Instruments and proficiency (Q6 — descriptive):** wide instrumentation across the cohort (keyboard, bass guitar, saxophone, guitar, piano, voice, cello, synthesizers, flute, bagpipes, percussion, and others), with proficiency self-ratings spanning Beginner to Expert/Professional. Most respondents reported Intermediate-to-Expert level on at least one instrument.
-
-**What was recorded for the Radiophrenia 2026 Jam (Q7 — descriptive):** voice/vocals, percussion, kazoo, cello, guitar, piano, synth, soundscape, and Supercollider-generated material; one respondent (P09) contributed the session's opening binaural field-recording track — a pre-existing recording (its filename is dated 2025-11-18) that also served as the composition's guide track, rather than material recorded during the evaluation period.
-
-**Recording/upload method (Q8, select all that apply):** direct recording via audio interface + microphone 4/9 (44%); upload after recording in an external sound recorder 2/9 (22%); upload after recording in a DAW 2/9 (22%); routed live from a DAW 2/9 (22%).
-
-**Latency measurement (Q9):** "Not applicable — I only uploaded files" 3/9 (33%); "Yes, every time I recorded something" 3/9 (33%); "Yes, but only once for the whole session" 2/9 (22%); "No" 1/9 (11%, P01).
-
-**Q10 (conditional on Q9 = "No"):** denominator is **n = 1** (P01, the sole respondent who answered literal "No"; the three "Not applicable" respondents were correctly not shown this question by the form's conditional logic). P01's stated reason: *"I didn't think it was necessary"*.
-
-**Session structure (Q11):** single session 5/9 (56%); across several sessions same day 2/9 (22%); across different days 2/9 (22%).
-
-**Time spent (Q12):** more than 60 minutes 4/9 (44%); 30–40 minutes 3/9 (33%); 20–30 minutes 1/9 (11%); less than 20 minutes 1/9 (11%). Most participants (7/9, 78%) spent 30 minutes or more.
-
-**Operating system (Q13):** macOS 8/9 (89%), Windows 1/9 (11%). **Browser (Q14):** Firefox 5/9 (56%), Chromium/Chrome 3/9 (33%), Safari 1/9 (11%).
-
-**Headphones (Q15):** Wired 7/9 (78%), None 2/9 (22%). No respondent reported wireless headphones.
-
-**Sample character:** a small, multi-disciplinary, technically experienced cohort, heavily skewed toward macOS (89%) and, less strongly, Firefox (56%). Engagement varied: just over half (5/9) worked in a single session and most (7/9) spent 30 minutes or more, but only three respondents (P01, P02, P03) met *both* conditions — so a "substantial single sitting" describes some, not most, of the sample, and the two figures should not be read as a joint pattern. The operating system and browser skew is noted as a limitation in [§8](#8-limitations-and-researcher-positionality).
+The labels P01 to P09 identify individual performers. P09 is Brown, who wrote the memo and helped design the questionnaire. We include her in the main results and show every rating again for the other eight. We also identify the comments for which she is the only source. This small group from one ensemble supports a descriptive account. We did not use significance tests, confidence intervals or regressions.
 
 ---
 
-## 3. Q16 — Headline Result
+<a id="2-sample-description-q1q15"></a>
 
-**Q16 — whether the platform meets the necessary standards as a professional audio recording application** — is the headline metric and is reported first. Its construct is *professional standards specifically*; artistic-intention support is a separate item (Q17, [§4](#4-q16q20--quantitative-results)), and the two should not be merged into a single "professional/artistic" judgement.
+## 2. Who took part and how they recorded
 
-| | n | Mean | Median | Range |
+### Musical background and recording tools
+
+All nine respondents were instrumentalists or vocalists. Many had other musical roles, including improvising, arranging or working with sound. They selected 29 roles in all, about 3.2 per person (Q1).
+
+| Musical role | Performers out of nine |
+|---|---|
+| Instrumentalist or vocalist | 9 (100%) |
+| Improviser | 6 (67%) |
+| Composer or arranger | 4 (44%) |
+| Sound engineer | 3 (33%) |
+| Educator | 3 (33%) |
+| Producer | 2 (22%) |
+| Ensemble leader | 1 (11%) |
+| Audio researcher | 1 (11%) |
+
+Their instruments included keyboards, piano, synthesizers, guitar, bass guitar, saxophone, cello, flute, bagpipes, percussion and voice (Q6). Players rated their proficiency from beginner to expert or professional. Most reported at least intermediate proficiency on one instrument.
+
+Five of the nine (56%) had previously used a browser-based recording tool, and four (44%) had not (Q2). Asked which comparable platforms they knew (Q3), five named Sonobus, two named SoundJack and two named BandLab.
+
+The software they usually used to make music (Q4) gives a sense of the tools they brought to this project. Four named a version of Ableton and three named Bitwig, both digital audio workstations (DAWs), the software musicians use to record, edit and mix audio. Three also named the web platform Playsound.space. Reaper, Cubase, Digital Performer, Adobe Audition, Vital, Loopback and Audio Hijack each appeared once. For tools named in both lists, we counted each person once in the appropriate category. For example, P02 listed Bitwig among comparable platforms as well as under usual software, and P06 listed Sonobus in both places.
+
+### What the performers contributed
+
+The tracks included voices, percussion, kazoo, cello, guitar, piano, synthesizer, soundscape and sounds generated with SuperCollider (Q7). The first track served as a guide for the piece. P09 uploaded this binaural field recording, made before the project. Its filename is dated 18 November 2025.
+
+Performers could record into Hi-Audio, send it live audio from another program, or upload a file they had already recorded. They could select more than one method (Q8).
+
+| How tracks were added | Performers out of nine |
+|---|---|
+| Recorded directly through an audio interface and microphone | 4 (44%) |
+| Uploaded a file recorded on a separate sound recorder | 2 (22%) |
+| Uploaded a file recorded in a DAW | 2 (22%) |
+| Routed live audio from a DAW into Hi-Audio | 2 (22%) |
+
+### Equipment, timing and recording sessions
+
+In their usual recording practice (Q5), four performers (44%) always used an external audio interface, three (33%) sometimes used one and two (22%) relied on a laptop or phone microphone. In total, seven of nine (78%) used an external interface at least some of the time.
+
+Hi-Audio includes a test for audio latency, the delay as sound travels through the playback and recording setup. Before recording (Q9), three performers (33%) ran the test every time and two (22%) ran it once for the session. Three others (33%) only uploaded files. The one performer who selected “No” (11%, P01) was the only person asked the follow-up question about skipping the test (Q10). P01 answered *"I didn't think it was necessary"*.
+
+| Session detail | Responses out of nine |
+|---|---|
+| When tracks were added (Q11) | 5 in one sitting (56%), 2 in several sessions on the same day (22%), 2 across different days (22%) |
+| Total time on the platform (Q12) | 4 over 60 minutes (44%), 3 between 30 and 40 minutes (33%), 1 between 20 and 30 minutes (11%), 1 under 20 minutes (11%) |
+| Operating system (Q13) | 8 macOS (89%), 1 Windows (11%) |
+| Browser (Q14) | 5 Firefox (56%), 3 Chromium/Chrome (33%), 1 Safari (11%) |
+| Headphones (Q15) | 7 wired (78%), 2 used none (22%), 0 wireless |
+
+Seven performers (78%) spent at least 30 minutes on the platform, and five worked in a single sitting. Three did both (P01, P02 and P03). Most of the experience described here therefore comes from musicians familiar with recording software, using macOS, with a mix of shorter and longer sessions.
+
+---
+
+<a id="3-q16--headline-result"></a>
+
+## 3. Did Hi-Audio meet professional recording standards?
+
+The main survey question (Q16) asked whether Hi-Audio met the standards performers expected of a professional audio recording application. It asked for their judgement after making the piece. A separate question asked whether the platform helped them realise their artistic intentions.
+
+The nine answers ranged from 1 (*Strongly disagree*) to 6 (*Agree*). Four performers chose 4, the neutral response. Two disagreed (one at 1 and one at 3), and three agreed (two at 5 and one at 6). Nobody selected 2 or 7. Both the mean and the median were 4, but the responses on either side show that performers differed in their assessment.
+
+| Whose ratings are included | Number of performers | Mean | Median | Range |
 |---|---|---|---|---|
-| Q16, full sample | 9 | **4.00** | 4.0 | 1–6 |
-| Q16, P09 excluded | 8 | 3.88 | 4.0 | 1–6 |
-
-Both figures sit almost exactly on the 7-point scale's midpoint (4.0 = "Neither disagree nor agree"), indicating a **mixed, centred rather than clearly positive or negative** view of the platform's suitability as a professional audio recording application among this cohort. The distribution shows this is a genuine spread rather than uniform neutrality: one respondent (P01) rated it 1 ("Strongly disagree"), one rated it 3, four rated it 4, two rated it 5 and one rated it 6. No respondent rated it 2, and none selected the scale's top option, "Strongly agree" (7).
+| All performers | 9 | **4.00** | 4.0 | 1–6 |
+| Performers other than the evaluator | 8 | 3.88 | 4.0 | 1–6 |
 
 ![Distribution of the nine Q16 ratings across the 1–7 scale. Each labelled marker is one respondent: P01 at 1, P06 at 3, four respondents at 4, P08 and P09 at 5, P02 at 6, and none at 7. The scale midpoint of 4 is marked with a dashed line.](figures/fig1_q16_distribution.svg)
 
-***Figure 1.** Distribution of the nine Q16 ratings. Each marker is one respondent. No respondent selected the scale's top option.*
+***Figure 1.** Each dot is one performer’s answer about professional recording standards. The four dots at the midpoint show how many chose the neutral response.*
 
 ---
 
-## 4. Q16–Q20 — Quantitative Results
+<a id="4-q16q20--quantitative-results"></a>
 
-### Q17 — Artistic intention support (supporting metric)
+## 4. How performers rated the recording experience
 
-| | n | Mean | Median | Range |
+The remaining 12 statements asked about artistic intentions, ease of use, enjoyment and possible future use. All nine performers answered each statement on the same seven-point scale.
+
+<a id="q17--artistic-intention-support-supporting-metric"></a>
+
+### Did Hi-Audio help performers realise their artistic intentions?
+
+On whether Hi-Audio helped them achieve what they had in mind artistically (Q17), the mean was 4.22, just above neutral. Individual answers ranged from 2 to 7.
+
+| Whose ratings are included | Number of performers | Mean | Median | Range |
 |---|---|---|---|---|
-| Full sample | 9 | 4.22 | 4.0 | 2–7 |
-| P09 excluded | 8 | 3.88 | 3.5 | 2–7 |
+| All performers | 9 | 4.22 | 4.0 | 2–7 |
+| Performers other than the evaluator | 8 | 3.88 | 3.5 | 2–7 |
 
-Q17 is also read alongside the open answers to Q21 and Q22. Read that way, the Q21 collaboration theme (contributing to and hearing a shared artistic project) plausibly supports a sense of artistic-intention support, while the Q22 editing-tools gap ([§6](#6-q21q23--thematic-findings)) plausibly works against it. The survey does not ask respondents to explain their Q17 rating, so this is a reading of the qualitative data rather than an established link.
+One performer described being able to hear the other tracks easily. Two wanted to edit their takes in ways the platform did not allow. Those comments suggest ways the platform could help or hinder creative work. The survey did not ask performers to explain their artistic-intention rating, so we cannot tell which experiences shaped any individual score.
 
-### Q18 — Pragmatic usability (Perceived Ease of Use; Venkatesh, 2000)
+<a id="q18--pragmatic-usability-perceived-ease-of-use-venkatesh-2000"></a>
 
-| Item | Statement | n=9 Mean | n=9 Median | n=9 Range |
+### How easy was Hi-Audio to use?
+
+Performers generally found the interface clear and felt that it required little mental effort. Those two statements had the highest means in the survey, both 5.33. Getting Hi-Audio to do what the performer wanted was a different matter. That average was 4.00, with answers spanning the entire scale. These four questions cover *Perceived Ease of Use* (Q18, Venkatesh, 2000).
+
+| Survey item | Statement in brief | Mean | Median | Range |
 |---|---|---|---|---|
 | Q18_1 | Clear and understandable | 5.33 | 5.0 | 3–7 |
 | Q18_2 | Did not require a lot of mental effort | 5.33 | 6.0 | 3–7 |
 | Q18_3 | Easy to use | 4.89 | 5.0 | 2–7 |
 | Q18_4 | Easy to get it to do what I wanted | 4.00 | 4.0 | 1–7 |
 
-Q18_2 is worded so that a higher score indicates *lower* mental effort; it was therefore not reverse-coded. All four items sit at or above the midpoint, with the first-impression items (clarity, mental effort) rated more favourably than the goal-completion item (Q18_4), which sits exactly at the midpoint.
+Agreement with the mental-effort statement means the performer found the interaction *less* demanding. A higher number therefore already points in the same direction as the other ease-of-use ratings.
 
-### Q19 — Hedonic/experiential quality (Perceived Enjoyment; Venkatesh, 2000)
+<a id="q19--hedonicexperiential-quality-perceived-enjoyment-venkatesh-2000"></a>
 
-| Item | Statement | n=9 Mean | n=9 Median | n=9 Range |
+### Did performers enjoy using Hi-Audio?
+
+The three questions about *Perceived Enjoyment* (Q19, Venkatesh, 2000) had means between 4.44 and 4.67, slightly above neutral. The median was exactly 4 for each, and individual experiences varied.
+
+| Survey item | Statement in brief | Mean | Median | Range |
 |---|---|---|---|---|
 | Q19_1 | Enjoyable | 4.44 | 4.0 | 1–7 |
 | Q19_2 | Process was pleasant | 4.67 | 4.0 | 2–7 |
 | Q19_3 | Had fun | 4.44 | 4.0 | 2–7 |
 
-All three items sit modestly above the midpoint.
+<a id="q20--future-use-intent-and-perceived-usefulness"></a>
 
-### Q20 — Future use intent and perceived usefulness
+### Would performers use Hi-Audio again or recommend it?
 
-| Item | Statement | n=9 Mean | n=9 Median | n=9 Range |
+Participants were more inclined to recommend Hi-Audio to colleagues (mean 4.67) than to plan to use it in their own next project (3.89). The statement about finding Hi-Audio useful for recording music received the lowest mean of all 13 statements (3.56), with a median of 3 (*Somewhat disagree*).
+
+| Survey item | Statement in brief | Mean | Median | Range |
 |---|---|---|---|---|
 | Q20_1 | Good idea to use for recording music | 4.11 | 4.0 | 2–7 |
 | Q20_2 | Would find it useful for recording music | **3.56** | 3.0 | 1–6 |
 | Q20_3 | Would plan to use in a future project | 3.89 | 4.0 | 2–6 |
 | Q20_4 | Would recommend to colleagues | 4.67 | 5.0 | 2–7 |
 
-**Q20_2 ("would find it useful for recording music") is the lowest-rated of all thirteen 7-point items** (mean 3.56, median 3.0, both below midpoint) — lower even than Q16. Q18_1 and Q18_2 (clarity, low mental effort) are the highest, at 5.33 each. Descriptively, then, **mean ratings indicate the platform was found pleasant and easy to use during the evaluation, and rated lower on average for practical usefulness in future recording work** — though not uniformly so at the item level. [§9](#9-conclusions) weighs that reading against the qualitative and triangulation findings.
+Averaging the statement means within each group gives 4.89 for ease of use, 4.52 for enjoyment and 4.06 for possible future use. These are descriptive averages. The last group combines four different judgements, and only Q20_3 asks directly about the next project. The 4.67 mean for recommending Hi-Audio was as high as or higher than several ease-of-use and enjoyment ratings. The averages therefore hide some important differences between statements.
 
-![Mean rating for each of the thirteen 7-point items, plotted against the 1–7 scale. Filled markers show the full sample (n = 9), hollow markers the same items with P09 excluded (n = 8), joined by a short line showing the shift. Colour distinguishes the Q16/Q17 headline items, the Q18 usability block, the Q19 experience block and the Q20 future-use block. The 4.0 midpoint is marked with a dashed line.](figures/fig2_item_means.svg)
+![Mean rating for each of the thirteen 7-point items, plotted against the 1–7 scale. Filled markers show the full sample (n = 9), hollow markers the same items with P09 excluded (n = 8), joined by a short line showing the shift. Colour distinguishes the professional-standards and artistic-intention items, the Q18 usability block, the Q19 experience block and the Q20 future-use block. The 4.0 midpoint is marked with a dashed line.](figures/fig2_item_means.svg)
 
-***Figure 2.** Mean rating for each of the thirteen items. Filled markers are the full sample (n = 9); hollow markers exclude P09 (n = 8). Exact values are tabulated above and in [§5](#5-p09-excluded-sensitivity-analysis-n--8).*
+***Figure 2.** Each row shows the mean for one statement. Filled dots include all nine performers. Open dots show the other eight after removing the evaluator’s answer. The dashed line marks the neutral response of 4. The [comparison table](#5-the-ratings-with-and-without-the-evaluator) gives the exact values.*
 
 ---
 
-## 5. P09-Excluded Sensitivity Analysis (n = 8)
+<a id="5-p09-excluded-sensitivity-analysis-n--8"></a>
 
-The table compares Q16–Q20 results with and without P09.
+## 5. The ratings with and without the evaluator
 
-| Item | Mean (n=9) | Mean (n=8) | Change in mean (Δ) | Median (n=9) | Median (n=8) |
+Brown took part in the recording project and was one of the nine people whose experience the survey set out to describe. Because she also helped design the questions and wrote the memo, we repeated the calculations using only the other eight performers. This is a sensitivity analysis. It shows how much her answers affect each result.
+
+For professional standards, the mean went from 4.00 to 3.88 and the median stayed at 4. For support for artistic intentions, the mean went from 4.22 to 3.88 and the median from 4 to 3.5. The broad reading of professional suitability as mixed holds in both groups.
+
+| Statement in brief | Mean, all 9 | Mean, other 8 | Change in mean | Median, all 9 | Median, other 8 |
 |---|---|---|---|---|---|
-| Q16 | 4.00 | 3.88 | −0.12 | 4.0 | 4.0 |
-| Q17 | 4.22 | 3.88 | −0.35 | 4.0 | 3.5 |
-| Q18_1 | 5.33 | 5.13 | −0.21 | 5.0 | 5.0 |
-| Q18_2 | 5.33 | 5.25 | −0.08 | 6.0 | 5.5 |
-| Q18_3 | 4.89 | 4.63 | −0.26 | 5.0 | 4.5 |
-| Q18_4 | 4.00 | 3.88 | −0.12 | 4.0 | 3.5 |
-| Q19_1 | 4.44 | 4.25 | −0.19 | 4.0 | 4.0 |
-| Q19_2 | 4.67 | 4.50 | −0.17 | 4.0 | 4.0 |
-| Q19_3 | 4.44 | 4.13 | −0.32 | 4.0 | 4.0 |
-| Q20_1 | 4.11 | 3.75 | −0.36 | 4.0 | 3.5 |
-| Q20_2 | 3.56 | 3.38 | −0.18 | 3.0 | 3.0 |
-| Q20_3 | 3.89 | 3.75 | −0.14 | 4.0 | 3.5 |
-| Q20_4 | 4.67 | 4.38 | −0.29 | 5.0 | 4.5 |
+| Meets professional standards (Q16) | 4.00 | 3.88 | −0.12 | 4.0 | 4.0 |
+| Supported artistic intentions (Q17) | 4.22 | 3.88 | −0.35 | 4.0 | 3.5 |
+| Clear interaction (Q18_1) | 5.33 | 5.13 | −0.21 | 5.0 | 5.0 |
+| Low mental effort (Q18_2) | 5.33 | 5.25 | −0.08 | 6.0 | 5.5 |
+| Easy to use (Q18_3) | 4.89 | 4.63 | −0.26 | 5.0 | 4.5 |
+| Easy to do what I wanted (Q18_4) | 4.00 | 3.88 | −0.12 | 4.0 | 3.5 |
+| Enjoyable (Q19_1) | 4.44 | 4.25 | −0.19 | 4.0 | 4.0 |
+| Pleasant process (Q19_2) | 4.67 | 4.50 | −0.17 | 4.0 | 4.0 |
+| Fun (Q19_3) | 4.44 | 4.13 | −0.32 | 4.0 | 4.0 |
+| Good idea for recording (Q20_1) | 4.11 | 3.75 | −0.36 | 4.0 | 3.5 |
+| Useful for recording (Q20_2) | 3.56 | 3.38 | −0.18 | 3.0 | 3.0 |
+| Would plan to use in next project (Q20_3) | 3.89 | 3.75 | −0.14 | 4.0 | 3.5 |
+| Would recommend to colleagues (Q20_4) | 4.67 | 4.38 | −0.29 | 5.0 | 4.5 |
 
-*Change in mean (Δ) is the mean for n = 8 minus the mean for n = 9, calculated before rounding. Values are rounded to two decimal places, with ties rounded toward positive infinity.*
+*The change is the mean for the eight minus the mean for all nine, calculated before rounding. Means and changes are rounded to two decimal places. An exact tie rounds towards the more positive value.*
 
-P09 rated all thirteen items between 5 and 7 (mean 6.15), so excluding her lowers every mean by 0.08 to 0.36 points. Four items (**Q16, Q17, Q18_4, Q20_1**) move from at-or-just-above the 4.0 midpoint to just below it once she is excluded; no item reverses by more than half a scale point. **Both figures are reported, but the divergence does not change the interpretation** — the sample was already centred on the midpoint with P09 included, and remains so without her.
+Brown (P09) gave every statement a rating from 5 to 7. Removing her response lowered each mean by 0.08 to 0.36 points. Four means moved from at or just above neutral to just below it. These concerned professional standards (Q16), artistic intentions (Q17), getting Hi-Audio to do what one wanted (Q18_4), and whether using it for recording would be a good idea (Q20_1).
 
-This sensitivity check excludes P09 because she co-designed the survey and wrote the evaluation memo. P02 had the same mean (6.15) and minimum rating (5).
+P02 and P09 each averaged 6.15 across the statements and gave no rating below 5. The reason for showing the results without P09 is her role in the evaluation.
 
 ![Each respondent's mean rating across all thirteen items, plotted on the 1–7 scale. P01 sits lowest at 2.23, then P06 and P07 together at 3.62, P04 at 3.69, P03 at 4.46, P05 at 4.54, P08 at 5.38, and P02 and P09 together at the top at 6.15. The 4.0 midpoint is marked with a dashed line.](figures/fig3_respondent_means.svg)
 
-***Figure 3.** Each respondent's mean across all thirteen items. The thirteen items span four different constructs, so this mean is a descriptive summary used here only for the positionality comparison — it is not an overall-attitude score and the ranking should not be read as one. P02 and P09 coincide exactly at 6.15, and P06 and P07 at 3.62.*
+***Figure 3.** Each dot shows one person’s mean across all 13 statements. P02 and P09 share the highest mean (6.15), and P06 and P07 also share a mean (3.62). The averages put the evaluator’s answers in the context of the other eight. These statements cover several aspects of recording, so the figure should not be read as a ranking of overall attitudes.*
 
 ---
 
-## 6. Q21–Q23 — Thematic Findings
+<a id="6-q21q23--thematic-findings"></a>
 
-Response rates were verified against the CSV before coding: **Q21: 6/9 answered, Q22: 7/9, Q23: 5/9**. Two of the five Q23 responses (P02: *"no, sorry! just musicians!"*; P01: *"No"*) decline to suggest a use case rather than offering one, so only 3/9 gave a substantive Q23 answer. Q21–Q23 are optional on the form, so blanks are expected item nonresponse, not an export defect or data loss.
+## 6. What performers said in their own words
 
-Themes are labelled **recurring** (≥2 respondents) or **isolated observation** (1 respondent). One answer can count toward more than one theme, so a question's theme counts can add up to more than its number of answers. Excerpts are attributed by PID only and are quoted exactly as submitted, including respondents' own spelling, list punctuation and spacing.
+The final three questions invited performers to describe their experience in their own words. The counts below use the number of people who gave a relevant answer to each question.
 
-### Q21 — Most useful/effective aspects (deductive frame: memo §4)
+| Optional question | People who replied (out of nine) | What they reported |
+|---|---|---|
+| What was useful? (Q21) | 6 | All six described something they valued. |
+| Were there challenges? (Q22) | 7 | Six described a difficulty. One (P02) answered *"No challenges"*. |
+| Where else might Hi-Audio be useful? (Q23) | 5 | Three suggested a use. Two replied without proposing a further use. |
 
-**Theme: Collaboration and multi-track listening — recurring (5/6 respondents: P08, P04, P03, P02, P01)**
+An answer can cover several topics. We call a topic recurring when at least two people raised it and identify observations from a single person separately. The excerpts retain the performers’ wording and spelling. Ellipses mark omitted words.
+
+<a id="q21--most-usefuleffective-aspects-deductive-frame-memo-4"></a>
+
+### What worked well?
+
+**Working with other performers’ tracks (5 of 6).** Four people explicitly mentioned collaborating (P01, P02, P04 and P08). A fifth, P03, described being able to listen easily to the other tracks. Counting only explicit references to collaboration gives four. Including listening to others in the shared session gives five.
+
 > P08: *"Ability to collaborate"*
 > P03: *"Intuitive understanding, and possibility to listen to the other tracks easily"*
 
-**Partially confirms** memo §4.1 (Accessibility), which frames distributed collaboration as a strength: this is the most frequent Q21 theme, but browser-based access itself — §4.1's actual subject — is named by only one respondent, so the accessibility framing is supported only indirectly. The code bundles explicit mentions of collaborating with others (4/6: P08, P04, P02, P01) with P03's mention of listening easily to other tracks, which implies the multi-track collaborative context without naming collaboration — so the dominant benefit is best stated as the collaborative multi-track setting broadly, not "collaboration" as a term respondents themselves converged on. This does **not** independently confirm §4.4 (Track Annotation): no Q21 answer mentions notes, annotations, or track metadata.
+This partly supports the memo’s account of browser access as a benefit for a distributed ensemble (§4.1). P04 was the only person to mention working “on the browser”. The other comments tell us what people valued about making a piece together, with little evidence about how important browser access itself was to them.
 
-**Theme: Ease of use / intuitive interface — recurring (4/6: P09, P08, P03, P02)**
+**Ease of use (4 of 6).** P02, P03, P08 and P09 described Hi-Audio as easy or intuitive. The memo describes a similar first impression in the words “simple and easy to use” (§4.2). P09 wrote that memo, and three other performers expressed a similar view.
+
 > P09: *"The interface was very easy to understand. I did not need to read a manual or watch any videos..."*
 > P02: *"It was so easy to use..."*
 
-**Confirms** memo §4.2 (Ease of Use) directly, including a near-verbatim echo of the memo's own quoted phrase ("simple and easy to use").
+**Streaming quality (1 of 6).** P02 also praised the quality of “streaming / collaboration”. This was the only comment about quality. The wording leaves open whether P02 meant the sound of shared playback or the experience of collaborating.
 
-**Isolated observation: Streaming quality (P02 only)**
 > P02: *"...the quality of the streaming / collaboration"*
 
-The only Q21 answer to mention quality of any kind. It does not say whether "streaming" means playback of the shared tracks or the collaborative exchange itself, so it is reported without further interpretation.
+<a id="q22--challenges-deductive-frame-memo-5"></a>
 
-Browser-based accessibility was mentioned only implicitly (P04: *"...on the browser"*, bundled with collaboration) — present in the data but not independently prominent, in contrast to its centrality in the memo.
+### What got in the way?
 
-### Q22 — Challenges (deductive frame: memo §5)
+Of the six performers who described a difficulty, three reported waiting and two described missing editing tools. The other observations below each came from one person.
 
-Seven respondents answered. One (P02) reported simply *"No challenges"*; the remaining six (P09, P08, P06, P04, P03, P01) gave substantive answers, and the fractions below are out of those six. P01 also opened with *"No challanges, but..."* (their spelling) before giving the most critical assessment of professional fit in the dataset — they appear to reserve "challenges" for something narrower than the missing professional features they then describe.
+**Waiting for tracks (3 of 6).** P04 said waiting for a track to process interrupted the creative workflow. P06 described a wait for synchronisation with the server. P09, the memo’s author, used the word “rendered” and had to leave the browser open. All three experienced a delay. Only P06 identified where they thought it occurred.
 
-**Theme: Absence of editing/audio-manipulation tools — recurring (2/6: P08, P01)**
-> P08: *"...i would have used it for recording if there was a way to cut, copy, and paste sections of the recording. It would also have been useful to manage the volume enveloppe..."*
-> P01: *"No challanges, but it's too basic to use professionally, as we cant choose the record point, can't crop or edit the sound files or do basic sound volume enveloping, so it has no advantage comparing to other software"*
-
-**Confirms** memo §5.4 (Editing and Audio Manipulation) closely, down to the specific missing features named (cut/copy/paste, volume envelope). P01's broader framing ("too basic to use professionally") also echoes §7's own assessment of the platform as not yet suited to end-to-end professional workflows — consistent with P01 having given the lowest Q16 (1) and Q17 (2) scores in the sample.
-
-**Theme: Post-recording processing/sync wait time — recurring (3/6: P09, P06, P04)**
 > P09: *"...it took a long time for the track to be 'rendered', so I had to keep Firefox open until that was completed..."*
 > P06: *"- waiting  time for recorded tracks to be synced with the serwer"*
 
-**Confirms** memo §5.6 (Signal Flow and Rendering Stability), which itself opens by citing "long rendering times." The survey's mentions concern wait time specifically, rather than the clipping/artefact example §5.6 elaborates via Loopback routing — a modest difference in emphasis, offered cautiously at this n. This is distinct from Q9, which asks only whether respondents ran the platform's built-in latency measurement before recording; no respondent reported that measurement as a problem. Note also that the three respondents do not describe the same mechanism: P06 names server synchronisation ("synced with the serwer"), while P09 says "rendered" and P04 says "processing" without locating the delay — so a shared *experience* of waiting is well supported, a shared *server-side* mechanism is not.
+The memo also records long rendering times (§5.6). Its example describes distortion while routing audio through Loopback. The survey comments support the observation about waiting and leave its technical cause open. The separate latency question (Q9) concerned a test run *before* recording. Nobody described that test as a difficulty.
 
-**Isolated observation: Live input-level control (P06 only)**
+**Editing a take (2 of 6).** P08 wanted to cut, copy and paste a passage and change its volume over time. P01 wanted to choose where recording started, crop a file and adjust its volume. P01 opened with “No challanges, but” and then explained why those missing tools mattered for professional use. This performer gave the lowest rating for professional standards (1) and also rated support for artistic intentions at the bottom of the observed range (2).
+
+> P08: *"...i would have used it for recording if there was a way to cut, copy, and paste sections of the recording. It would also have been useful to manage the volume enveloppe..."*
+> P01: *"No challanges, but it's too basic to use professionally, as we cant choose the record point, can't crop or edit the sound files or do basic sound volume enveloping, so it has no advantage comparing to other software"*
+
+Both accounts support the memo’s finding about missing editing tools (§5.4). P01 also made the connection to professional work explicit, as the memo does in §7.
+
+**Adjusting the input level while playing (1 of 6).** P06 wanted to change the incoming audio level during recording. This is a different operation from changing the volume of a take afterwards. The memo records a similar difficulty with input gain (§5.3).
+
 > P06: *"- no options to manipulate audio input levels or other audio parameters on the fly when recording"*
 
-**Confirms** memo §5.3 (Recording Workflow Limitations), which notes the platform "lacked visible input gain control." Distinct from the editing theme above: this concerns adjusting levels live, during recording, not shaping already-recorded material.
+**Seeing which controls were active (1 of 6).** P09 had trouble telling whether a button press had taken effect, including on the playback and recording controls and the Mute and Solo buttons. The memo describes the same problem (§5.1). Both accounts come from the same person.
 
-**Isolated observation: Visual feedback / interface clarity (P09 only)**
 > P09: *"...did not provide very clear feedback when buttons were pressed (i.e. buttons did not change colour), so it was difficult to see if something was happening or not (visually)."*
 
-**Confirms** memo §5.1 directly — but from a single respondent, and specifically the memo's own author. This agreement is therefore expected and is **not** independent corroboration: it is the same authorial voice. Her fuller answer also names transport-bar and Mute/Solo button confusion.
+P09 also found the headphones icon confusing because its hover label read “select cursor” (§5.2). The memo gives a different example where showing a label helped new users identify the Stop button (§4.3). Together these examples show why the wording of a label matters. P01’s comment about choosing a recording start point also concerned navigation. These two performers described different problems with the controls.
 
-The same answer also lands on **memo §5.2**: *"hovering over the 'Headphone' icon shows text 'select cursor' which is confusing as it is very different to DAW"* matches §5.2's note that "the function of the headphones icon (Select Cursor) was not immediately clear to some participants." This qualifies rather than contradicts **§4.3 (Interface Discoverability)**, which cites hover-over labels as an orientation aid: §4.3's example is the Stop control, whose label is self-explanatory, whereas the Headphone icon's label names a different function than the icon depicts — the same mechanism helping in one case and confusing in another, not an internal inconsistency in the memo. Again, this is not independent corroboration.
+**Noise during a second recording session (1 of 6).** P03 heard noise while including sound from a browser and deleted the recording. The account does not identify a cause or name the routing or clipping problem described in memo §5.6.
 
-**Isolated observation, mechanism unclear: possible noise/audio issue during a second take (P03 only)**
 > P03: *"Noise were introduced during a second recording session, while also including a sound source from browser. I had to delete it."*
 
-The respondent does not specify how this happened, so it is reported as a tentative single-respondent observation rather than a confirmed "signal bleed" or "capture" mechanism. It sits adjacent to, but does not clearly match, memo §5.6's routing/artefact examples — no routing tool or clipping is named.
+Nobody mentioned a file-format or browser/network compatibility problem in these answers. The memo describes file export in §5.8 and documents two browser-specific examples in Appendix B (Figs B2–B3). A Firefox microphone-permission icon was sometimes hidden, and a browser refresh was needed for Loopback to appear as an input. Neither example came up in the survey. The [development priorities table](#71-which-development-priorities-did-other-performers-raise) also covers keyboard shortcuts.
 
-No respondent raised file-format compatibility, browser/network compatibility, or the absence of keyboard shortcuts as a Q22 challenge — all three despite the first two belonging to the deductive frame. File-format friction (§5.8) and missing keyboard shortcuts (§5.2) have their own memo subsections, so their absence here is reportable (see [§7.1](#71-memo-findings-the-survey-does-not-corroborate)). Browser behaviour is a different case: the memo has no §5 subsection for it and treats browser-based access as a strength (§4.1), but Appendix B does record browser-specific friction — a Firefox microphone-permission icon that was sometimes hidden (Fig B2), and a browser refresh being needed before Loopback appeared as an input device (Fig B3). Neither was raised by any respondent. Transport-related concerns do appear (P09's transport-bar/Mute/Solo comments; P01's inability to choose the record point) but fall within the visual-feedback and editing themes above rather than forming a separate recurring theme.
+<a id="q23--other-use-cases-deductiveinductive-per-memo-67"></a>
 
-### Q23 — Other use cases (deductive/inductive, per memo §6/§7)
+### What other uses did performers suggest?
 
-Three respondents gave substantive suggestions. **Peer ensemble collaboration** is a recurring theme at the broad level (**2/3: P04, P06**), though the two proposed applications differ — cross-timezone collaboration versus lighter-weight preliminary sessions — so each is presented separately below. The code is defined narrowly, as peer ensemble work: P09's remote-education scenario also involves two parties exchanging recordings, but the relationship there is asymmetric and pedagogical rather than co-creative, so it is coded as its own theme. Under a broader definition the count would be 3/3; the narrow reading is used because memo §4.1's collaboration framing concerns distributed performers co-producing a single work.
+Three performers proposed another way to use Hi-Audio. Two described musicians working as peers (P04 and P06). One proposed a new setting, teaching a student remotely (P09). Two others answered the question without suggesting another use. P01 wrote *"No"*. P02 saw it as a tool for musicians, writing *"no, sorry! just musicians!"*. The four remaining performers left the question blank.
 
-**Isolated, inductive — new finding, proposed as an extension rather than a current capability: Remote music education (P09 only)**
-> P09: *"Hi-Audio platform would be very useful in remote music education. ...a teacher can record introductory videos... They can then record a simple scale, upload sheet music for the scale, and the child can play along with this recording to practice. When they think they have practised enough, they can record a track. The teacher will review it, give them feedback... I understand this is a completely different view of how the platform could be used, and would involve changes to the platform, but it is worth thinking about."* (condensed from a longer response describing a full remote-teaching scenario for a hypothetical student without access to a nearby music school; her closing sentence is quoted in full)
+**Working across locations and time zones (P04).** This suggestion extends the memo’s observation about remote collaboration (§4.1) to ensembles whose members work at different times.
 
-Not addressed anywhere in memo §4–§8, and the only substantively new use case in the Q23 set. It is reported here with the qualification P09 herself attached to it: the scenario turns on capabilities the evaluated version did not have — uploading video lessons and sheet music, and reviewing past sessions — and she states plainly that it "would involve changes to the platform." It is therefore a proposed direction for development, not evidence that the platform as evaluated fits an educational context. This distinguishes it from the two Q23 suggestions below, which describe uses the platform already supports.
-
-**Isolated — nuances §7: Preliminary jam/collaboration sessions (P06 only)**
-> P06: *"- preliminary jam/collaboration sessions"*
-
-§7 concludes the platform is not yet fit for *end-to-end* professional production. P06's suggestion is consistent with that conclusion rather than contradicting it: it fits the platform to a lighter-weight preliminary/rehearsal use — a positive framing of the same limitation.
-
-**Isolated — confirms/extends §4.1: Distributed, cross-timezone collaboration (P04 only)**
 > P04: *"Distributed collaborations across different locations and time zones"*
 
-Extends the existing accessibility/collaboration strength prospectively rather than introducing a new one. With P06's suggestion above, this forms the 2/3 collaborative-use theme noted at the start of this section.
+**Preliminary jam or rehearsal sessions (P06).** The suggestion identifies a stage of production where the platform could already be useful. It fits the memo’s assessment that Hi-Audio could support parts of a professional project (§7).
 
-**Counterweight.** Two of the five who answered Q23 named no further context: P01 answered *"No"*, and P02 *"no, sorry! just musicians!"* — the latter an explicit claim that the platform's applicability does not extend beyond musicians, which bears on §7's platform-fit assessment. These are responses, not silence, and are reported as data: **2 of the 5 who answered Q23 named no further use case.** Neither is raised to a coded theme, because "declined to name one" is not a substantive shared idea; P02's scope limitation *is* content, and is recorded as such in the sentence above.
+> P06: *"- preliminary jam/collaboration sessions"*
+
+We grouped these two answers together because both describe peers making music with one another, as in the FLO project. This gives two of the three suggestions. A broader category that also included a teacher and pupil exchanging recordings would cover all three.
+
+**Remote music education (P09, the memo’s author).** P09 imagined a child without a nearby music school practising to a teacher’s recording, uploading a take and receiving feedback. The teacher and student could also revisit earlier sessions. This was the only suggested use that went beyond the memo’s discussion (§4–§8). It would require new features, including support for video lessons, sheet music and reviewing past sessions. The idea came from one respondent and was not tested in this project.
+
+> P09: *"Hi-Audio platform would be very useful in remote music education. ...a teacher can record introductory videos... They can then record a simple scale, upload sheet music for the scale, and the child can play along with this recording to practice. When they think they have practised enough, they can record a track. The teacher will review it, give them feedback... I understand this is a completely different view of how the platform could be used, and would involve changes to the platform, but it is worth thinking about."*
 
 ---
 
-## 7. Triangulation with the Practice-Based Memo
+<a id="7-triangulation-with-the-practice-based-memo"></a>
 
-| Memo section | Survey evidence | Relationship |
-|---|---|---|
-| §4.1 Accessibility | Q21: collaboration/multi-track theme (5/6); explicit collaboration mentions 4/6 | **Partially confirms** — browser-based access itself is named by only one respondent (P04), so the accessibility framing is confirmed indirectly. Does **not** confirm §4.4 Track Annotation: no respondent mentioned notes or annotations |
-| §4.2 Ease of Use | Q21: ease-of-use theme (4/6); Q18_1/Q18_2 highest-rated items (5.33 each) | **Confirms** strongly, quantitatively and qualitatively |
-| §5.1 Visual Feedback and Interface Clarity | Q22: P09's isolated comment | **Confirms**, but non-independent (same authorial voice as the memo) |
-| §5.2 Transport Controls and Navigation | Q22: P09's Headphone-icon comment; P01's "cant choose the record point" | **Confirms** the icon-clarity point (non-independent); **qualifies** §4.3, whose hover-label example is the Stop control. §5.2's keyboard-shortcut and Fast Forward/Rewind points drew no mention |
-| §5.3 Recording Workflow Limitations | Q22: P06's live input-level control observation | **Confirms** (isolated, single-respondent) |
-| §5.4 Editing and Audio Manipulation | Q22: editing-absence theme (2/6); Q20_2 lowest-rated item (3.56) | **Confirms.** Plausibly consistent with the muted future-use results, though the survey does not ask why Q20_2 was rated low |
-| §5.6 Signal Flow and Rendering Stability | Q22: processing/sync wait-time theme (3/6) | **Confirms** — §5.6 already names "long rendering times"; the wait-time emphasis is a modest nuance, not a new one |
-| §5 (no clean subsection match) | Q22: P03's noise/audio observation | **Tentative** — mechanism unclear; adjacent to but not a clean match for §5.6 |
-| §6 Design Implications | Q22/Q23 findings generally | **Partially confirms.** Three of the four priorities the survey speaks to are raised by respondents other than the memo's author — editing tools (2/6: P08, P01), input control (P06), and delays while tracks were processed or synchronised (3/6, two of them independent: P06, P04). Those respondents describe waiting, not unstable rendering. Visual feedback is raised only by P09, the memo's own author, so it is not independently corroborated ([§7.1](#71-memo-findings-the-survey-does-not-corroborate)) |
-| §7 Platform Fit | Q16 (4.00/3.88, centred on midpoint); Q17 (4.22/3.88); Q20 (mixed, Q20_2 lowest of all items) | **Confirms** §7's reading of the platform as "a lightweight multitrack recording environment rather than a fully featured creative production system" — centred results align with a qualified rather than unqualified fit |
-| §7 / §8.2 (not addressed) | Q23: P09's remote-education suggestion | **New finding**, but a proposed *extension*: P09 states it "would involve changes to the platform," so it does not bear on the fit of the version evaluated |
+## 7. How the survey compares with the evaluation memo
 
-*Denominators differ by question and are not a common scale: Q21 fractions are out of the **6 respondents who answered Q21**; Q22 fractions are out of the **6 substantive answers** among the 7 who answered (P02's "No challenges" carries no content to code); Q23 fractions are out of the **3 substantive answers**. See [§6](#6-q21q23--thematic-findings).*
+The [practice-based evaluation memo](memo.html) draws on observations and informal feedback collected while the ensemble was making the piece. The survey asked the same group to look back on that experience months later. Where the two accounts address the same issue, they agree fully or in part. We found no direct contradiction. Agreement carries more weight when a performer other than the memo’s author also described the issue.
 
-### 7.1 Memo findings the survey does not corroborate
-
-The table above has rows only where survey evidence exists. Read alone, that hides an equally reportable result: several memo findings — including three of the four development priorities memo §8 calls "the most critical areas for development" — drew no independent support from this survey. Denominators below are the six substantive Q22 answers, as in [§6](#6-q21q23--thematic-findings).
-
-| Memo §8 critical area | Independent survey support |
+| Finding in the memo | What the survey adds |
 |---|---|
-| Improved visual feedback for active states | **P09 only** — and P09 authored the memo, so this is non-independent by the positionality rule applied throughout |
-| Standard keyboard shortcuts | **No mention** in any Q22 answer |
-| Uncompressed export formats (§5.8, .m4a friction) | **No mention** in any Q22 answer |
-| Basic non-destructive editing tools | **2/6** (P08, P01) — the only one of the four with independent survey support |
+| Browser access makes collaboration easier (§4.1) | Five of six strengths answers mentioned collaborating or hearing other tracks. Only P04 mentioned the browser, so the survey gives stronger support to the value of making music together than to the reason given in the memo. |
+| The recording interface is easy to use (§4.2) | Four of six strengths answers described ease of use. Across all nine performers, clarity and low mental effort were the two highest-rated statements (both 5.33). |
+| Active controls can be hard to see (§5.1) | P09 described the same difficulty. This is the memo author’s own experience in both accounts. |
+| Some playback and recording controls are hard to interpret or use (§5.2) | P09’s example of the headphones icon qualifies the memo’s positive example of the Stop button label (§4.3). P01 wanted to choose a recording start point. Nobody mentioned the behaviour of Fast Forward or Rewind. |
+| Performers need control over the incoming signal (§5.3) | One performer (P06) independently described wanting to adjust levels as they recorded. |
+| Basic editing functions are missing (§5.4) | Two of six people who described a difficulty wanted to edit their recordings. The low mean for usefulness (3.56) is consistent with these comments, but performers were not asked why they gave that rating. |
+| Tracks can take a long time to render (§5.6) | Three of six described waiting for tracks. P04 and P06 reported this independently of the memo’s author. Their comments support the observation of a delay. They do not establish that rendering was unstable. |
+| Signal or routing problems can affect recordings (§5) | P03 heard unwanted noise during a second recording session. Without a cause or details of the routing, the link with the memo’s example in §5.6 remains uncertain. |
+| Several parts of the workflow could be improved (§6) | Other performers independently mentioned editing, control of input levels and delays. Visual feedback also came up, solely in P09’s answer. |
+| Hi-Audio can serve as a lightweight multitrack recorder, with limitations for a full professional production (§7) | Average agreement was close to neutral for professional standards (4.00 for all nine, 3.88 for the other eight) and artistic intentions (4.22 and 3.88). Ratings for usefulness, recommendation and planned use varied. Together these findings are consistent with the memo’s qualified assessment. |
+| Possible future uses (§7 and §8.2) | P09’s remote-teaching proposal introduces a use the memo did not consider. It would require changes to the version evaluated. |
 
-Three further memo subsections drew no survey mention at all: **§5.5** (accidental timeline shifts), **§5.7** (pinch-to-zoom / gestural support), and **§5.9** (track renaming). **§4.4** (Track Annotation) is likewise unconfirmed — no Q21 answer mentions notes or annotations (see the §4.1 row above).
+The counts in this comparison refer to the relevant question. Six people described strengths, six described difficulties and three suggested a use. The [performers’ comments](#6-what-performers-said-in-their-own-words) give the evidence behind each count.
 
-**How to read this.** Absence of mention in a small, optional free-text question is **not evidence of absence**: the memo drew on sustained observation across the whole evaluation period, which a single retrospective item cannot replicate, and the survey did not ask about these areas directly, did not measure export behaviour, and cannot show whether respondents reached the relevant workflow stage. The narrow claim is only that these issues were not raised spontaneously in the Q22 answers. (Note that memo §5.2 locates the keyboard-shortcut cost *inside* the platform — the missing Spacebar Play/Stop slowing recording sessions — not at the point of export.) This is a descriptive observation about where survey and memo evidence overlap, not a recommendation to reweight §8's priorities.
+<a id="71-memo-findings-the-survey-does-not-corroborate"></a>
 
-**Narrative summary:** where the survey speaks to a memo finding it agrees with it — fully on some points, partly on others, and on some only through the memo author's own answers — and no survey finding contradicts the memo; but it does not speak to all of them, as [§7.1](#71-memo-findings-the-survey-does-not-corroborate) sets out. The most frequently recurring Q22 concern is post-recording wait time (3/6), directly confirming §5.6; the editing/audio-manipulation gap (2/6) is mentioned less often but is where the survey's most critical respondent, P01, concentrated their comments. One clearly new observation emerges (P09's remote-education use case) alongside one tentative single-respondent observation whose mechanism the data does not establish (P03's noise/audio issue during a second take).
+### 7.1 Which development priorities did other performers raise?
+
+The memo draws particular attention to four changes in §8. Basic editing was the only one that also appeared in another performer’s survey response.
+
+| Development priority in the memo | Who raised it in the survey? |
+|---|---|
+| Make it clear when controls such as Mute or Solo are active | P09 alone. She also wrote the memo. |
+| Add standard keyboard shortcuts | Nobody mentioned shortcuts. The memo describes the extra steps needed to start and stop playback without the spacebar during recording (§5.2). |
+| Offer uncompressed audio export | Nobody mentioned export format. The memo describes having to convert files exported as .m4a before using them in other software (§5.8). |
+| Add basic non-destructive editing, so a take can be edited while keeping the original audio | P08 and P01 (two of the six who described a difficulty) asked for functions such as cutting a passage or changing its volume over time. |
+
+The survey also drew no comments on accidentally shifting tracks on the timeline (§5.5), pinch-to-zoom gestures (§5.7) or renaming tracks (§5.9). No one mentioned attaching notes to individual tracks as a strength (§4.4).
+
+Performers chose what to write about. The survey did not ask about each feature, track whether people reached the relevant stage of production, or measure export behaviour. An unmentioned issue may still have affected their work. These answers tell us which experiences performers recalled spontaneously. They do not give a basis for reordering the memo’s priorities.
 
 ---
 
-## 8. Limitations and Researcher Positionality
+<a id="8-limitations-and-researcher-positionality"></a>
 
-- **Sample size and scope.** n = 9, a small, non-random, single-organisation expert cohort (FLO performers). Descriptive statistics only; findings are scoped to "FLO participants in this study" and should not be generalised to other users, platforms, or contexts.
-- **Platform/browser skew.** 8/9 respondents used macOS and 5/9 used Firefox; only one data point exists for Windows and for Safari each. Findings may under-represent OS- or browser-specific issues.
-- **Partial response to open questions.** Q21–Q23 were answered by 6/9, 7/9, and 5/9 respondents respectively (only 3/9 gave a substantive Q23 answer). Thematic findings in [§6](#6-q21q23--thematic-findings) reflect these smaller subsets, not the full n = 9.
-- **One coder for the open questions.** Q21–Q23 were coded by a single coder; no second coder coded the answers independently, and no inter-coder agreement was measured. Where a coding decision is a judgement call — for example the scope of the collaboration codes in Q21 and Q23 ([§6](#6-q21q23--thematic-findings)) — the alternative reading and its effect on the count are stated alongside it.
-- **Researcher positionality.** Both authors co-designed the questionnaire. Nela Brown is also respondent P09, the author of the practice-based memo against which findings are triangulated, and a co-author of this analysis. José M. Gil Panal is the lead software engineer of the platform evaluated; he did not complete the questionnaire. Handling here: (a) she is retained in all primary n = 9 results; (b) Q16–Q20 are additionally reported at n = 8 excluding her ([§5](#5-p09-excluded-sensitivity-analysis-n--8)); (c) her Q22 comment on visual feedback is flagged as non-independent corroboration of her own memo's §5.1; (d) her Q23 education-use-case suggestion is flagged as sourced solely from her. As [§5](#5-p09-excluded-sensitivity-analysis-n--8) shows, her ratings are high but not numerically unique (P02's mean and floor are identical) — the n = 8 figures are a transparency measure tied to her disclosed role, not an outlier correction.
-- **Instrument caveat.** Q18 and Q19 reproduce Venkatesh's (2000) Perceived Ease of Use and Perceived Enjoyment scales, and Q20_2 is Davis's (1989) usefulness item; but the instrument as assembled recombined items across sources, changed their tense from present to past, and was never re-validated. Absolute scores are therefore read descriptively and are not compared to published norms (see [§1](#1-scope-and-analytic-approach) and [References](#references)).
-- **Retrospective self-report, collected months after use.** The evaluation period ended on 13 March 2026; responses were submitted between 20 May and 3 July 2026, a lag of **68 to 112 days**. Several questions, Q22 in particular, ask respondents to recall specific interface behaviours — which icons were unclear, how long rendering took, whether a control responded as expected — and a gap of this length gives no reason to expect recall of that detail to be complete, so absence of a specific complaint may reflect imperfect memory rather than absence of the problem. The data cannot say how often it does. This reinforces the caution in [§7.1](#71-memo-findings-the-survey-does-not-corroborate). The intervals are measured from the common evaluation end date and the survey did not record when each respondent last used the platform, so an individual's actual gap may be longer; the lag also varies across the sample by 44 days, so respondents were not all recalling from the same distance.
-- **Single time point, within a communicating cohort.** All data was collected in one wave, within a cohort that communicated informally (WhatsApp group, per memo §3) during the study — some convergence in language or emphasis between respondents may partly reflect shared discussion rather than fully independent impressions.
+## 8. What limits the conclusions?
+
+- **One ensemble making one piece.** The nine performers were a small, non-random group from one organisation, experienced in music and technology. Their responses describe this project and this version of Hi-Audio. Eight used macOS and five used Firefox. Windows and Safari each had only one user, so issues specific to other setups may be under-represented.
+- **Time between recording and answering.** The evaluation ended on 13 March 2026. The surveys were submitted between 20 May and 3 July, 68 to 112 days later. That is a 44-day difference between the earliest and latest replies. The survey did not record each person’s last session, so some may have been recalling events even further back. Details such as how a button behaved or how long a track took to process may have faded. We cannot estimate how much this affected the answers.
+- **Optional comments and one researcher identifying themes.** Six people answered the strengths question, seven the challenges question and five the question about other uses. Only three proposed a use. One researcher interpreted the comments, so we have no measure of agreement between coders. The [comments section](#6-what-performers-said-in-their-own-words) shows how different readings of “collaboration” would change the counts.
+- **The authors’ roles.** Both authors designed the survey. Brown directed the evaluation, performed, wrote the memo and contributed to this analysis. Her answers are included as P09. The [eight-person comparison](#5-the-ratings-with-and-without-the-evaluator) shows her influence on the ratings. She was the sole source in the survey for the comments on visual feedback and the idea of remote education. Co-author José M. Gil Panal, Hi-Audio’s lead software engineer, helped introduce the platform to the musicians and provided technical support. He did not complete the questionnaire.
+- **What the ratings measure.** The questionnaire combined published items with questions written for this study and asked performers to recall past use. The combined instrument had not been validated for this population. Nine responses cannot establish its reliability. We interpret scores within this project and make no comparisons with published norms. The [appendix documents the adaptations](#where-the-rating-questions-came-from).
+- **One survey after a shared experience.** The ensemble communicated in a WhatsApp group during the project (memo §3). Performers may have discussed an issue before reporting it, which could help explain similar wording or emphasis. There was one round of responses, so the survey cannot show how views changed over time.
 
 ---
 
 ## 9. Conclusions
 
-Among FLO participants in this study, the platform's perceived suitability as a professional audio recording application (Q16) sits almost exactly at the 7-point scale's midpoint (mean 4.00, n = 9; 3.88 with P09 excluded), indicating a mixed rather than clearly positive or negative view. This is not uniform neutrality: ratings range from strongly critical (P01, "Strongly disagree") to clearly positive (P02 "Agree," P09 "Somewhat agree"), and no respondent selected the scale's top option on Q16.
+For this ensemble, the clearest value of Hi-Audio was in building a piece together. Performers could contribute when they were ready, hear one another’s tracks and get started with an interface several found easy to understand. They were more divided on whether the platform met their standards for professional recording. Four chose neutral, three leaned towards agreement and two towards disagreement.
 
-Several findings converge across the quantitative and qualitative data. **Collaboration and ease of use are the platform's clearest strengths** in this cohort — the top qualitative theme in Q21 and the highest-rated quantitative items (Q18_1/Q18_2, both 5.33). On the concern side the picture has two parts: **post-recording processing/sync wait time is the most frequently recurring Q22 concern** (3/6 substantive answers), while **the absence of editing/audio-manipulation tools, mentioned less often (2/6), is where the survey's most critical respondent concentrated their comments** — P01, who also gave the lowest Q16 and Q17 scores. Q20_2 ("would find it useful for recording music") is the lowest-rated quantitative item in the survey (mean 3.56); the editing-tools gap is a plausible contributor, though the survey does not establish this causally.
+The written answers make that distinction concrete. Waiting for a track was the most frequent difficulty. Editing mattered particularly to the performer who gave the lowest professional-standards rating and explained that they could neither choose a recording start point nor shape the sound afterwards. The survey supports those accounts of difficulty. It leaves open how far they explain the group’s lower rating for usefulness in future recording work.
 
-A more cautious observation: averaging the item means within each block gives 4.06 for Q20, 4.89 for Q18 and 4.52 for Q19, so the future-use items sit lower on average than the usability and enjoyment items. These are arithmetic averages of item means, not subscale scores — the blocks were not validated as scales here ([§1](#1-scope-and-analytic-approach)), Q20 mixes attitude, usefulness, intention and recommendation rather than measuring one thing, and the pattern is not uniform at the item level, since Q20_4 ("would recommend to colleagues," 4.67) matches or exceeds several Q18 and Q19 items. Read with those limits, the cohort rated the platform well on clarity and low mental effort during use (Q18_1/Q18_2, 5.33 each), only modestly above the midpoint on enjoyment (Q19 means 4.44–4.67, all three medians exactly 4.0), and lower again across the Q20 items, of which only Q20_3 asks directly about a future project — a shape consistent with memo §7's own assessment of the platform as well-suited to lightweight collaborative use but not yet to end-to-end professional production.
-
-Survey findings agree with the practice-based memo where they overlap, fully or partly, and contradict none of its findings, although some of that agreement rests only on the memo author's own answers. Coverage is partial: three of the four development priorities named in memo §8 (visual feedback, keyboard shortcuts, uncompressed export formats) received no independent support here, and only non-destructive editing tools was independently corroborated ([§7.1](#71-memo-findings-the-survey-does-not-corroborate)) — which, given a small cohort and an optional free-text challenge question, is not disconfirmation. One clearly new observation emerges, P09's suggested remote music-education use case, alongside one tentative single-respondent observation, P03's noise/audio issue during a second take, whose mechanism the data does not establish. Neither is yet corroborated within this sample.
+Taken together, the project and the survey show where Hi-Audio fitted into this production. The musicians used it to assemble 16 source tracks and mixed the piece offline. Of the four improvements prioritised in the memo, basic editing was the one other performers also requested. Remote teaching, proposed by the evaluator alone, remains an idea for a different version of the platform.
 
 ## References
 
@@ -325,7 +392,7 @@ Survey findings agree with the practice-based memo where they overlap, fully or 
 
 ## Appendix: Survey questions
 
-Wording as on the survey form. The survey opened with a consent notice (not reproduced here) and had three sections: Section 1, User Profile & Background (Q1–Q6); Section 2, Hi-Audio Recording Technical Setup (Q7–Q15); and Section 3, Exploring the Usability and Usefulness of the Hi-Audio Online Platform (Q16–Q23). All questions were required unless marked optional.
+The survey opened with a consent notice. It covered musical background (Q1–Q6), the recording setup (Q7–Q15), and the usability and usefulness of Hi-Audio (Q16–Q23). The table reproduces the wording on the form. Questions were required unless marked optional.
 
 | Q | Question | Answer format |
 |---|---|---|
@@ -365,4 +432,16 @@ Wording as on the survey form. The survey opened with a consent notice (not repr
 | Q23 | Can you think of any other situation where Hi-Audio platform could be useful? | Open text (optional) |
 
 *7-point scale: 1 Strongly disagree · 2 Disagree · 3 Somewhat disagree · 4 Neither disagree nor agree · 5 Somewhat agree · 6 Agree · 7 Strongly agree.*
+
+### Where the rating questions came from
+
+- **Ease of use and enjoyment.** Q18 uses the four *Perceived Ease of Use* statements and Q19 the three *Perceived Enjoyment* statements as worded in Venkatesh (2000, Appendix 1). Their earlier sources are Davis (1989) for ease of use and Davis, Bagozzi and Warshaw (1992) for enjoyment. We named Hi-Audio in place of “the system” and changed the verbs from present to past tense. Q18_2 also drops “my” from “a lot of my mental effort”.
+- **Usefulness and future use.** Q20_2 adapts Davis’s (1989) usefulness item by changing “in my job” to “for recording music”. Q20_1 concerns attitude and Q20_3 concerns intention. Both fit the technology-acceptance literature, but their exact wording source is unknown. The recommendation question (Q20_4) and the single questions about professional standards (Q16) and artistic intentions (Q17) were written for this study.
+- **Timing and interpretation.** The original scales asked about a system in current use. Here the musicians answered months after using Hi-Audio. That difference in what they had to recall is separate from the change in verb tense. Recombining the questions did not produce a standardised questionnaire or validated subscale scores for this group.
+
+### Data and participant identifiers
+
+The [published survey responses (CSV)](participant_survey_responses.csv) contain nine submissions and 33 columns. The professional-standards and artistic-intention questions were each a single statement on the form. The published file corrects an export that repeated their values across columns, and gives one column for each question.
+
+Participant labels follow submission order, from P01 on 20 May to P09 on 3 July 2026. Each submission date is unique and matches the date on the corresponding form in `docs/individual_participant_responses/`. The “Submission N” number on each form matches its participant number.
 

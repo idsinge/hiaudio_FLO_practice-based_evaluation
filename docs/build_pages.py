@@ -22,7 +22,8 @@ from the Citation section of README.md, so the citations are kept in one place.
 
 Standard library only, so it runs wherever python3 does. It handles the markdown subset the
 two sources use: ATX headings, paragraphs with hard breaks, pipe tables, blockquotes, bullet
-lists, horizontal rules, images with figure captions, and inline bold / italic / code / links.
+lists, horizontal rules, images with figure captions, standalone anchors for earlier section
+links, and inline bold / italic / code / links.
 
 On the analysis page, single question references (Q16, Q18_1, ...) get a hover/focus pop-up
 with the question's wording, read from the analysis's own "Appendix: Survey questions" table.
@@ -219,6 +220,7 @@ def slug(text: str) -> str:
 
 
 IMG_RE = re.compile(r"^!\[(.*)\]\((.+)\)$")
+ANCHOR_RE = re.compile(r'<a id="[a-z0-9_-]+"></a>')
 CAP_RE = re.compile(r"^\*\*\*(Fig(?:ure)? [A-Z]?\d+\.)\*\*\s*(.*?)\*$")
 ROW_SEP_RE = re.compile(r"^\|[\s:|-]+\|$")
 
@@ -242,6 +244,11 @@ def convert(md: str) -> str:
 
         if stripped == "---":
             out.append("<hr/>")
+            i += 1
+            continue
+
+        if ANCHOR_RE.fullmatch(stripped):
+            out.append(stripped)
             i += 1
             continue
 
@@ -321,7 +328,7 @@ def convert(md: str) -> str:
         while i < n and lines[i].strip():
             raw = lines[i]
             s = raw.strip()
-            if s == "---" or s.startswith(("#", "|", ">", "- ")) or IMG_RE.match(s):
+            if s == "---" or s.startswith(("#", "|", ">", "- ")) or IMG_RE.match(s) or ANCHOR_RE.fullmatch(s):
                 break
             para.append(inline(s) + ("\x01" if raw.endswith("  ") else ""))
             i += 1
