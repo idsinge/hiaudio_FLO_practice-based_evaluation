@@ -41,7 +41,9 @@ Performers answered 23 questions about their musical background, how they contri
 
 For background and equipment, we counted how many people chose each answer. Two questions allowed several selections. We grouped the names of music tools by hand before counting them (Q3 and Q4). Performers also listed instruments and the sounds they contributed (Q6 and Q7). We summarised those lists in prose, without counting individual instruments or sounds.
 
-For the 13 rating statements, we converted agreement into numbers from 1 (*Strongly disagree*) to 7 (*Strongly agree*). A rating of 4 meant *Neither disagree nor agree*. The tables give the mean (average), the median (middle of the ordered responses) and the range (lowest to highest response). A mean near 4 can result from people holding quite different views. Some questions came from published scales. We used each rating descriptively because the combined questionnaire had not been validated for this group. The [appendix explains where the questions came from](#where-the-rating-questions-came-from).
+Performers rated their agreement with 13 statements, some adapted from [published scales](#where-the-rating-questions-came-from). We coded their answers from 1 (*Strongly disagree*) to 7 (*Strongly agree*), with 4 for the neutral response (*Neither disagree nor agree*).
+
+We summarised the nine performers’ answers to each question separately because we had not tested whether combining ratings across questions would accurately reflect how easy or enjoyable they found Hi-Audio to use. The tables give the mean (average), the median (middle of the ordered ratings) and the range (lowest to highest rating) for each statement. A mean near 4 can reflect a mix of agreement and disagreement.
 
 For the written answers, one researcher grouped comments by topic. The initial topics came from the memo, such as ease of use and editing. The researcher also recorded ideas that went beyond it. We then compared the comments and ratings with the memo’s observations on strengths, difficulties and suitability for professional work (memo §4–§8).
 
